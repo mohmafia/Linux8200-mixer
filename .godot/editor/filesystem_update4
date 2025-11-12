@@ -1,0 +1,13 @@
+res://SCENE1/SCENES/Scene1.tscn
+res://SCENE1/SCRIPTS/GD/crossfader.gd
+res://SCENE1/SCRIPTS/GD/mic1_vu.gd
+res://SCENE1/SCRIPTS/GD/EQ_faders.gd
+res://SCENE1/SCRIPTS/GD/link_device4.gd
+res://SCENE1/SCRIPTS/GD/button_link_dev_5.gd
+res://SCENE1/SCRIPTS/GD/button_link_dev_6.gd
+res://SCENE1/SCRIPTS/GD/vu_usb_1.gd
+res://SCENE1/SCRIPTS/GD/vu_usb_2.gd
+res://settings_lcd_panel.tscn
+res://SCENE1/SCRIPTS/GD/Faders_usb_block.gd
+res://SCENE1/SCRIPTS/GD/Fader_usb_block2.gd
+res://SCENE1/SCRIPTS/GD/fader_master_b.gd
