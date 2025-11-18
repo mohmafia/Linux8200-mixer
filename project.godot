@@ -18,12 +18,15 @@ boot_splash/fullsize=false
 boot_splash/use_filter=false
 config/icon="res://SCENE1/images/ICONS/icon.svg"
 
+[autoload]
+
+InstallManager="*res://SCENE1/SCRIPTS/GD/InstallManager.gd"
+
 [display]
 
 window/size/viewport_width=1736
 window/size/viewport_height=900
-window/size/resizable=false
-window/size/always_on_top=true
+window/stretch/mode="viewport"
 
 [editor]
 

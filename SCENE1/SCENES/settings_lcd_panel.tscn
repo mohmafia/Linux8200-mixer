@@ -1,0 +1,532 @@
+[gd_scene load_steps=11 format=3 uid="uid://cdtdudvksiwp4"]
+
+[ext_resource type="Texture2D" uid="uid://obovidwjbiqb" path="res://SCENE1/images/LCD/lcd-disp.png" id="1_oc276"]
+[ext_resource type="Texture2D" uid="uid://7o61t7tgthc2" path="res://SCENE1/images/pcb.jpg" id="1_ulkku"]
+[ext_resource type="FontFile" uid="uid://ca4574svpk1wn" path="res://SCENE1/font/VT323-Regular.ttf" id="2_rl16v"]
+[ext_resource type="Texture2D" uid="uid://cngx1hd2yu7vt" path="res://SCENE1/images/buttons/knopje.png" id="3_khtxq"]
+[ext_resource type="Script" uid="uid://br5s5rkmwdu0h" path="res://SCENE1/SCENES/button_exit_lcd.gd" id="4_rl16v"]
+[ext_resource type="Theme" uid="uid://cb44yoxalg5xm" path="res://menubuttonstyle.tres" id="5_3g0p4"]
+[ext_resource type="FontFile" uid="uid://swi45mygiorx" path="res://SCENE1/font/Roboto-Bold.ttf" id="5_khtxq"]
+[ext_resource type="Script" uid="uid://o5a0c0dnq4n2" path="res://SCENE1/SCENES/button_mic_1.gd" id="6_i4dgb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_khtxq"]
+bg_color = Color(0.0862745, 0.0862745, 0.0862745, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i4dgb"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="Settings_lcd_panel" type="Node2D"]
+
+[node name="Pcb" type="Sprite2D" parent="."]
+position = Vector2(875, 461)
+scale = Vector2(4.60847, 3.14437)
+texture = ExtResource("1_ulkku")
+
+[node name="Lcd-disp" type="Sprite2D" parent="."]
+position = Vector2(795, 663)
+scale = Vector2(2.35919, 2.08057)
+texture = ExtResource("1_oc276")
+
+[node name="Label7" type="Label" parent="."]
+offset_left = 453.0
+offset_top = 515.0
+offset_right = 1135.0
+offset_bottom = 812.0
+theme_override_fonts/font = ExtResource("2_rl16v")
+theme_override_font_sizes/font_size = 71
+text = " SYSTEM STATUS: RUNNING
+ COMPRESSOR: ON
+ SELECT DEVICES
+ VERSION: 0.50B"
+
+[node name="Label_return_to_main" type="Label" parent="."]
+offset_left = 733.0
+offset_top = 311.0
+offset_right = 845.0
+offset_bottom = 359.0
+theme_override_font_sizes/font_size = 29
+text = "EXIT"
+horizontal_alignment = 1
+
+[node name="Button_MIC1" type="MenuButton" parent="."]
+offset_left = 33.0
+offset_top = 43.0
+offset_right = 169.0
+offset_bottom = 107.0
+theme = ExtResource("5_3g0p4")
+theme_override_fonts/font = ExtResource("5_khtxq")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "MIC1"
+flat = false
+item_count = 2
+popup/item_0/text = "DEVICE1"
+popup/item_0/checkable = 1
+popup/item_0/id = 0
+popup/item_1/text = "DEVICE2"
+popup/item_1/id = 1
+script = ExtResource("6_i4dgb")
+
+[node name="Button_MIC2" type="MenuButton" parent="."]
+offset_left = 185.0
+offset_top = 43.0
+offset_right = 321.0
+offset_bottom = 107.0
+theme = ExtResource("5_3g0p4")
+theme_override_fonts/font = ExtResource("5_khtxq")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "MIC2"
+flat = false
+item_count = 2
+popup/item_0/text = "DEVICE1"
+popup/item_0/checkable = 1
+popup/item_0/id = 0
+popup/item_1/text = "DEVICE2"
+popup/item_1/id = 1
+script = ExtResource("6_i4dgb")
+
+[node name="Button_DEVICE1" type="MenuButton" parent="."]
+offset_left = 337.0
+offset_top = 43.0
+offset_right = 473.0
+offset_bottom = 107.0
+theme = ExtResource("5_3g0p4")
+theme_override_fonts/font = ExtResource("5_khtxq")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "DEVICE1"
+flat = false
+item_count = 2
+popup/item_0/text = "DEVICE1"
+popup/item_0/checkable = 1
+popup/item_0/id = 0
+popup/item_1/text = "DEVICE2"
+popup/item_1/id = 1
+script = ExtResource("6_i4dgb")
+
+[node name="Button_DEVICE2" type="MenuButton" parent="."]
+offset_left = 489.0
+offset_top = 43.0
+offset_right = 625.0
+offset_bottom = 107.0
+theme = ExtResource("5_3g0p4")
+theme_override_fonts/font = ExtResource("5_khtxq")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "DEVICE2"
+flat = false
+item_count = 2
+popup/item_0/text = "DEVICE1"
+popup/item_0/checkable = 1
+popup/item_0/id = 0
+popup/item_1/text = "DEVICE2"
+popup/item_1/id = 1
+script = ExtResource("6_i4dgb")
+
+[node name="Button_DEVICE3" type="MenuButton" parent="."]
+offset_left = 641.0
+offset_top = 43.0
+offset_right = 777.0
+offset_bottom = 107.0
+theme = ExtResource("5_3g0p4")
+theme_override_fonts/font = ExtResource("5_khtxq")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "DEVICE3"
+flat = false
+item_count = 2
+popup/item_0/text = "DEVICE1"
+popup/item_0/checkable = 1
+popup/item_0/id = 0
+popup/item_1/text = "DEVICE2"
+popup/item_1/id = 1
+script = ExtResource("6_i4dgb")
+
+[node name="Button_DEVICE4" type="MenuButton" parent="."]
+offset_left = 791.0
+offset_top = 43.0
+offset_right = 927.0
+offset_bottom = 107.0
+theme = ExtResource("5_3g0p4")
+theme_override_fonts/font = ExtResource("5_khtxq")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "DEVICE4"
+flat = false
+item_count = 2
+popup/item_0/text = "DEVICE1"
+popup/item_0/checkable = 1
+popup/item_0/id = 0
+popup/item_1/text = "DEVICE2"
+popup/item_1/id = 1
+script = ExtResource("6_i4dgb")
+
+[node name="Button_DEVICE5" type="MenuButton" parent="."]
+offset_left = 943.0
+offset_top = 43.0
+offset_right = 1079.0
+offset_bottom = 107.0
+theme = ExtResource("5_3g0p4")
+theme_override_fonts/font = ExtResource("5_khtxq")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "DEVICE5"
+flat = false
+item_count = 2
+popup/item_0/text = "DEVICE1"
+popup/item_0/checkable = 1
+popup/item_0/id = 0
+popup/item_1/text = "DEVICE2"
+popup/item_1/id = 1
+script = ExtResource("6_i4dgb")
+
+[node name="Button_DEVICE6" type="MenuButton" parent="."]
+offset_left = 1097.0
+offset_top = 43.0
+offset_right = 1233.0
+offset_bottom = 107.0
+theme = ExtResource("5_3g0p4")
+theme_override_fonts/font = ExtResource("5_khtxq")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "DEVICE6"
+flat = false
+item_count = 2
+popup/item_0/text = "DEVICE1"
+popup/item_0/checkable = 1
+popup/item_0/id = 0
+popup/item_1/text = "DEVICE2"
+popup/item_1/id = 1
+script = ExtResource("6_i4dgb")
+
+[node name="Button_MASTER_A" type="MenuButton" parent="."]
+offset_left = 1249.0
+offset_top = 43.0
+offset_right = 1386.0
+offset_bottom = 107.0
+theme = ExtResource("5_3g0p4")
+theme_override_fonts/font = ExtResource("5_khtxq")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "MASTER A"
+flat = false
+item_count = 2
+popup/item_0/text = "DEVICE1"
+popup/item_0/checkable = 1
+popup/item_0/id = 0
+popup/item_1/text = "DEVICE2"
+popup/item_1/id = 1
+script = ExtResource("6_i4dgb")
+
+[node name="Button_MASTER_B" type="MenuButton" parent="."]
+offset_left = 1405.0
+offset_top = 43.0
+offset_right = 1542.0
+offset_bottom = 107.0
+theme = ExtResource("5_3g0p4")
+theme_override_fonts/font = ExtResource("5_khtxq")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "MASTER B"
+flat = false
+item_count = 2
+popup/item_0/text = "DEVICE1"
+popup/item_0/checkable = 1
+popup/item_0/id = 0
+popup/item_1/text = "DEVICE2"
+popup/item_1/id = 1
+script = ExtResource("6_i4dgb")
+
+[node name="Button_MASTER_C" type="MenuButton" parent="."]
+offset_left = 1560.0
+offset_top = 43.0
+offset_right = 1697.0
+offset_bottom = 107.0
+theme = ExtResource("5_3g0p4")
+theme_override_fonts/font = ExtResource("5_khtxq")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "MASTER C"
+flat = false
+item_count = 2
+popup/item_0/text = "DEVICE1"
+popup/item_0/checkable = 1
+popup/item_0/id = 0
+popup/item_1/text = "DEVICE2"
+popup/item_1/id = 1
+script = ExtResource("6_i4dgb")
+
+[node name="CAPACITOR" type="Label" parent="."]
+offset_top = 293.0
+offset_right = 80.0
+offset_bottom = 354.0
+tooltip_text = "CAPACITOR"
+mouse_filter = 1
+
+[node name="CAPACITOR2" type="Label" parent="."]
+offset_left = 100.0
+offset_top = 354.0
+offset_right = 204.0
+offset_bottom = 436.0
+tooltip_text = "CAPACITOR"
+mouse_filter = 1
+
+[node name="CAPACITOR3" type="Label" parent="."]
+offset_left = 287.0
+offset_top = 311.0
+offset_right = 391.0
+offset_bottom = 375.0
+tooltip_text = "CAPACITOR"
+mouse_filter = 1
+
+[node name="CAPACITOR4" type="Label" parent="."]
+offset_left = 741.0
+offset_top = 354.0
+offset_right = 902.0
+offset_bottom = 443.0
+tooltip_text = "CAPACITOR"
+mouse_filter = 1
+
+[node name="CAPACITOR5" type="Label" parent="."]
+offset_left = 927.0
+offset_top = 275.0
+offset_right = 1088.0
+offset_bottom = 436.0
+tooltip_text = "CAPACITOR"
+mouse_filter = 1
+
+[node name="RESISTOR" type="Label" parent="."]
+offset_left = -4.0
+offset_top = 235.0
+offset_right = 157.0
+offset_bottom = 293.0
+tooltip_text = "RESISTOR"
+mouse_filter = 1
+
+[node name="RESISTOR2" type="Label" parent="."]
+offset_left = 252.0
+offset_top = 253.0
+offset_right = 413.0
+offset_bottom = 311.0
+tooltip_text = "RESISTOR"
+mouse_filter = 1
+
+[node name="RESISTOR3" type="Label" parent="."]
+offset_left = 535.0
+offset_top = 253.0
+offset_right = 696.0
+offset_bottom = 311.0
+tooltip_text = "RESISTOR"
+mouse_filter = 1
+
+[node name="RESISTOR4" type="Label" parent="."]
+offset_left = 777.0
+offset_top = 235.0
+offset_right = 938.0
+offset_bottom = 293.0
+tooltip_text = "RESISTOR"
+mouse_filter = 1
+
+[node name="RESISTOR5" type="Label" parent="."]
+offset_left = 1205.0
+offset_top = 336.0
+offset_right = 1527.0
+offset_bottom = 440.0
+tooltip_text = "RESISTOR"
+mouse_filter = 1
+
+[node name="RESISTOR6" type="Label" parent="."]
+offset_left = 1508.0
+offset_top = 336.0
+offset_right = 1743.0
+offset_bottom = 437.0
+tooltip_text = "RESISTOR"
+mouse_filter = 1
+
+[node name="RESISTOR7" type="Label" parent="."]
+offset_left = 1336.0
+offset_top = 639.0
+offset_right = 1479.0
+offset_bottom = 681.0
+tooltip_text = "RESISTOR"
+mouse_filter = 1
+
+[node name="RESISTOR8" type="Label" parent="."]
+offset_left = 1560.0
+offset_top = 639.0
+offset_right = 1703.0
+offset_bottom = 681.0
+tooltip_text = "RESISTOR"
+mouse_filter = 1
+
+[node name="RESISTOR9" type="Label" parent="."]
+offset_left = 1205.0
+offset_top = 591.0
+offset_right = 1738.0
+offset_bottom = 614.0
+tooltip_text = "RESISTOR"
+mouse_filter = 1
+
+[node name="TRANSISTOR" type="Label" parent="."]
+offset_left = 1205.0
+offset_top = 548.0
+offset_right = 1738.0
+offset_bottom = 591.0
+tooltip_text = "TRANSISTOR"
+mouse_filter = 1
+
+[node name="TRANSISTOR2" type="Label" parent="."]
+offset_left = 1116.0
+offset_top = 403.0
+offset_right = 1173.0
+offset_bottom = 446.0
+tooltip_text = "TRANSISTOR"
+mouse_filter = 1
+
+[node name="CONNECTOR" type="Label" parent="."]
+offset_left = 489.0
+offset_top = 336.0
+offset_right = 641.0
+offset_bottom = 443.0
+tooltip_text = "CONNECTOR"
+mouse_filter = 1
+
+[node name="CONNECTOR2" type="Label" parent="."]
+offset_left = -4.0
+offset_top = 840.0
+offset_right = 337.0
+offset_bottom = 894.0
+tooltip_text = "CONNECTOR"
+mouse_filter = 1
+
+[node name="CONNECTOR3" type="Label" parent="."]
+offset_left = 1542.0
+offset_top = 856.0
+offset_right = 1657.0
+offset_bottom = 900.0
+tooltip_text = "CONNECTOR"
+mouse_filter = 1
+
+[node name="OPAMP" type="Label" parent="."]
+offset_left = 1205.0
+offset_top = 717.0
+offset_right = 1721.0
+offset_bottom = 761.0
+tooltip_text = "OPAMP"
+mouse_filter = 1
+
+[node name="OPAMP2" type="Label" parent="."]
+offset_left = 1205.0
+offset_top = 477.0
+offset_right = 1721.0
+offset_bottom = 521.0
+tooltip_text = "OPAMP"
+mouse_filter = 1
+
+[node name="VOLTAGE-REGULATORS" type="Label" parent="."]
+offset_left = 1205.0
+offset_top = 214.0
+offset_right = 1738.0
+offset_bottom = 336.0
+tooltip_text = "VOLTAGE-REGULATORS"
+mouse_filter = 1
+
+[node name="COMPRESSOR-CONTROL" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 143.0
+offset_right = 1049.0
+offset_bottom = 228.0
+tooltip_text = "COMPRESSOR-CONTROL"
+mouse_filter = 1
+
+[node name="LCD-CONTROL" type="Label" parent="."]
+offset_left = 252.0
+offset_top = 548.0
+offset_right = 385.0
+offset_bottom = 670.0
+tooltip_text = "      LCD
+CONTROLLER"
+mouse_filter = 1
+
+[node name="VU POWER" type="Label" parent="."]
+offset_left = 287.0
+offset_top = 394.0
+offset_right = 391.0
+offset_bottom = 516.0
+tooltip_text = "VU POWER"
+mouse_filter = 1
+
+[node name="DSP" type="Label" parent="."]
+offset_left = -4.0
+offset_top = 564.0
+offset_right = 100.0
+offset_bottom = 686.0
+tooltip_text = "DSP"
+mouse_filter = 1
+
+[node name="DIODES" type="Label" parent="."]
+offset_left = 641.0
+offset_top = 336.0
+offset_right = 745.0
+offset_bottom = 458.0
+tooltip_text = "DIODES"
+mouse_filter = 1
+
+[node name="DIODES2" type="Label" parent="."]
+offset_left = 1205.0
+offset_top = 829.0
+offset_right = 1625.0
+offset_bottom = 852.0
+tooltip_text = "DIODES"
+mouse_filter = 1
+
+[node name="ZENER" type="Label" parent="."]
+offset_left = 1680.0
+offset_top = 835.0
+offset_right = 1720.0
+offset_bottom = 891.0
+tooltip_text = "ZENER"
+mouse_filter = 1
+
+[node name="Button_exit_lcd" type="TextureButton" parent="."]
+offset_left = 741.0
+offset_top = 354.0
+offset_right = 834.0
+offset_bottom = 436.0
+toggle_mode = true
+texture_normal = ExtResource("3_khtxq")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("4_rl16v")
+
+[connection signal="pressed" from="Button_exit_lcd" to="Button_exit_lcd" method="_on_exit_button_pressed"]

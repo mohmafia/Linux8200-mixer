@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://me6by7jtw5ip"]
+[gd_scene load_steps=49 format=3 uid="uid://me6by7jtw5ip"]
 
 [ext_resource type="Script" uid="uid://c65bktc35wp24" path="res://SCENE1/SCRIPTS/GD/control.gd" id="1_hsbbc"]
 [ext_resource type="Texture2D" uid="uid://daoi0hqcyxc2e" path="res://SCENE1/images/Background/mixer-stamped-front.png" id="2_xy2h2"]
@@ -25,6 +25,8 @@
 [ext_resource type="Script" uid="uid://bf851euqn3bws" path="res://SCENE1/SCRIPTS/GD/EQ_faders.gd" id="23_75g7p"]
 [ext_resource type="Texture2D" uid="uid://cngx1hd2yu7vt" path="res://SCENE1/images/buttons/knopje.png" id="24_vab4s"]
 [ext_resource type="Texture2D" uid="uid://bd1ky7a6i3l64" path="res://SCENE1/images/buttons/schakelaar met led.png" id="25_41mpo"]
+[ext_resource type="Script" uid="uid://bk7xn3nkwai1s" path="res://SCENE1/SCRIPTS/GD/button_menu_lcd.gd" id="25_by0o0"]
+[ext_resource type="Script" uid="uid://cc5yoe8w6m3h4" path="res://SCENE1/SCRIPTS/GD/button_exit.gd" id="25_xy2h2"]
 [ext_resource type="Texture2D" uid="uid://doewriqbkr3ps" path="res://SCENE1/images/LEDS/led voor schakelaar.png" id="26_gxq17"]
 [ext_resource type="Script" uid="uid://xdha8pxaxpcx" path="res://SCENE1/SCRIPTS/GD/crossfader.gd" id="27_0d6jj"]
 [ext_resource type="Texture2D" uid="uid://dxx1uu4dmfehj" path="res://SCENE1/images/Rotary_knobs/gd-draaiknop-oranje.png" id="28_txy8k"]
@@ -108,15 +110,20 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_hsbbc")
 
+[node name="InstallContainer" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [node name="Label-black" type="Label" parent="."]
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.014
 anchor_bottom = 0.011
-offset_left = -12.0
-offset_top = -6.0
-offset_right = 1714.5
-offset_bottom = 963.736
+offset_left = -14.0
+offset_top = 4.0
+offset_right = 1712.5
+offset_bottom = 973.736
 theme_override_styles/normal = SubResource("StyleBoxFlat_tedhf")
 
 [node name="Mixer-stamped-front" type="Sprite2D" parent="."]
@@ -691,6 +698,7 @@ offset_bottom = 135.0
 toggle_mode = true
 texture_normal = ExtResource("24_vab4s")
 ignore_texture_size = true
+script = ExtResource("25_by0o0")
 
 [node name="Button_sel_lcd" type="Sprite2D" parent="."]
 position = Vector2(1192, 120)
@@ -707,6 +715,17 @@ texture = ExtResource("24_vab4s")
 [node name="Button_comp_on_off" type="Sprite2D" parent="."]
 position = Vector2(1040, 272)
 texture = ExtResource("24_vab4s")
+
+[node name="Button_exit" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.009
+anchor_bottom = 0.017
+offset_left = 1605.0
+offset_top = 75.0
+offset_right = 1662.35
+offset_bottom = 134.7
+script = ExtResource("25_xy2h2")
 
 [node name="SchakelaarMetLed" type="Sprite2D" parent="."]
 position = Vector2(1640, 111)
@@ -1476,9 +1495,9 @@ text = "-10"
 
 [node name="Button_link_dev4" type="Button" parent="."]
 layout_mode = 0
-offset_left = 884.0
+offset_left = 840.0
 offset_top = 438.0
-offset_right = 929.0
+offset_right = 896.0
 offset_bottom = 469.0
 theme_override_font_sizes/font_size = 14
 theme_override_styles/hover = SubResource("StyleBoxFlat_87wg0")
@@ -1488,9 +1507,9 @@ script = ExtResource("38_vnqhc")
 
 [node name="Button_link_dev5" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1042.0
+offset_left = 1007.0
 offset_top = 438.0
-offset_right = 1087.0
+offset_right = 1060.0
 offset_bottom = 469.0
 theme_override_font_sizes/font_size = 14
 theme_override_styles/hover = SubResource("StyleBoxFlat_87wg0")
@@ -1500,12 +1519,80 @@ script = ExtResource("39_o4etp")
 
 [node name="Button_link_dev6" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1213.0
+offset_left = 1171.0
 offset_top = 438.0
-offset_right = 1258.0
+offset_right = 1228.0
 offset_bottom = 469.0
 theme_override_font_sizes/font_size = 14
 theme_override_styles/hover = SubResource("StyleBoxFlat_87wg0")
 theme_override_styles/normal = SubResource("StyleBoxFlat_w5605")
 text = "LINK"
 script = ExtResource("40_8flde")
+
+[node name="A_only_mic1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 166.0
+offset_top = 438.0
+offset_right = 221.0
+offset_bottom = 469.0
+theme_override_fonts/font = ExtResource("3_by0o0")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/hover = SubResource("StyleBoxFlat_87wg0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_w5605")
+text = "A ONLY"
+script = ExtResource("40_8flde")
+
+[node name="A_only_mic2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 292.0
+offset_top = 438.0
+offset_right = 347.0
+offset_bottom = 469.0
+theme_override_fonts/font = ExtResource("3_by0o0")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/hover = SubResource("StyleBoxFlat_87wg0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_w5605")
+text = "A ONLY"
+script = ExtResource("40_8flde")
+
+[node name="A_only_D1" type="Button" parent="."]
+layout_mode = 0
+offset_left = 910.0
+offset_top = 438.0
+offset_right = 965.0
+offset_bottom = 469.0
+theme_override_fonts/font = ExtResource("3_by0o0")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/hover = SubResource("StyleBoxFlat_87wg0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_w5605")
+text = "A ONLY"
+script = ExtResource("40_8flde")
+
+[node name="A_only_D2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1075.0
+offset_top = 438.0
+offset_right = 1130.0
+offset_bottom = 469.0
+theme_override_fonts/font = ExtResource("3_by0o0")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/hover = SubResource("StyleBoxFlat_87wg0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_w5605")
+text = "A ONLY"
+script = ExtResource("40_8flde")
+
+[node name="A_only_D3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1248.0
+offset_top = 438.0
+offset_right = 1303.0
+offset_bottom = 469.0
+theme_override_fonts/font = ExtResource("3_by0o0")
+theme_override_font_sizes/font_size = 14
+theme_override_styles/hover = SubResource("StyleBoxFlat_87wg0")
+theme_override_styles/normal = SubResource("StyleBoxFlat_w5605")
+text = "A ONLY"
+script = ExtResource("40_8flde")
+
+[connection signal="pressed" from="Button_menu_lcd" to="Button_menu_lcd" method="On_button_pressed_install_scene"]
+[connection signal="pressed" from="Button_exit" to="Button_exit" method="_on_exitbutton_pressed"]

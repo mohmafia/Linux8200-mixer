@@ -28,4 +28,4 @@ func _input(event):
 func update_volume():
 	var volume = 1 - ((position.y - min_position) / (max_position - min_position))
 	emit_signal("volume_changed", volume)
-	print("Mic2 moved:", volume)  # Verbind dit met je mixer-audio!
+	#print("Mic2 moved:", volume)  # Verbind dit met je mixer-audio!

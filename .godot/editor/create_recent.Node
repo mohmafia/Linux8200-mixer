@@ -1,8 +1,11 @@
-Control
-TextureButton
-Button
-Sprite2D
 Label
+MenuButton
+OptionButton
+Button
+Control
+RichTextLabel
+TextureButton
+Sprite2D
 TextureRect
 VBoxContainer
 Line2D

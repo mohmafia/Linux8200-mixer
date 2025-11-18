@@ -26,8 +26,8 @@ func _ready():
 	update_volume()
 	
 	# Debug prints
-	print("Master A start pos:", position.y)
-	print("Master A connected:", $".".is_connected("volume_changed", target_callable))
+	#print("Master A start pos:", position.y)
+	#print("Master A connected:", $".".is_connected("volume_changed", target_callable))
 
 
 
@@ -48,11 +48,11 @@ func update_volume():
 		fader_position = 0.001  # mini offset zodat hij nooit 'vast' op 0 zit
 	var effective_volume = fader_position * input_volume
 	emit_signal("volume_changed", effective_volume)
-	print("Master A volume update Input Volume:", input_volume)
+	#print("Master A volume update Input Volume:", input_volume)
 
 
 func set_input_volume(value: float):
 	input_volume = clamp(value, 0.0, 1.0)
 	# deferred zodat de waarde niet in hetzelfde frame als _ready() botst
 	call_deferred("update_volume")
-	print("Master A received input_volume:", value)
+	#print("Master A received input_volume:", value)

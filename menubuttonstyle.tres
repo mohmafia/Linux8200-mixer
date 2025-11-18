@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cb44yoxalg5xm"]
+
+[ext_resource type="FontFile" uid="uid://swi45mygiorx" path="res://SCENE1/font/Roboto-Bold.ttf" id="1_7f3sp"]
+
+[resource]
+default_font = ExtResource("1_7f3sp")
+default_font_size = 27
+PopupMenu/colors/font_color = Color(0.551479, 0.959773, 0.927499, 1)
