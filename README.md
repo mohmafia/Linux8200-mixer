@@ -100,13 +100,18 @@ This project is made possible by the open source community and the creative mind
 
 <img width="1738" height="918" alt="screenshot" src="https://github.com/user-attachments/assets/6399c0b4-afaf-49cf-bebe-97e2c7de2425" />
 
+![mixersim](https://github.com/user-attachments/assets/4ed1f72c-c6f0-4b0b-bae8-84393f50183c)
+
+
 **Settings skin**
 
 <img width="1736" height="885" alt="settings-panel" src="https://github.com/user-attachments/assets/f267e8f1-273a-44e8-aef5-3bc4ec03ff39" />
 
 **PCB Tooltips**
 
-<img width="527" height="422" alt="tooltips" src="https://github.com/user-attachments/assets/aedc0468-4968-4966-b8e3-06017d5f9b7e" />  <img width="752" height="469" alt="tooltips on settings scene" src="https://github.com/user-attachments/assets/e8bc5a4b-b554-4b5a-bf6f-44e4b1a02910" />
+<img width="527" height="422" alt="tooltips" src="https://github.com/user-attachments/assets/aedc0468-4968-4966-b8e3-06017d5f9b7e" /> 
+<img width="752" height="469" alt="tooltips on settings scene" src="https://github.com/user-attachments/assets/e8bc5a4b-b554-4b5a-bf6f-44e4b1a02910" />
+
 
 
 
