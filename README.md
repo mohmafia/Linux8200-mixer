@@ -102,6 +102,11 @@ This project is made possible by the open source community and the creative mind
 
 **Settings skin**
 
-<img width="1740" height="892" alt="settings-panel" src="https://github.com/user-attachments/assets/f33b2b5e-3673-4a60-a217-4e0b69ee22c8" />
+<img width="1736" height="885" alt="settings-panel" src="https://github.com/user-attachments/assets/f267e8f1-273a-44e8-aef5-3bc4ec03ff39" />
+
+**PCB Tooltips**
+
+<img width="527" height="422" alt="tooltips" src="https://github.com/user-attachments/assets/aedc0468-4968-4966-b8e3-06017d5f9b7e" />
+
 
 ---
