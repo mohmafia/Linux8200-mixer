@@ -20,11 +20,6 @@ OpenMixer UI is a modular interface for digital audio control — built to be ex
 
 ---
 
-## 🖼️ Screenshots
-
-> Coming soon — PCB-style settings scene with labeled components, LCD display, and dynamic tooltips.
-
----
 
 ## 🛠️ Tech Stack
 
@@ -99,6 +94,14 @@ This project is made possible by the open source community and the creative mind
 > Want to be listed here? Contribute and make your mark.
 
 ---
+## 🖼️ Screenshots
 
+** Main skin **
 
 <img width="1738" height="918" alt="screenshot" src="https://github.com/user-attachments/assets/6399c0b4-afaf-49cf-bebe-97e2c7de2425" />
+
+** Settings skin **
+
+<img width="1740" height="892" alt="settings-panel" src="https://github.com/user-attachments/assets/f33b2b5e-3673-4a60-a217-4e0b69ee22c8" />
+
+---
