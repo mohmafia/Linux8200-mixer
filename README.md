@@ -84,9 +84,9 @@ This project is licensed under the MIT License — free to use, modify, and dist
 - [ ] SVG-based scalable UI
 - [ ] Real DSP code
 - [ ] Skin/theme support
-- [ ] Routing logic and audio simulation
+- [ ] Routing logic and audio sinks real and virtual
 - [ ] Community-contributed skins and layouts
-- [ ] Integration with real audio devices (optional)
+- [ ] Integration with real audio devices like midi controlers or usb controlers (optional for now)
 
 ---
 
