@@ -94,6 +94,7 @@ This project is licensed under the MIT License — free to use, modify, and dist
 This project is made possible by the open source community and the creative minds who believe in building tools that are both functional and beautiful.
 
 > Want to be listed here? Contribute and make your mark.
+> ## 📣 NixNoob50 Thanks for help with skinning and SVG graphics
 
 ---
 ## 🖼️ Screenshots
