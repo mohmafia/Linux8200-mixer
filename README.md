@@ -80,8 +80,9 @@ This project is licensed under the MIT License — free to use, modify, and dist
 
 - [x] PCB-style layout in settings scene
 - [x] Tooltip system for all interactive elements
-- [x] Bash integration for system-level control
+- [x] Bash integration for system-level dependencies install
 - [ ] SVG-based scalable UI
+- [ ] Real DSP code
 - [ ] Skin/theme support
 - [ ] Routing logic and audio simulation
 - [ ] Community-contributed skins and layouts
