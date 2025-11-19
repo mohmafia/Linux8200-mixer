@@ -2,7 +2,9 @@
 
 # 🎛️ OpenMixer UI
 
-**A scalable, skinnable, open-source digital mixer interface built with Godot 4 and Bash.**
+**A scalable, skinnable, open-source digital mixer interface built with Godot 4.4 and Bash.**
+
+**Contributors make sure you use the godot 4.4 version only!!!.**
 
 OpenMixer UI is a modular interface for digital audio control — built to be extended, themed, and integrated into real-world audio workflows or embedded systems. While the overall project focuses on mixer logic and device routing, the **settings scene** is uniquely styled to resemble the internal PCB of a hardware mixer, complete with labeled components and a retro LCD-style system status display.
 
