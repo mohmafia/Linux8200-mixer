@@ -1,4 +1,3 @@
-Put in your documents folder
-make mixer_x86_64 executable
+Put in your documents folder or where you want them!!!!
 then run from desktop
 keep all files in same folder
