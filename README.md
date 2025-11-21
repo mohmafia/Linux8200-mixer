@@ -27,9 +27,9 @@ OpenMixer UI is a modular interface for digital audio control — built to be ex
 
 | Layer         | Tech Used         |
 |---------------|-------------------|
-| UI & Logic    | Godot 4 (GDScript)|
+| UI & Logic    | Godot 4.4 (GDScript)|
 | System Access | Bash scripting    |
-| Assets        | PNG (JPG for now), SVG (planned) |
+| Assets        | PNG, JPG, SVG |
 | Versioning    | Git + GitHub      |
 
 ---
