@@ -1,8 +1,11 @@
+ResolutionScaler
+CanvasLayer
+Camera2D
+Control
 Label
 MenuButton
 OptionButton
 Button
-Control
 RichTextLabel
 TextureButton
 Sprite2D

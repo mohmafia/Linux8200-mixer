@@ -27,6 +27,7 @@ InstallManager="*res://SCENE1/SCRIPTS/GD/InstallManager.gd"
 window/size/viewport_width=1736
 window/size/viewport_height=900
 window/stretch/mode="viewport"
+window/dpi/allow_hidpi=false
 
 [editor]
 
@@ -43,4 +44,17 @@ folder_colors={
 "res://SCENE1/images/Faders/": "red",
 "res://SCENE1/images/LCD/": "blue",
 "res://SCENE1/images/buttons/": "green"
+}
+
+[input]
+
+"Scroll Up"={
+"deadzone": 0.2,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":4,"canceled":false,"pressed":false,"double_click":false,"script":null)
+]
+}
+"Scroll Down"={
+"deadzone": 0.2,
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":5,"canceled":false,"pressed":false,"double_click":false,"script":null)
+]
 }
