@@ -4,10 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://7o61t7tgthc2" path="res://SCENE1/images/pcb.jpg" id="1_ulkku"]
 [ext_resource type="FontFile" uid="uid://ca4574svpk1wn" path="res://SCENE1/font/VT323-Regular.ttf" id="2_rl16v"]
 [ext_resource type="Texture2D" uid="uid://cngx1hd2yu7vt" path="res://SCENE1/images/buttons/knopje.png" id="3_khtxq"]
-[ext_resource type="Script" uid="uid://br5s5rkmwdu0h" path="res://SCENE1/SCENES/button_exit_lcd.gd" id="4_rl16v"]
+[ext_resource type="Script" uid="uid://br5s5rkmwdu0h" path="res://SCENE1/SCRIPTS/GD/button_exit_lcd.gd" id="4_rl16v"]
 [ext_resource type="Theme" uid="uid://cb44yoxalg5xm" path="res://menubuttonstyle.tres" id="5_3g0p4"]
 [ext_resource type="FontFile" uid="uid://swi45mygiorx" path="res://SCENE1/font/Roboto-Bold.ttf" id="5_khtxq"]
-[ext_resource type="Script" uid="uid://o5a0c0dnq4n2" path="res://SCENE1/SCENES/button_mic_1.gd" id="6_i4dgb"]
+[ext_resource type="Script" uid="uid://o5a0c0dnq4n2" path="res://SCENE1/SCRIPTS/GD/button_mic_1.gd" id="6_i4dgb"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_khtxq"]
 bg_color = Color(0.0862745, 0.0862745, 0.0862745, 1)
