@@ -116,7 +116,8 @@ This project is made possible by the open source community and the creative mind
 <img width="527" height="422" alt="tooltips" src="https://github.com/user-attachments/assets/aedc0468-4968-4966-b8e3-06017d5f9b7e" /> 
 <img width="752" height="469" alt="tooltips on settings scene" src="https://github.com/user-attachments/assets/e8bc5a4b-b554-4b5a-bf6f-44e4b1a02910" />
 
+**Devices skin**
 
-
+<img width="1582" height="771" alt="device-scene" src="https://github.com/user-attachments/assets/29c632ac-3a17-40b9-8688-2b48dee26de6" />
 
 ---
