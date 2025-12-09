@@ -1,5 +1,7 @@
 # Linux8200-mixer
 
+**We are now set to Public!!!**
+
 # 🎛️ OpenMixer UI
 
 **A scalable, skinnable, open-source digital mixer interface built with Godot 4.4 and Bash.**
