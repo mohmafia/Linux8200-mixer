@@ -14,7 +14,7 @@ OpenMixer UI is a modular interface for digital audio control — built to be ex
 
 ## 🚀 Features
 
-- **Godot 4 UI** with GDScript for responsive, interactive control
+- **Godot 4.4 UI** with GDScript for responsive, interactive control
 - **Bash integration** for system-level tasks like device detection, routing, and installation
 - **Scalable interface** with plans for full **SVG-based skinning**
 - **Hover-based tooltips** in the settings scene for intuitive feedback
@@ -64,7 +64,7 @@ Every small contribution can have a big impact. Whether it's a new skin, a toolt
 ## 📦 Getting Started
 
 1. Clone the repo
-2. Open the project in Godot 4
+2. Open the project in Godot 4.4
 3. Run the main scene (`install.tscn`) or `settings_lcd_panel.tscn`
 4. Explore, test, and contribute!
 
@@ -83,7 +83,7 @@ This project is licensed under the MIT License — free to use, modify, and dist
 - [x] PCB-style layout in settings scene
 - [x] Tooltip system for all interactive elements
 - [x] Bash integration for system-level dependencies install
-- [ ] SVG-based scalable UI
+- [x] SVG-based scalable UI
 - [ ] Real DSP code
 - [ ] Skin/theme support
 - [ ] Routing logic and audio sinks real and virtual
