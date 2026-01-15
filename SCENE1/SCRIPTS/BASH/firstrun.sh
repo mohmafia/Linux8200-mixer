@@ -157,41 +157,31 @@ WAYLAND_DISPLAY_SAVED="$(sed -n '4p' "$TMP_ENV_FILE" | cut -d'=' -f2- || true)"
 
 msg "Running post-install verification as $REAL_USER..."
 
-ENV_PREFIX=""
-[ -n "$DBUS_SESSION_BUS_ADDRESS_SAVED" ] && ENV_PREFIX="$ENV_PREFIX DBUS_SESSION_BUS_ADDRESS=$DBUS_SESSION_BUS_ADDRESS_SAVED"
-[ -n "$XDG_RUNTIME_DIR_SAVED" ] && ENV_PREFIX="$ENV_PREFIX XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR_SAVED"
-[ -n "$DISPLAY_SAVED" ] && ENV_PREFIX="$ENV_PREFIX DISPLAY=$DISPLAY_SAVED"
-[ -n "$WAYLAND_DISPLAY_SAVED" ] && ENV_PREFIX="$ENV_PREFIX WAYLAND_DISPLAY=$WAYLAND_DISPLAY_SAVED"
+# Forceer de juiste XDG_RUNTIME_DIR als deze leeg is
+if [ -z "$XDG_RUNTIME_DIR_SAVED" ]; then
+	USER_ID=$(id -u "$REAL_USER")
+	XDG_RUNTIME_DIR_SAVED="/run/user/$USER_ID"
+fi
 
-sudo -u "$REAL_USER" env $ENV_PREFIX bash -c '
-  set -euo pipefail
-  echo "🔍 Verifying installation..."
+# Gebruik 'machinectl' of 'systemd-run' als ze beschikbaar zijn, 
+# anders vallen we terug op een verbeterde sudo-aanroep.
+sudo -u "$REAL_USER" bash << EOF
+	export XDG_RUNTIME_DIR="$XDG_RUNTIME_DIR_SAVED"
+	export DBUS_SESSION_BUS_ADDRESS="$DBUS_SESSION_BUS_ADDRESS_SAVED"
+	
+	echo "🔍 Verifying for user: \$USER (UID: \$UID)"
 
-  if systemctl --user 2>/dev/null | grep -q pipewire; then
-	echo "✅ PipeWire user service detected"
-  else
-	echo "⚠️ PipeWire user service not active (may start on next login)"
-  fi
-
-  if command -v pactl >/dev/null 2>&1; then
-	if pactl info >/dev/null 2>&1; then
-	  pactl info | grep "Server Name" || true
+	# Check of de socket daadwerkelijk bestaat
+	if [ -S "\$XDG_RUNTIME_DIR/pipewire-0" ]; then
+		echo "✅ PipeWire Socket gevonden in runtime dir."
 	else
-	  echo "⚠️ pactl present but connection failed"
+		echo "⚠️ PipeWire Socket niet gevonden. Service start mogelijk pas na herstart."
 	fi
-  else
-	echo "⚠️ pactl not found"
-  fi
 
-  CFG="$HOME/.local/share/godot/app_userdata/mixer-project-linux/installed.flag"
-  echo "📝 Writing first-run config to $CFG"
-  mkdir -p "$(dirname "$CFG")"
-  echo "installed=true" > "$CFG"
-
-  echo
-  echo "✅ Mixer environment ready for user $USER!"
-'
-
-echo
-echo "✅ Installation SUCCESS!"
-echo "🔁 Restart, log out and back in to activate group membership and audio services."
+	# Probeer de status op te vragen via de user-bus
+	if systemctl --user --machine="$REAL_USER@.host" is-active pipewire >/dev/null 2>&1; then
+		echo "✅ PipeWire user service is actief."
+	else
+		echo "⚠️ PipeWire user service nog niet actief."
+	fi
+EOF

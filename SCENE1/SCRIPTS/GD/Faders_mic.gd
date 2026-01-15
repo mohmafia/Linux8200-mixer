@@ -8,6 +8,7 @@ signal volume_changed(value)  # Registreert het signaal
 
 func _ready():
 	$".".connect("volume_changed", Callable($"../../VU_Mic1", "set_fader_volume"))
+	# van af hier moeten we veranderen dat we naar de mix manager sturen
 	$".".connect("volume_changed", Callable($"../../Fader_master_B", "set_input_volume"))
 	$".".connect("volume_changed", Callable($"../../Fader_master_A", "set_input_volume"))
 	$".".connect("volume_changed", Callable($"../../Fader_master_C", "set_input_volume"))
