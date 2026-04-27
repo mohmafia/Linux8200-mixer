@@ -1,0 +1,71 @@
+[gd_scene load_steps=3 format=3 uid="uid://ch733mfohaxgr"]
+
+[ext_resource type="Texture2D" uid="uid://drvyok7o01ewc" path="res://SCENE-ROOT/images/Devices/scarlett-2i2.png" id="1_3mx0l"]
+[ext_resource type="Texture2D" uid="uid://dj21sss7q58ay" path="res://SCENE-ROOT/images/Devices/U-phoria-UMC204-HD.png" id="2_s854i"]
+
+[node name="Devices" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Scarlett-2i2" type="Sprite2D" parent="."]
+position = Vector2(609.25, 151.75)
+scale = Vector2(0.702961, 0.690024)
+texture = ExtResource("1_3mx0l")
+
+[node name="Select" type="Button" parent="Scarlett-2i2"]
+offset_left = -266.0
+offset_top = -94.0
+offset_right = -212.0
+offset_bottom = -33.0
+flat = true
+
+[node name="48V" type="Button" parent="Scarlett-2i2"]
+offset_left = -148.301
+offset_top = -95.2866
+offset_right = -94.3012
+offset_bottom = -34.2866
+flat = true
+
+[node name="Inst" type="Button" parent="Scarlett-2i2"]
+offset_left = -34.4969
+offset_top = -95.2866
+offset_right = 19.5031
+offset_bottom = -34.2866
+flat = true
+
+[node name="Auto" type="Button" parent="Scarlett-2i2"]
+offset_left = -266.373
+offset_top = 52.5344
+offset_right = -212.373
+offset_bottom = 113.534
+flat = true
+
+[node name="Safe" type="Button" parent="Scarlett-2i2"]
+offset_left = -149.724
+offset_top = 52.5344
+offset_right = -95.7238
+offset_bottom = 113.534
+flat = true
+
+[node name="Air" type="Button" parent="Scarlett-2i2"]
+offset_left = -34.4969
+offset_top = 52.5344
+offset_right = 19.5031
+offset_bottom = 113.534
+flat = true
+
+[node name="Direct" type="Button" parent="Scarlett-2i2"]
+offset_left = 470.51
+offset_top = -96.7358
+offset_right = 524.51
+offset_bottom = -35.7358
+flat = true
+
+[node name="U-phoria-umc204-hd" type="Sprite2D" parent="."]
+position = Vector2(608.25, 458.5)
+scale = Vector2(1.325, 1.10284)
+texture = ExtResource("2_s854i")

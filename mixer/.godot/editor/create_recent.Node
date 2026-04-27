@@ -1,0 +1,14 @@
+Control
+VBoxContainer
+ScrollContainer
+Window
+Label
+ColorRect
+HBoxContainer
+Line2D
+Button
+MarginContainer
+RichTextLabel
+CanvasLayer
+DirectionalLight3D
+Camera3D

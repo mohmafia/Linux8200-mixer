@@ -1,0 +1,1032 @@
+[gd_scene load_steps=18 format=3 uid="uid://cgadow4p535t6"]
+
+[ext_resource type="Script" uid="uid://svrb3lg6atql" path="res://SCENE-ROOT/SCRIPTS/GD/pre_comp_scene.gd" id="1_twb1i"]
+[ext_resource type="Texture2D" uid="uid://cews8mxi1f51e" path="res://SCENE-ROOT/images/Devices/Universal_Audio_1176LN_front.png" id="2_yv2jq"]
+[ext_resource type="Texture2D" uid="uid://ddyi0nhwfysqd" path="res://SCENE-ROOT/images/VU/gd-analog-vu.png" id="3_icg2m"]
+[ext_resource type="Texture2D" uid="uid://d20dy3lgocefs" path="res://SCENE-ROOT/images/VU/gd-vunaald.png" id="4_or5rd"]
+[ext_resource type="Script" uid="uid://blve57tkv1s8e" path="res://SCENE-ROOT/SCRIPTS/GD/gd_vunaald_3.gd" id="5_37gyi"]
+[ext_resource type="Texture2D" uid="uid://b52r702i2uevl" path="res://SCENE-ROOT/images/Devices/comp-draai-knop.png" id="6_imerc"]
+[ext_resource type="FontFile" uid="uid://swi45mygiorx" path="res://SCENE-ROOT/font/Roboto-Bold.ttf" id="7_jrtw1"]
+[ext_resource type="Script" uid="uid://blyix1vv2hb76" path="res://comp_draai_knop_ch_1.gd" id="7_yv2jq"]
+[ext_resource type="Script" uid="uid://bcp2204hqr6ap" path="res://comp_draai_knop_2_ch_1.gd" id="8_icg2m"]
+[ext_resource type="Script" uid="uid://bxs55uq8oksma" path="res://vu_compressor_needle2.gd" id="8_yxqsl"]
+[ext_resource type="Script" uid="uid://b7p2afsrqror7" path="res://comp_draai_knop_3_ch_1.gd" id="9_or5rd"]
+[ext_resource type="Script" uid="uid://co1d0ud0osmfm" path="res://vu_compressor_needle_3.gd" id="9_qanqf"]
+[ext_resource type="Script" uid="uid://cwo2epp4otvgq" path="res://comp_draai_knop_4_ch_1.gd" id="10_qe1oa"]
+[ext_resource type="Script" uid="uid://cmaqbg8p6gm53" path="res://vu_compressor_needle_4.gd" id="10_x0tog"]
+[ext_resource type="Script" uid="uid://dlti6cipfwtgo" path="res://vu_compressor_needle_5.gd" id="11_yv2jq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ybdkq"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xhkew"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="pre_comp" type="Window"]
+position = Vector2i(0, 36)
+size = Vector2i(1740, 896)
+script = ExtResource("1_twb1i")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+custom_minimum_size = Vector2(10, 0)
+offset_right = 1740.0
+offset_bottom = 896.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer"]
+custom_minimum_size = Vector2(0, 1490)
+layout_mode = 2
+
+[node name="Control" type="Control" parent="ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 4000)
+layout_mode = 2
+
+[node name="comp_ch1" type="Control" parent="ScrollContainer/VBoxContainer/Control"]
+z_index = 8
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="UniversalAudio1176lnFront" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+position = Vector2(854.75, 140.5)
+scale = Vector2(1.46234, 1.48496)
+texture = ExtResource("2_yv2jq")
+
+[node name="VU_compressor" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+position = Vector2(1288.75, 161.5)
+scale = Vector2(1.06278, 0.819005)
+texture = ExtResource("3_icg2m")
+
+[node name="VU_compressor_needle" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+position = Vector2(1293.75, 199.675)
+scale = Vector2(1, 1.65458)
+texture = ExtResource("4_or5rd")
+offset = Vector2(0, -28)
+script = ExtResource("5_37gyi")
+
+[node name="Comp-draai-knop-ch1" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+position = Vector2(246, 162)
+scale = Vector2(0.222315, 0.214502)
+texture = ExtResource("6_imerc")
+script = ExtResource("7_yv2jq")
+
+[node name="Comp-draai-knop2-ch1" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+position = Vector2(585, 162)
+scale = Vector2(0.223889, 0.217523)
+texture = ExtResource("6_imerc")
+script = ExtResource("8_icg2m")
+
+[node name="Comp-draai-knop3-ch1" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+position = Vector2(850, 95)
+scale = Vector2(0.106667, 0.104985)
+texture = ExtResource("6_imerc")
+script = ExtResource("9_or5rd")
+
+[node name="Comp-draai-knop4-ch1" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+position = Vector2(857, 238)
+scale = Vector2(0.106667, 0.104985)
+texture = ExtResource("6_imerc")
+script = ExtResource("10_qe1oa")
+
+[node name="Button_20-ch1" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 60.4997
+offset_right = 1100.75
+offset_bottom = 108.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_12-ch1" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 110.5
+offset_right = 1100.75
+offset_bottom = 158.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_8-ch1" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 162.5
+offset_right = 1100.75
+offset_bottom = 210.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_4-ch1" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 214.5
+offset_right = 1100.75
+offset_bottom = 262.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_LH-ch1" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 60.4997
+offset_right = 1525.75
+offset_bottom = 108.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_SK-ch1" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 112.5
+offset_right = 1525.75
+offset_bottom = 160.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_Auto-ch1" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 164.5
+offset_right = 1525.75
+offset_bottom = 212.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_On_Off-ch1" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 216.5
+offset_right = 1525.75
+offset_bottom = 264.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+layout_mode = 0
+offset_left = 1218.75
+offset_top = 251.5
+offset_right = 1476.75
+offset_bottom = 278.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 21
+text = "Lookahead Compressor"
+
+[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+layout_mode = 0
+offset_left = 1468.75
+offset_top = 24.4997
+offset_right = 1538.75
+offset_bottom = 42.4997
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "OPTIONS"
+
+[node name="Label3" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+layout_mode = 0
+offset_left = 1535.75
+offset_top = 66.4997
+offset_right = 1559.75
+offset_bottom = 84.4997
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "LH"
+
+[node name="Label4" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+layout_mode = 0
+offset_left = 1534.75
+offset_top = 123.5
+offset_right = 1558.75
+offset_bottom = 141.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "SK"
+
+[node name="Label5" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+layout_mode = 0
+offset_left = 1535.75
+offset_top = 175.5
+offset_right = 1574.75
+offset_bottom = 193.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "AUTO"
+
+[node name="Label6" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch1"]
+layout_mode = 0
+offset_left = 1533.75
+offset_top = 231.5
+offset_right = 1572.75
+offset_bottom = 270.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "ON
+OFF"
+
+[node name="comp_ch2" type="Control" parent="ScrollContainer/VBoxContainer/Control"]
+z_index = 7
+layout_mode = 3
+anchors_preset = 0
+offset_top = 319.0
+offset_right = 40.0
+offset_bottom = 359.0
+
+[node name="UniversalAudio1176lnFront" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+position = Vector2(854.748, 133.5)
+scale = Vector2(1.46234, 1.48496)
+texture = ExtResource("2_yv2jq")
+
+[node name="VU_compressor" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+position = Vector2(1288.75, 154.5)
+scale = Vector2(1.06278, 0.819005)
+texture = ExtResource("3_icg2m")
+
+[node name="VU_compressor_needle2" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+position = Vector2(1293.75, 192.675)
+scale = Vector2(1, 1.65458)
+texture = ExtResource("4_or5rd")
+offset = Vector2(0, -28)
+script = ExtResource("8_yxqsl")
+
+[node name="Comp-draai-knop" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+position = Vector2(245.998, 155)
+scale = Vector2(0.222315, 0.214502)
+texture = ExtResource("6_imerc")
+
+[node name="Comp-draai-knop2" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+position = Vector2(584.998, 155)
+scale = Vector2(0.223889, 0.217523)
+texture = ExtResource("6_imerc")
+
+[node name="Comp-draai-knop3" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+position = Vector2(849.998, 87.9997)
+scale = Vector2(0.106667, 0.104985)
+texture = ExtResource("6_imerc")
+
+[node name="Comp-draai-knop4" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+position = Vector2(856.998, 231)
+scale = Vector2(0.106667, 0.104985)
+texture = ExtResource("6_imerc")
+
+[node name="Button_20" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 53.4994
+offset_right = 1100.75
+offset_bottom = 101.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_12" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 103.5
+offset_right = 1100.75
+offset_bottom = 151.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_8" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 155.5
+offset_right = 1100.75
+offset_bottom = 203.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_4" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 207.5
+offset_right = 1100.75
+offset_bottom = 255.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_LH" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 53.4994
+offset_right = 1525.75
+offset_bottom = 101.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_SK" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 105.5
+offset_right = 1525.75
+offset_bottom = 153.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_Auto" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 157.5
+offset_right = 1525.75
+offset_bottom = 205.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_On_Off" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 209.5
+offset_right = 1525.75
+offset_bottom = 257.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+layout_mode = 0
+offset_left = 1218.75
+offset_top = 244.5
+offset_right = 1476.75
+offset_bottom = 271.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 21
+text = "Lookahead Compressor"
+
+[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+layout_mode = 0
+offset_left = 1468.75
+offset_top = 17.4994
+offset_right = 1538.75
+offset_bottom = 35.4994
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "OPTIONS"
+
+[node name="Label3" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+layout_mode = 0
+offset_left = 1535.75
+offset_top = 59.4994
+offset_right = 1559.75
+offset_bottom = 77.4994
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "LH"
+
+[node name="Label4" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+layout_mode = 0
+offset_left = 1534.75
+offset_top = 116.5
+offset_right = 1558.75
+offset_bottom = 134.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "SK"
+
+[node name="Label5" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+layout_mode = 0
+offset_left = 1535.75
+offset_top = 168.5
+offset_right = 1574.75
+offset_bottom = 186.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "AUTO"
+
+[node name="Label6" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch2"]
+layout_mode = 0
+offset_left = 1533.75
+offset_top = 224.5
+offset_right = 1572.75
+offset_bottom = 263.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "ON
+OFF"
+
+[node name="comp_ch3" type="Control" parent="ScrollContainer/VBoxContainer/Control"]
+z_index = 6
+layout_mode = 3
+anchors_preset = 0
+offset_top = 319.0
+offset_right = 40.0
+offset_bottom = 359.0
+
+[node name="UniversalAudio1176lnFront" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+position = Vector2(854.748, 441.5)
+scale = Vector2(1.46234, 1.48496)
+texture = ExtResource("2_yv2jq")
+
+[node name="VU_compressor" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+position = Vector2(1288.75, 462.5)
+scale = Vector2(1.06278, 0.819005)
+texture = ExtResource("3_icg2m")
+
+[node name="VU_compressor_needle3" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+position = Vector2(1293.75, 500.675)
+scale = Vector2(1, 1.65458)
+texture = ExtResource("4_or5rd")
+offset = Vector2(0, -28)
+script = ExtResource("9_qanqf")
+
+[node name="Comp-draai-knop" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+position = Vector2(245.998, 463)
+scale = Vector2(0.222315, 0.214502)
+texture = ExtResource("6_imerc")
+
+[node name="Comp-draai-knop2" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+position = Vector2(584.998, 463)
+scale = Vector2(0.223889, 0.217523)
+texture = ExtResource("6_imerc")
+
+[node name="Comp-draai-knop3" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+position = Vector2(849.998, 396)
+scale = Vector2(0.106667, 0.104985)
+texture = ExtResource("6_imerc")
+
+[node name="Comp-draai-knop4" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+position = Vector2(856.998, 539)
+scale = Vector2(0.106667, 0.104985)
+texture = ExtResource("6_imerc")
+
+[node name="Button_20" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 361.499
+offset_right = 1100.75
+offset_bottom = 409.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_12" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 411.5
+offset_right = 1100.75
+offset_bottom = 459.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_8" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 463.5
+offset_right = 1100.75
+offset_bottom = 511.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_4" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 515.5
+offset_right = 1100.75
+offset_bottom = 563.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_LH" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 361.499
+offset_right = 1525.75
+offset_bottom = 409.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_SK" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 413.5
+offset_right = 1525.75
+offset_bottom = 461.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_Auto" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 465.5
+offset_right = 1525.75
+offset_bottom = 513.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_On_Off" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 517.5
+offset_right = 1525.75
+offset_bottom = 565.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+layout_mode = 0
+offset_left = 1218.75
+offset_top = 552.5
+offset_right = 1476.75
+offset_bottom = 579.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 21
+text = "Lookahead Compressor"
+
+[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+layout_mode = 0
+offset_left = 1468.75
+offset_top = 325.499
+offset_right = 1538.75
+offset_bottom = 343.499
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "OPTIONS"
+
+[node name="Label3" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+layout_mode = 0
+offset_left = 1535.75
+offset_top = 367.499
+offset_right = 1559.75
+offset_bottom = 385.499
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "LH"
+
+[node name="Label4" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+layout_mode = 0
+offset_left = 1534.75
+offset_top = 424.5
+offset_right = 1558.75
+offset_bottom = 442.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "SK"
+
+[node name="Label5" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+layout_mode = 0
+offset_left = 1535.75
+offset_top = 476.5
+offset_right = 1574.75
+offset_bottom = 494.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "AUTO"
+
+[node name="Label6" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch3"]
+layout_mode = 0
+offset_left = 1533.75
+offset_top = 532.5
+offset_right = 1572.75
+offset_bottom = 571.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "ON
+OFF"
+
+[node name="comp_ch4" type="Control" parent="ScrollContainer/VBoxContainer/Control"]
+z_index = 5
+layout_mode = 3
+anchors_preset = 0
+offset_top = 319.0
+offset_right = 40.0
+offset_bottom = 359.0
+
+[node name="UniversalAudio1176lnFront" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+position = Vector2(854.748, 749.5)
+scale = Vector2(1.46234, 1.48496)
+texture = ExtResource("2_yv2jq")
+
+[node name="VU_compressor" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+position = Vector2(1288.75, 770.5)
+scale = Vector2(1.06278, 0.819005)
+texture = ExtResource("3_icg2m")
+
+[node name="VU_compressor_needle4" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+position = Vector2(1293.75, 808.675)
+scale = Vector2(1, 1.65458)
+texture = ExtResource("4_or5rd")
+offset = Vector2(0, -28)
+script = ExtResource("10_x0tog")
+
+[node name="Comp-draai-knop" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+position = Vector2(245.998, 771)
+scale = Vector2(0.222315, 0.214502)
+texture = ExtResource("6_imerc")
+
+[node name="Comp-draai-knop2" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+position = Vector2(584.998, 771)
+scale = Vector2(0.223889, 0.217523)
+texture = ExtResource("6_imerc")
+
+[node name="Comp-draai-knop3" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+position = Vector2(849.998, 704)
+scale = Vector2(0.106667, 0.104985)
+texture = ExtResource("6_imerc")
+
+[node name="Comp-draai-knop4" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+position = Vector2(856.998, 847)
+scale = Vector2(0.106667, 0.104985)
+texture = ExtResource("6_imerc")
+
+[node name="Button_20" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 669.499
+offset_right = 1100.75
+offset_bottom = 717.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_12" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 719.5
+offset_right = 1100.75
+offset_bottom = 767.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_8" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 771.5
+offset_right = 1100.75
+offset_bottom = 819.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_4" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 823.5
+offset_right = 1100.75
+offset_bottom = 871.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_LH" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 669.499
+offset_right = 1525.75
+offset_bottom = 717.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_SK" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 721.5
+offset_right = 1525.75
+offset_bottom = 769.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_Auto" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 773.5
+offset_right = 1525.75
+offset_bottom = 821.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_On_Off" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 825.5
+offset_right = 1525.75
+offset_bottom = 873.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+layout_mode = 0
+offset_left = 1218.75
+offset_top = 860.5
+offset_right = 1476.75
+offset_bottom = 887.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 21
+text = "Lookahead Compressor"
+
+[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+layout_mode = 0
+offset_left = 1468.75
+offset_top = 633.499
+offset_right = 1538.75
+offset_bottom = 651.499
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "OPTIONS"
+
+[node name="Label3" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+layout_mode = 0
+offset_left = 1535.75
+offset_top = 675.499
+offset_right = 1559.75
+offset_bottom = 693.499
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "LH"
+
+[node name="Label4" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+layout_mode = 0
+offset_left = 1534.75
+offset_top = 732.5
+offset_right = 1558.75
+offset_bottom = 750.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "SK"
+
+[node name="Label5" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+layout_mode = 0
+offset_left = 1535.75
+offset_top = 784.5
+offset_right = 1574.75
+offset_bottom = 802.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "AUTO"
+
+[node name="Label6" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch4"]
+layout_mode = 0
+offset_left = 1533.75
+offset_top = 840.5
+offset_right = 1572.75
+offset_bottom = 879.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "ON
+OFF"
+
+[node name="comp_ch5" type="Control" parent="ScrollContainer/VBoxContainer/Control"]
+z_index = 4
+layout_mode = 3
+anchors_preset = 0
+offset_top = 319.0
+offset_right = 40.0
+offset_bottom = 359.0
+
+[node name="UniversalAudio1176lnFront" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+position = Vector2(854.748, 1057.5)
+scale = Vector2(1.46234, 1.48496)
+texture = ExtResource("2_yv2jq")
+
+[node name="VU_compressor" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+position = Vector2(1288.75, 1078.5)
+scale = Vector2(1.06278, 0.819005)
+texture = ExtResource("3_icg2m")
+
+[node name="VU_compressor_needle5" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+position = Vector2(1293.75, 1116.67)
+scale = Vector2(1, 1.65458)
+texture = ExtResource("4_or5rd")
+offset = Vector2(0, -28)
+script = ExtResource("11_yv2jq")
+
+[node name="Comp-draai-knop" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+position = Vector2(245.998, 1079)
+scale = Vector2(0.222315, 0.214502)
+texture = ExtResource("6_imerc")
+
+[node name="Comp-draai-knop2" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+position = Vector2(584.998, 1079)
+scale = Vector2(0.223889, 0.217523)
+texture = ExtResource("6_imerc")
+
+[node name="Comp-draai-knop3" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+position = Vector2(849.998, 1012)
+scale = Vector2(0.106667, 0.104985)
+texture = ExtResource("6_imerc")
+
+[node name="Comp-draai-knop4" type="Sprite2D" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+position = Vector2(856.998, 1155)
+scale = Vector2(0.106667, 0.104985)
+texture = ExtResource("6_imerc")
+
+[node name="Button_20" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 977.499
+offset_right = 1100.75
+offset_bottom = 1025.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_12" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 1027.5
+offset_right = 1100.75
+offset_bottom = 1075.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_8" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 1079.5
+offset_right = 1100.75
+offset_bottom = 1127.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_4" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+layout_mode = 0
+offset_left = 1061.75
+offset_top = 1131.5
+offset_right = 1100.75
+offset_bottom = 1179.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_LH" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 977.499
+offset_right = 1525.75
+offset_bottom = 1025.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_SK" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 1029.5
+offset_right = 1525.75
+offset_bottom = 1077.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_Auto" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 1081.5
+offset_right = 1525.75
+offset_bottom = 1129.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Button_On_Off" type="Button" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+layout_mode = 0
+offset_left = 1486.75
+offset_top = 1133.5
+offset_right = 1525.75
+offset_bottom = 1181.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_ybdkq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_xhkew")
+
+[node name="Label" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+layout_mode = 0
+offset_left = 1218.75
+offset_top = 1168.5
+offset_right = 1476.75
+offset_bottom = 1195.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 21
+text = "Lookahead Compressor"
+
+[node name="Label2" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+layout_mode = 0
+offset_left = 1468.75
+offset_top = 941.499
+offset_right = 1538.75
+offset_bottom = 959.499
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "OPTIONS"
+
+[node name="Label3" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+layout_mode = 0
+offset_left = 1535.75
+offset_top = 983.499
+offset_right = 1559.75
+offset_bottom = 1001.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "LH"
+
+[node name="Label4" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+layout_mode = 0
+offset_left = 1534.75
+offset_top = 1040.5
+offset_right = 1558.75
+offset_bottom = 1058.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "SK"
+
+[node name="Label5" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+layout_mode = 0
+offset_left = 1535.75
+offset_top = 1092.5
+offset_right = 1574.75
+offset_bottom = 1110.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "AUTO"
+
+[node name="Label6" type="Label" parent="ScrollContainer/VBoxContainer/Control/comp_ch5"]
+layout_mode = 0
+offset_left = 1533.75
+offset_top = 1148.5
+offset_right = 1572.75
+offset_bottom = 1187.5
+theme_override_fonts/font = ExtResource("7_jrtw1")
+theme_override_font_sizes/font_size = 15
+text = "ON
+OFF"

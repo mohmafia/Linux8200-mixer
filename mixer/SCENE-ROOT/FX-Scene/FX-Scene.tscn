@@ -1,0 +1,5499 @@
+[gd_scene load_steps=106 format=3 uid="uid://nd4c2sc66a5x"]
+
+[ext_resource type="Script" uid="uid://dv8uegabtos0j" path="res://SCENE-ROOT/FX-Scene/fx_scene.gd" id="1_angds"]
+[ext_resource type="Texture2D" uid="uid://dygk68u1iqqe6" path="res://SCENE-ROOT/FX-Scene/topbar.png" id="2_ln127"]
+[ext_resource type="Texture2D" uid="uid://cw2568hhuryq3" path="res://SCENE-ROOT/FX-Scene/alligator-front.png" id="2_pupc3"]
+[ext_resource type="Texture2D" uid="uid://cqjoh0dosxaxw" path="res://SCENE-ROOT/FX-Scene/schakelaar.png" id="2_rblm6"]
+[ext_resource type="Texture2D" uid="uid://lsrgks85i8r7" path="res://SCENE-ROOT/FX-Scene/lfo.png" id="3_angds"]
+[ext_resource type="Texture2D" uid="uid://che6yglhhblg6" path="res://SCENE-ROOT/FX-Scene/Synth-carier.png" id="4_ldmr0"]
+[ext_resource type="FontFile" uid="uid://lyfp0tdm1qrv" path="res://SCENE-ROOT/font/Michroma-Regular.ttf" id="5_6bymk"]
+[ext_resource type="Script" uid="uid://dlw1lbhrv2piu" path="res://SCENE-ROOT/FX-Scene/scroll_container.gd" id="5_43adc"]
+[ext_resource type="Texture2D" uid="uid://bi1u622lxws6m" path="res://SCENE-ROOT/FX-Scene/output mix.png" id="5_jvpxk"]
+[ext_resource type="Texture2D" uid="uid://cm4m0hy3c2k8p" path="res://SCENE-ROOT/FX-Scene/unison.png" id="6_8wvhk"]
+[ext_resource type="Texture2D" uid="uid://b76x5w0ygm47m" path="res://SCENE-ROOT/FX-Scene/pitch.png" id="7_ogcfe"]
+[ext_resource type="Texture2D" uid="uid://x6wd72lx8lff" path="res://SCENE-ROOT/FX-Scene/micro-mixer.png" id="8_e5v56"]
+[ext_resource type="Texture2D" uid="uid://cihfmel2evyw7" path="res://SCENE-ROOT/FX-Scene/vintage.png" id="8_rblm6"]
+[ext_resource type="Texture2D" uid="uid://d1u103xxg0tpm" path="res://SCENE-ROOT/FX-Scene/modulator.png" id="9_pupc3"]
+[ext_resource type="Texture2D" uid="uid://oh2c5ebgok6m" path="res://SCENE-ROOT/FX-Scene/schuif-vert.png" id="11_8wvhk"]
+[ext_resource type="Texture2D" uid="uid://qcyu0xlc2c7n" path="res://SCENE-ROOT/FX-Scene/knop-klein-wit.png" id="11_ogcfe"]
+[ext_resource type="Texture2D" uid="uid://bd2t56curd25" path="res://SCENE-ROOT/FX-Scene/led-schuif-vert.png" id="12_ogcfe"]
+[ext_resource type="Texture2D" uid="uid://ig6prs5rw3h6" path="res://SCENE-ROOT/FX-Scene/knop-klein-zwart.png" id="13_rblm6"]
+[ext_resource type="Texture2D" uid="uid://8o7ly3g0cj2n" path="res://SCENE-ROOT/FX-Scene/display-background.png" id="14_34otq"]
+[ext_resource type="FontFile" uid="uid://2b54ad21lerh" path="res://SCENE-ROOT/font/digital-7 (mono).ttf" id="15_c6riy"]
+[ext_resource type="Texture2D" uid="uid://b6i4b3b33thw0" path="res://SCENE-ROOT/FX-Scene/led.png" id="17_adwf4"]
+[ext_resource type="Script" uid="uid://b0uxew4yvmoye" path="res://SCENE-ROOT/FX-Scene/schakelaar_beast_on_of.gd" id="17_w7mjd"]
+[ext_resource type="Texture2D" uid="uid://dk4cx51prcpu" path="res://SCENE-ROOT/FX-Scene/knop-groot-wit.png" id="18_1fxtp"]
+[ext_resource type="Script" uid="uid://v7p0ox6sxecw" path="res://SCENE-ROOT/FX-Scene/Synth_Carrier_switch_porta.gd" id="18_bfdyk"]
+[ext_resource type="Script" uid="uid://bxlsh6ol7a7al" path="res://SCENE-ROOT/FX-Scene/Synth_Carrier_switch_key_mode.gd" id="19_3qea6"]
+[ext_resource type="Script" uid="uid://tf0kn5tcvis" path="res://SCENE-ROOT/FX-Scene/SYNTHCARRIER_fader_harmonic_mix_minus_12.gd" id="20_v7rq3"]
+[ext_resource type="Script" uid="uid://3x7i6een6it2" path="res://SCENE-ROOT/FX-Scene/Synth_Carrier_switch_amp_mode.gd" id="21_103xy"]
+[ext_resource type="Texture2D" uid="uid://gv3g8i161jkp" path="res://SCENE-ROOT/FX-Scene/knop blauw.png" id="21_dvntt"]
+[ext_resource type="Texture2D" uid="uid://cpr134b1rq1nk" path="res://SCENE-ROOT/FX-Scene/knop zwart-geel streep.png" id="22_056xh"]
+[ext_resource type="Script" uid="uid://cbibbvwj0gs0q" path="res://SCENE-ROOT/FX-Scene/LFO_schuif_vert_pitch.gd" id="22_k8837"]
+[ext_resource type="Texture2D" uid="uid://cvc8elvypp173" path="res://SCENE-ROOT/FX-Scene/knop zwart rood streep.png" id="22_kcj7y"]
+[ext_resource type="Script" uid="uid://cwwgrf66e2wvk" path="res://SCENE-ROOT/FX-Scene/VINTAGE_fader_harmonic_mix_root.gd" id="22_mtocb"]
+[ext_resource type="Script" uid="uid://bu8bo6bfbayfo" path="res://SCENE-ROOT/FX-Scene/VINTAGE_fader_harmonic_mix_plus_7.gd" id="23_2oyox"]
+[ext_resource type="FontFile" uid="uid://borqy5se5elv4" path="res://SCENE-ROOT/font/MesloLGS NF Regular.ttf" id="23_056xh"]
+[ext_resource type="Texture2D" uid="uid://cp8celiap4lid" path="res://SCENE-ROOT/FX-Scene/knop zwart wit streep.png" id="23_dtp5j"]
+[ext_resource type="Script" uid="uid://b76nnh6edbavv" path="res://SCENE-ROOT/FX-Scene/LFO_fader_mod.gd" id="23_u7lhm"]
+[ext_resource type="Script" uid="uid://dudnvyrb504ua" path="res://SCENE-ROOT/FX-Scene/VINTAGE_fader_harmonic_mix_plus_12.gd" id="24_517gk"]
+[ext_resource type="Script" uid="uid://batyfpvajht88" path="res://SCENE-ROOT/FX-Scene/LFO_fader_env_a.gd" id="24_vpmdt"]
+[ext_resource type="Script" uid="uid://c8kme0u73fu27" path="res://SCENE-ROOT/FX-Scene/VINTAGE_fader_harmonic_mix_plus_12_plus_7.gd" id="25_42tgq"]
+[ext_resource type="Script" uid="uid://ctgqdg6y0rm31" path="res://SCENE-ROOT/FX-Scene/LFO_fader_env_d.gd" id="25_ypmir"]
+[ext_resource type="Script" uid="uid://b55djg51hfgj3" path="res://SCENE-ROOT/FX-Scene/LFO_fader_env_s.gd" id="26_kqem8"]
+[ext_resource type="Script" uid="uid://o73g4dse6w2w" path="res://SCENE-ROOT/FX-Scene/LFO_fader_env_r.gd" id="27_v7rq3"]
+[ext_resource type="Texture2D" uid="uid://lejvqwns1yph" path="res://SCENE-ROOT/FX-Scene/sampler-front.png" id="28_lkil8"]
+[ext_resource type="Texture2D" uid="uid://bh3pbuvcrwe1o" path="res://SCENE-ROOT/FX-Scene/pad-unpressed.png" id="29_43adc"]
+[ext_resource type="Texture2D" uid="uid://caqqc47wah0lt" path="res://SCENE-ROOT/FX-Scene/knob-roundings.png" id="29_dtp5j"]
+[ext_resource type="Texture2D" uid="uid://hcye42wbr3jw" path="res://SCENE-ROOT/FX-Scene/pad-pressed.png" id="30_a5wmf"]
+[ext_resource type="Script" uid="uid://bvgwklp47y31j" path="res://SCENE-ROOT/FX-Scene/Synth_Carrier_wavform_control.gd" id="30_hevnm"]
+[ext_resource type="Texture2D" uid="uid://cw5d1iy38uatf" path="res://SCENE-ROOT/FX-Scene/parrot.png" id="31_8hmit"]
+[ext_resource type="Texture2D" uid="uid://dyaai706h8non" path="res://SCENE-ROOT/FX-Scene/Device-type-ex-label.png" id="32_ax5q8"]
+[ext_resource type="Texture2D" uid="uid://bncqgds882o7m" path="res://SCENE-ROOT/FX-Scene/parrot-clipart.png" id="33_e5v56"]
+[ext_resource type="FontFile" uid="uid://c5gc1vraf2bps" path="res://SCENE-ROOT/font/Caveat-Regular.ttf" id="34_lkil8"]
+[ext_resource type="Texture2D" uid="uid://mkqnqx8qquy7" path="res://SCENE-ROOT/FX-Scene/select button grey.png" id="37_ax5q8"]
+[ext_resource type="Texture2D" uid="uid://dcgyowb850tt6" path="res://SCENE-ROOT/FX-Scene/nav-button.png" id="38_e5v56"]
+[ext_resource type="Texture2D" uid="uid://bbjp3mch4g3cu" path="res://SCENE-ROOT/FX-Scene/select button yellow.png" id="39_k8837"]
+[ext_resource type="Script" uid="uid://bgfa7rfronil3" path="res://SCENE-ROOT/FX-Scene/PARROT_rot_pitch_sample_4.gd" id="44_f2m5g"]
+[ext_resource type="Texture2D" uid="uid://dsdj7hrxn0ipc" path="res://SCENE-ROOT/FX-Scene/aligator-logo.png" id="45_g2bq0"]
+[ext_resource type="Script" uid="uid://fmkasgg4uxou" path="res://SCENE-ROOT/FX-Scene/VINTAGE_fader_spectral_spread.gd" id="47_kqem8"]
+[ext_resource type="Script" uid="uid://bjqgkr813ub1i" path="res://SCENE-ROOT/FX-Scene/VINTAGE_fader_mic_dry.gd" id="51_517gk"]
+[ext_resource type="Script" uid="uid://dbeqybxpoco67" path="res://SCENE-ROOT/FX-Scene/VINTAGE_fader_synth_carrier.gd" id="54_6r5jr"]
+[ext_resource type="Script" uid="uid://bu8kl607man1h" path="res://SCENE-ROOT/FX-Scene/VINTAGE_fader_vocoder_robat.gd" id="55_f2m5g"]
+[ext_resource type="Texture2D" uid="uid://3rmtfrg15ovb" path="res://SCENE-ROOT/images/template-plaat/template frontplaat mixer project.png" id="61_j33au"]
+[ext_resource type="Texture2D" uid="uid://crtpwmpppwmpq" path="res://SCENE-ROOT/images/selectors/selectors.png" id="62_8oyj7"]
+[ext_resource type="FontFile" uid="uid://swi45mygiorx" path="res://SCENE-ROOT/font/Roboto-Bold.ttf" id="62_sp00t"]
+[ext_resource type="Script" uid="uid://b870rdqyfdijg" path="res://SCENE-ROOT/SCRIPTS/GD/size.gd" id="63_g2bq0"]
+[ext_resource type="Texture2D" uid="uid://72j7vnqxh4hw" path="res://SCENE-ROOT/images/buttons/vierkant knopje.png" id="63_o750p"]
+[ext_resource type="Texture2D" uid="uid://3txo2suqxhvp" path="res://SCENE-ROOT/images/Background/echo-well-logo.png" id="64_t7jjg"]
+[ext_resource type="FontFile" uid="uid://dophbsoy1257a" path="res://SCENE-ROOT/font/Ballmain.ttf" id="65_7881w"]
+[ext_resource type="Texture2D" uid="uid://cngwwov2m7wrv" path="res://SCENE-ROOT/images/buttons/silver-knob.png" id="66_xwjmo"]
+[ext_resource type="Texture2D" uid="uid://cawf7j60q2hc7" path="res://SCENE-ROOT/images/buttons/knob-scale.png" id="67_oyh7p"]
+[ext_resource type="Texture2D" uid="uid://bpf2m7e15pepb" path="res://SCENE-ROOT/images/template-plaat/blank-peach-front.png" id="68_7881w"]
+[ext_resource type="Script" uid="uid://b57iv738vbij" path="res://SCENE-ROOT/SCRIPTS/GD/fader_cv_1.gd" id="69_xwjmo"]
+[ext_resource type="Texture2D" uid="uid://ydbjkj255jg" path="res://SCENE-ROOT/images/template-plaat/peach-logo.png" id="70_oyh7p"]
+[ext_resource type="Texture2D" uid="uid://dbmuscb7ygskm" path="res://SCENE-ROOT/images/template-plaat/nice-vintage-rotary.png" id="71_1b1nu"]
+[ext_resource type="Script" uid="uid://caranrk4ayaji" path="res://SCENE-ROOT/SCRIPTS/GD/wavform_control_peach.gd" id="73_oyh7p"]
+[ext_resource type="Script" uid="uid://bi1a5pb6mcpne" path="res://SCENE-ROOT/SCRIPTS/GD/peach_logo_3.gd" id="73_xwjmo"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_056xh"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j33au"]
+content_margin_left = 8.0
+content_margin_right = 8.0
+bg_color = Color(0.898039, 0.945098, 0.262745, 1)
+
+[sub_resource type="Theme" id="Theme_a5wmf"]
+VScrollBar/styles/grabber = SubResource("StyleBoxFlat_j33au")
+VScrollBar/styles/grabber_highlight = null
+VScrollBar/styles/grabber_pressed = null
+VScrollBar/styles/scroll = null
+VScrollBar/styles/scroll_focus = null
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_angds"]
+bg_color = Color(0.133289, 0.266926, 0.193475, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e5v56"]
+bg_color = Color(0.941176, 0.584314, 0.266667, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_re3l0"]
+bg_color = Color(0.607843, 0.615686, 0.603922, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kxfn5"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1fxtp"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hevnm"]
+bg_color = Color(0.00820202, 0.00820203, 0.00820202, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_demfc"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pupc3"]
+bg_color = Color(4.42803e-06, 0.992685, 0.148231, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_adwf4"]
+bg_color = Color(0.18359, 0.18359, 0.18359, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6bymk"]
+bg_color = Color(0.0273598, 0.160582, 0.107411, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3qea6"]
+bg_color = Color(0.000693897, 0.000693898, 0.000693897, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0usyw"]
+bg_color = Color(0.588235, 0.537255, 0.917647, 0.431373)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8hr4p"]
+bg_color = Color(0.500403, 0.639623, 0.553531, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k8837"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jpp14"]
+bg_color = Color(0.333333, 0.992157, 0.160784, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_34otq"]
+bg_color = Color(0.137255, 0.341176, 0.137255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a5wmf"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 12
+border_width_top = 12
+border_width_right = 12
+border_width_bottom = 12
+border_color = Color(0.118581, 0.118581, 0.118581, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vpmdt"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.118581, 0.118581, 0.118581, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u7lhm"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_color = Color(0.00820203, 0.00820202, 0.00820201, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1b1nu"]
+bg_color = Color(0.463759, 0.443033, 0.322997, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_color = Color(0.425825, 0.632855, 0.385005, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l8adc"]
+bg_color = Color(0.26227, 0.198046, 0.0640455, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.774496, 0.37809, 0.246929, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jiyfo"]
+bg_color = Color(0.902446, 0.444423, 0.377307, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fjcrc"]
+bg_color = Color(0.234238, 0.392297, 0.421916, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m8ice"]
+bg_color = Color(0.197937, 0.197937, 0.197937, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+corner_radius_top_left = 11
+corner_radius_top_right = 11
+corner_radius_bottom_right = 11
+corner_radius_bottom_left = 11
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mp4fb"]
+bg_color = Color(0.705882, 0.458824, 0.227451, 0.654902)
+border_width_left = 3
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.629675, 0.629675, 0.629674, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+expand_margin_top = 6.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0kstj"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yx50j"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="FX-Window" type="Window"]
+title = "FX RACK LINUX 8200"
+initial_position = 1
+size = Vector2i(1090, 900)
+script = ExtResource("1_angds")
+
+[node name="Channel_Selector" type="Control" parent="."]
+z_index = 100
+layout_mode = 3
+anchors_preset = 0
+offset_left = 535.0
+offset_top = 28.0
+offset_right = 575.0
+offset_bottom = 68.0
+
+[node name="Topbar_Channel_Select" type="Sprite2D" parent="Channel_Selector"]
+z_index = 400
+position = Vector2(-6.10352e-05, 0)
+scale = Vector2(1.81725, 2.07317)
+texture = ExtResource("2_ln127")
+
+[node name="Display-background_Channel_select" type="Sprite2D" parent="Channel_Selector"]
+z_index = 400
+position = Vector2(62.9167, 1.66666)
+scale = Vector2(1.41821, 2.05556)
+texture = ExtResource("14_34otq")
+
+[node name="label_display_top_bar_channel_select" type="Label" parent="Channel_Selector"]
+z_index = 400
+layout_mode = 0
+offset_left = -206.333
+offset_top = -33.6667
+offset_right = 330.667
+offset_bottom = 29.3333
+theme_override_colors/font_color = Color(8.08597e-06, 0.83784, 7.70092e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 0.839216, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("15_c6riy")
+theme_override_font_sizes/font_size = 35
+text = "SELECT CHANNEL"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="led_input_signal_green" type="ColorRect" parent="Channel_Selector"]
+z_index = 400
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -12.175
+anchor_right = -11.375
+anchor_bottom = 0.5
+offset_left = 9.0
+offset_top = 29.0
+offset_right = -9.99997
+offset_bottom = 16.0
+color = Color(0.32549, 0.964706, 0, 1)
+
+[node name="led_input_signal_green_2" type="ColorRect" parent="Channel_Selector"]
+z_index = 400
+layout_mode = 0
+offset_left = -478.0
+offset_top = 19.0
+offset_right = -465.0
+offset_bottom = 26.0
+color = Color(0.32549, 0.964706, 0, 1)
+
+[node name="led_input_signal_yellow" type="ColorRect" parent="Channel_Selector"]
+z_index = 400
+layout_mode = 0
+offset_left = -478.0
+offset_top = 9.0
+offset_right = -465.0
+offset_bottom = 16.0
+color = Color(0.960784, 0.960784, 0.00392157, 1)
+
+[node name="led_input_signal_red" type="ColorRect" parent="Channel_Selector"]
+z_index = 400
+layout_mode = 0
+offset_left = -478.0
+offset_top = -1.0
+offset_right = -465.0
+offset_bottom = 6.0
+color = Color(1, 0.0313726, 0, 1)
+
+[node name="Label" type="Label" parent="Channel_Selector"]
+z_index = 400
+layout_mode = 0
+offset_left = -484.0
+offset_top = -4.0
+offset_right = -460.0
+offset_bottom = 41.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_056xh")
+
+[node name="scrollcontainer" type="ScrollContainer" parent="."]
+clip_contents = false
+custom_minimum_size = Vector2(10, 0)
+offset_left = 5.0
+offset_right = 1782.0
+offset_bottom = 1498.0
+scale = Vector2(0.6, 0.6)
+theme = SubResource("Theme_a5wmf")
+follow_focus = true
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+script = ExtResource("5_43adc")
+
+[node name="vbox" type="VBoxContainer" parent="scrollcontainer"]
+custom_minimum_size = Vector2(0, 4490)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="control" type="Control" parent="scrollcontainer/vbox"]
+layout_mode = 2
+
+[node name="topbar" type="Control" parent="scrollcontainer/vbox/control"]
+anchors_preset = 0
+offset_left = 1.66667
+offset_top = 848.333
+offset_right = 41.6667
+offset_bottom = 888.333
+
+[node name="label4" type="Label" parent="scrollcontainer/vbox/control/topbar"]
+z_index = -18
+layout_mode = 0
+offset_left = -47.0
+offset_top = 108.0
+offset_right = 1825.0
+offset_bottom = 2467.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_angds")
+
+[node name="topbar" type="Sprite2D" parent="scrollcontainer/vbox/control/topbar"]
+position = Vector2(708.335, 887.25)
+scale = Vector2(1.41684, 2.07317)
+texture = ExtResource("2_ln127")
+
+[node name="topbar_label" type="Label" parent="scrollcontainer/vbox/control/topbar"]
+layout_mode = 0
+offset_left = 205.0
+offset_top = 855.0
+offset_right = 498.0
+offset_bottom = 906.0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("5_6bymk")
+theme_override_font_sizes/font_size = 35
+text = "THE BEAST"
+
+[node name="topbar_label2" type="Label" parent="scrollcontainer/vbox/control/topbar"]
+layout_mode = 0
+offset_left = 283.0
+offset_top = 902.0
+offset_right = 450.0
+offset_bottom = 955.0
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0.920995, 0.920995, 0.920995, 1)
+theme_override_constants/line_spacing = -1
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("5_6bymk")
+theme_override_font_sizes/font_size = 17
+text = "Multimode
+Vocoder"
+
+[node name="schakelaar" type="Sprite2D" parent="scrollcontainer/vbox/control/topbar"]
+z_index = 200
+position = Vector2(98.3334, 868.333)
+scale = Vector2(1.57143, 1.5)
+texture = ExtResource("2_rblm6")
+script = ExtResource("17_w7mjd")
+
+[node name="mixer" type="Control" parent="scrollcontainer/vbox/control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -21.6667
+offset_top = -176.667
+offset_right = 18.3333
+offset_bottom = -136.667
+
+[node name="micro-mixer" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 64
+position = Vector2(886.667, 393.333)
+scale = Vector2(1.28901, 1.41933)
+texture = ExtResource("8_e5v56")
+
+[node name="rot_mixer_master_level" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(1546.67, 403.333)
+scale = Vector2(1.60569, 1.55983)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_level_ch1" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(190, 375)
+scale = Vector2(1.45325, 1.42094)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_level_ch2" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(390, 375)
+scale = Vector2(1.45325, 1.42094)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_level_ch3" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(590, 375)
+scale = Vector2(1.45325, 1.42094)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_level_ch4" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(790, 375)
+scale = Vector2(1.45325, 1.42094)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_level_ch5" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(988.333, 373.333)
+scale = Vector2(1.45325, 1.42094)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_level_ch6" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(1188.33, 373.333)
+scale = Vector2(1.45325, 1.42094)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_aux_ch1" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(121.667, 343.333)
+scale = Vector2(0.993395, 0.953526)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_pan_ch1" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(253.333, 343.333)
+scale = Vector2(0.993395, 0.953526)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_aux_ch2" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(320.365, 343.594)
+scale = Vector2(0.993395, 0.953526)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_pan_ch2" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(452.031, 343.594)
+scale = Vector2(0.993395, 0.953526)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_aux_ch3" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(522.031, 343.594)
+scale = Vector2(0.993395, 0.953526)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_pan_ch3" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(653.698, 343.594)
+scale = Vector2(0.993395, 0.953526)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_aux_ch4" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(720.365, 343.594)
+scale = Vector2(0.993395, 0.953526)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_pan_ch4" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(852.031, 343.594)
+scale = Vector2(0.993395, 0.953526)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_aux_ch5" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(920.365, 343.594)
+scale = Vector2(0.993395, 0.953526)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_pan_ch5" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(1052.03, 343.594)
+scale = Vector2(0.993395, 0.953526)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_aux_ch6" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(1120.36, 343.594)
+scale = Vector2(0.993395, 0.953526)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_pan_ch6" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(1252.03, 343.594)
+scale = Vector2(0.993395, 0.953526)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_mixer_aux_return" type="Sprite2D" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 120
+position = Vector2(1321.67, 345)
+scale = Vector2(0.993395, 0.953526)
+texture = ExtResource("11_ogcfe")
+
+[node name="label_ch1" type="Label" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 70
+layout_mode = 0
+offset_left = 128.333
+offset_top = 438.333
+offset_right = 204.333
+offset_bottom = 473.333
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("34_lkil8")
+theme_override_font_sizes/font_size = 27
+text = "PARROT"
+
+[node name="label_ch2" type="Label" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 70
+layout_mode = 0
+offset_left = 318.333
+offset_top = 436.667
+offset_right = 429.333
+offset_bottom = 471.667
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("34_lkil8")
+theme_override_font_sizes/font_size = 27
+text = "KROKODILE"
+
+[node name="label_ch3" type="Label" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 70
+layout_mode = 0
+offset_left = 531.667
+offset_top = 436.667
+offset_right = 642.667
+offset_bottom = 471.667
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("34_lkil8")
+theme_override_font_sizes/font_size = 27
+text = "THE EAST"
+
+[node name="label_ch4" type="Label" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 70
+layout_mode = 0
+offset_left = 723.333
+offset_top = 438.333
+offset_right = 834.333
+offset_bottom = 473.333
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("34_lkil8")
+theme_override_font_sizes/font_size = 27
+text = "THE WELL"
+
+[node name="label_master" type="Label" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 70
+layout_mode = 0
+offset_left = 1518.33
+offset_top = 320.0
+offset_right = 1637.33
+offset_bottom = 355.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("34_lkil8")
+theme_override_font_sizes/font_size = 27
+text = "MASTER FX"
+
+[node name="Label_fx" type="Label" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 200
+layout_mode = 0
+offset_left = 1338.33
+offset_top = 398.333
+offset_right = 1378.33
+offset_bottom = 439.333
+theme_override_colors/font_outline_color = Color(0.864675, 0.864675, 0.864675, 1)
+theme_override_constants/line_spacing = 1
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("34_lkil8")
+theme_override_font_sizes/font_size = 32
+text = "Fx"
+
+[node name="button_p_channel1" type="Button" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 75
+layout_mode = 0
+offset_left = 100.0
+offset_top = 408.0
+offset_right = 117.0
+offset_bottom = 428.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.000113828, 0.000113828, 0.000113828, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e5v56")
+theme_override_styles/normal = SubResource("StyleBoxFlat_re3l0")
+toggle_mode = true
+text = "P"
+text_overrun_behavior = 3
+autowrap_mode = 1
+clip_text = true
+
+[node name="button_p_channel2" type="Button" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 75
+layout_mode = 0
+offset_left = 301.667
+offset_top = 408.333
+offset_right = 318.667
+offset_bottom = 428.333
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.0646965, 0.0646965, 0.0646965, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e5v56")
+theme_override_styles/normal = SubResource("StyleBoxFlat_re3l0")
+toggle_mode = true
+text = "P"
+text_overrun_behavior = 3
+autowrap_mode = 1
+clip_text = true
+
+[node name="button_p_channel3" type="Button" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 75
+layout_mode = 0
+offset_left = 500.0
+offset_top = 408.333
+offset_right = 517.0
+offset_bottom = 428.333
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.0646965, 0.0646965, 0.0646965, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e5v56")
+theme_override_styles/normal = SubResource("StyleBoxFlat_re3l0")
+toggle_mode = true
+text = "P"
+text_overrun_behavior = 3
+autowrap_mode = 1
+clip_text = true
+
+[node name="button_p_channel4" type="Button" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 75
+layout_mode = 0
+offset_left = 698.333
+offset_top = 408.333
+offset_right = 715.333
+offset_bottom = 428.333
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.0646965, 0.0646965, 0.0646965, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e5v56")
+theme_override_styles/normal = SubResource("StyleBoxFlat_re3l0")
+toggle_mode = true
+text = "P"
+text_overrun_behavior = 3
+autowrap_mode = 1
+clip_text = true
+
+[node name="button_p_channel5" type="Button" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 75
+layout_mode = 0
+offset_left = 898.333
+offset_top = 408.333
+offset_right = 915.333
+offset_bottom = 428.333
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.0646965, 0.0646965, 0.0646965, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e5v56")
+theme_override_styles/normal = SubResource("StyleBoxFlat_re3l0")
+toggle_mode = true
+text = "P"
+text_overrun_behavior = 3
+autowrap_mode = 1
+clip_text = true
+
+[node name="button_p_channel6" type="Button" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 75
+layout_mode = 0
+offset_left = 1098.33
+offset_top = 408.333
+offset_right = 1115.33
+offset_bottom = 428.333
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.0646965, 0.0646965, 0.0646965, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/pressed = SubResource("StyleBoxFlat_e5v56")
+theme_override_styles/normal = SubResource("StyleBoxFlat_re3l0")
+toggle_mode = true
+text = "P"
+text_overrun_behavior = 3
+autowrap_mode = 1
+clip_text = true
+
+[node name="vu_ch1" type="Control" parent="scrollcontainer/vbox/control/mixer"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="led_rood" type="ColorRect" parent="scrollcontainer/vbox/control/mixer/vu_ch1"]
+z_index = 100
+layout_mode = 0
+offset_left = 243.333
+offset_top = 403.333
+offset_right = 261.333
+offset_bottom = 408.333
+color = Color(0.360784, 0.207843, 0.054902, 1)
+
+[node name="led_geel" type="ColorRect" parent="scrollcontainer/vbox/control/mixer/vu_ch1"]
+z_index = 100
+layout_mode = 0
+offset_left = 243.333
+offset_top = 415.0
+offset_right = 261.333
+offset_bottom = 420.0
+color = Color(0.368627, 0.34902, 0.054902, 1)
+
+[node name="led_groen" type="ColorRect" parent="scrollcontainer/vbox/control/mixer/vu_ch1"]
+z_index = 100
+layout_mode = 0
+offset_left = 243.0
+offset_top = 425.0
+offset_right = 261.0
+offset_bottom = 430.0
+color = Color(0.203922, 0.345098, 0.0666667, 1)
+
+[node name="Label" type="Label" parent="scrollcontainer/vbox/control/mixer"]
+z_index = 65
+layout_mode = 0
+offset_left = 1355.0
+offset_top = 333.334
+offset_right = 1452.0
+offset_bottom = 359.334
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_font_sizes/font_size = 21
+text = "FX RETURN"
+
+[node name="outputmix" type="Sprite2D" parent="scrollcontainer/vbox/control"]
+position = Vector2(1568.34, 1963.92)
+scale = Vector2(1.80071, 1.60938)
+texture = ExtResource("5_jvpxk")
+
+[node name="unison" type="Sprite2D" parent="scrollcontainer/vbox/control"]
+position = Vector2(1566.16, 2399.92)
+scale = Vector2(1.82632, 1.74872)
+texture = ExtResource("6_8wvhk")
+
+[node name="pitch" type="Sprite2D" parent="scrollcontainer/vbox/control"]
+position = Vector2(1565.66, 2765.67)
+scale = Vector2(1.82105, 1.68667)
+texture = ExtResource("7_ogcfe")
+
+[node name="vintage" type="Sprite2D" parent="scrollcontainer/vbox/control"]
+position = Vector2(481.667, 2014.42)
+scale = Vector2(1.30897, 1.51277)
+texture = ExtResource("8_rblm6")
+
+[node name="modulator" type="Sprite2D" parent="scrollcontainer/vbox/control"]
+position = Vector2(1174.66, 2013.42)
+scale = Vector2(1.63016, 1.51004)
+texture = ExtResource("9_pupc3")
+
+[node name="label2" type="Label" parent="scrollcontainer/vbox/control"]
+layout_mode = 0
+offset_left = 1450.0
+offset_top = 2702.75
+offset_right = 1525.0
+offset_bottom = 2738.75
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 26
+text = "PITCH"
+
+[node name="label3" type="Label" parent="scrollcontainer/vbox/control"]
+layout_mode = 0
+offset_left = 1453.33
+offset_top = 2464.42
+offset_right = 1541.33
+offset_bottom = 2500.42
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 26
+text = "EFFECT"
+
+[node name="beast_control" type="Control" parent="scrollcontainer/vbox/control"]
+anchors_preset = 0
+offset_left = 521.667
+offset_top = 1710.75
+offset_right = 929.667
+offset_bottom = 1778.75
+
+[node name="button_up_beast" type="Button" parent="scrollcontainer/vbox/control/beast_control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.042
+anchor_top = 0.059
+anchor_right = 1.123
+anchor_bottom = 0.426
+offset_left = -0.136017
+offset_top = -0.0120001
+offset_right = -0.184021
+offset_bottom = 0.0319977
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kxfn5")
+theme_override_styles/normal = SubResource("StyleBoxFlat_1fxtp")
+
+[node name="button_down_beast" type="Button" parent="scrollcontainer/vbox/control/beast_control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.046
+anchor_top = 0.515
+anchor_right = 1.127
+anchor_bottom = 0.838
+offset_left = -0.101257
+offset_top = -0.0200195
+offset_right = -0.149292
+offset_bottom = 0.0159798
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kxfn5")
+theme_override_styles/normal = SubResource("StyleBoxFlat_1fxtp")
+
+[node name="button_open_beast" type="Button" parent="scrollcontainer/vbox/control/beast_control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.147
+anchor_top = 0.074
+anchor_right = 1.228
+anchor_bottom = 0.912
+offset_left = 0.0239563
+offset_top = -0.0320001
+offset_right = -0.0240173
+offset_bottom = -0.0160027
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kxfn5")
+theme_override_styles/normal = SubResource("StyleBoxFlat_1fxtp")
+
+[node name="button_save_beast" type="Button" parent="scrollcontainer/vbox/control/beast_control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.246
+anchor_top = 0.078
+anchor_right = 1.327
+anchor_bottom = 0.912
+offset_left = -0.0347595
+offset_top = 0.0293283
+offset_right = -0.0827637
+offset_bottom = 0.317326
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kxfn5")
+theme_override_styles/normal = SubResource("StyleBoxFlat_1fxtp")
+
+[node name="display-background" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control"]
+position = Vector2(214.167, 30.8333)
+scale = Vector2(1.0774, 2.05556)
+texture = ExtResource("14_34otq")
+
+[node name="label_display_top_bar" type="Label" parent="scrollcontainer/vbox/control/beast_control"]
+layout_mode = 0
+offset_left = 12.0
+offset_right = 420.0
+offset_bottom = 63.0
+theme_override_colors/font_color = Color(8.08597e-06, 0.83784, 7.70092e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 0.839216, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("15_c6riy")
+theme_override_font_sizes/font_size = 35
+text = "Init Patch"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="synth-carrier" type="Control" parent="scrollcontainer/vbox/control/beast_control"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="synth-carier" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+position = Vector2(168.25, 682.25)
+scale = Vector2(1.41897, 1.58837)
+texture = ExtResource("4_ldmr0")
+
+[node name="rot_noise" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+z_index = 4
+position = Vector2(739.997, 602)
+scale = Vector2(1.78861, 1.79487)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_pos" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+z_index = 4
+position = Vector2(248.334, 715.33)
+scale = Vector2(1.58536, 1.62393)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_semi" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+z_index = 4
+position = Vector2(-78.333, 757)
+scale = Vector2(1.58536, 1.62393)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_oct" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+z_index = 4
+position = Vector2(-78.333, 647)
+scale = Vector2(1.58536, 1.62393)
+texture = ExtResource("11_ogcfe")
+
+[node name="switch_porta" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+z_index = 1
+position = Vector2(-471.667, 684.25)
+scale = Vector2(2.21428, 2.19444)
+texture = ExtResource("2_rblm6")
+script = ExtResource("18_bfdyk")
+Y_POS_0 = 657.0
+Y_POS_1 = 685.0
+Y_POS_2 = 705.0
+
+[node name="switch_key_mode" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+z_index = 1
+position = Vector2(-315, 685.33)
+scale = Vector2(2.21428, 2.19444)
+texture = ExtResource("2_rblm6")
+script = ExtResource("19_3qea6")
+Y_POS_0 = 657.0
+Y_POS_1 = 685.0
+Y_POS_2 = 705.0
+
+[node name="switch_amp_mode" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+z_index = 1
+position = Vector2(749.999, 787.583)
+scale = Vector2(2.21428, 2.19444)
+texture = ExtResource("2_rblm6")
+script = ExtResource("21_103xy")
+
+[node name="rot_noise_auto" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+z_index = 4
+position = Vector2(786.667, 697)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("13_rblm6")
+
+[node name="rot_noise_color" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+z_index = 4
+position = Vector2(696.667, 697)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("13_rblm6")
+
+[node name="rot_vib_amt" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+z_index = 4
+position = Vector2(-241.666, 790.33)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("13_rblm6")
+
+[node name="rot_voice_pan" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+z_index = 4
+position = Vector2(-188.333, 667)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("13_rblm6")
+
+[node name="rot_time" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+z_index = 4
+position = Vector2(-375, 667)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("13_rblm6")
+
+[node name="fader_harmonic_mix_minus12" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+z_index = 4
+position = Vector2(349.5, 778)
+scale = Vector2(2.55555, 2.37179)
+texture = ExtResource("11_8wvhk")
+script = ExtResource("20_v7rq3")
+
+[node name="led-fader_harmonic_mix_minus12" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier/fader_harmonic_mix_minus12"]
+z_index = 5
+position = Vector2(0.450043, 0.5271)
+scale = Vector2(0.587635, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="fader_harmonic_mix_root" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+z_index = 4
+position = Vector2(404.5, 778)
+scale = Vector2(2.55555, 2.37179)
+texture = ExtResource("11_8wvhk")
+script = ExtResource("22_mtocb")
+
+[node name="led-fader_harmonic_mix_root" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier/fader_harmonic_mix_root"]
+z_index = 5
+position = Vector2(0.450043, 0.5271)
+scale = Vector2(0.587635, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="fader_harmonic_mix_plus7" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+z_index = 4
+position = Vector2(462.834, 778)
+scale = Vector2(2.55555, 2.37179)
+texture = ExtResource("11_8wvhk")
+script = ExtResource("23_2oyox")
+
+[node name="led-fader_harmonic_mix_plus7" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier/fader_harmonic_mix_plus7"]
+z_index = 5
+position = Vector2(0.450043, 0.5271)
+scale = Vector2(0.587635, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="fader_harmonic_mix_plus12" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+z_index = 4
+position = Vector2(521.167, 778)
+scale = Vector2(2.55555, 2.37179)
+texture = ExtResource("11_8wvhk")
+script = ExtResource("24_517gk")
+
+[node name="led-fader_harmonic_mix_plus12" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier/fader_harmonic_mix_plus12"]
+z_index = 5
+position = Vector2(0.450043, 0.5271)
+scale = Vector2(0.587635, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="fader_harmonic_mix_plus12-plus7" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+z_index = 4
+position = Vector2(582.834, 778)
+scale = Vector2(2.55555, 2.37179)
+texture = ExtResource("11_8wvhk")
+script = ExtResource("25_42tgq")
+
+[node name="led-fader_harmonic_mix_plus12-plus7" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier/fader_harmonic_mix_plus12-plus7"]
+z_index = 5
+position = Vector2(0.450043, 0.5271)
+scale = Vector2(0.587635, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="wavform_control" type="Control" parent="scrollcontainer/vbox/control/beast_control/synth-carrier"]
+anchors_preset = 0
+offset_left = -30.0
+offset_top = 626.0
+offset_right = 207.0
+offset_bottom = 763.0
+script = ExtResource("30_hevnm")
+
+[node name="label_black_background" type="Label" parent="scrollcontainer/vbox/control/beast_control/synth-carrier/wavform_control"]
+z_index = 210
+layout_mode = 0
+offset_right = 232.0
+offset_bottom = 137.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_hevnm")
+
+[node name="waveformline2d" type="Line2D" parent="scrollcontainer/vbox/control/beast_control/synth-carrier/wavform_control/label_black_background"]
+position = Vector2(11.666, 49.9164)
+default_color = Color(0.843812, 0.182295, 4.81307e-07, 1)
+
+[node name="waveformnamelabel" type="Label" parent="scrollcontainer/vbox/control/beast_control/synth-carrier/wavform_control"]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 145.0
+offset_right = 184.0
+offset_bottom = 173.0
+theme_override_colors/font_color = Color(0.890196, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.890196, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_demfc")
+text = "Waveform"
+horizontal_alignment = 1
+
+[node name="lfo_module" type="Control" parent="scrollcontainer/vbox/control/beast_control"]
+anchors_preset = 0
+offset_left = -519.666
+offset_top = -222.417
+offset_right = -479.666
+offset_bottom = -182.417
+
+[node name="lfo" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+position = Vector2(694.167, 1270)
+scale = Vector2(1.42393, 1.78505)
+texture = ExtResource("3_angds")
+
+[node name="fader_pitch" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+position = Vector2(73.75, 1375.42)
+scale = Vector2(3.38889, 2.37179)
+texture = ExtResource("11_8wvhk")
+script = ExtResource("22_k8837")
+
+[node name="led_fader_pitch" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module/fader_pitch"]
+z_index = 5
+position = Vector2(0.245893, 0.699829)
+scale = Vector2(0.594262, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="fader_mod" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+position = Vector2(155.417, 1375.42)
+scale = Vector2(3.38889, 2.37179)
+texture = ExtResource("11_8wvhk")
+script = ExtResource("23_u7lhm")
+
+[node name="led_fader_mod" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module/fader_mod"]
+z_index = 5
+position = Vector2(0.2458, 0.699829)
+scale = Vector2(0.594262, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="fader_env_a" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+position = Vector2(1210.83, 1363.75)
+scale = Vector2(2.55555, 2.37179)
+texture = ExtResource("11_8wvhk")
+script = ExtResource("24_vpmdt")
+
+[node name="led_fader_env_a" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module/fader_env_a"]
+z_index = 5
+position = Vector2(0.450043, 0.527039)
+scale = Vector2(0.587635, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="fader_env_d" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+position = Vector2(1254.17, 1363.75)
+scale = Vector2(2.55555, 2.37179)
+texture = ExtResource("11_8wvhk")
+script = ExtResource("25_ypmir")
+
+[node name="led_fader_env_d" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module/fader_env_d"]
+z_index = 5
+position = Vector2(0.446045, 0.527039)
+scale = Vector2(0.587635, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="fader_env_s" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+position = Vector2(1297.5, 1363.75)
+scale = Vector2(2.55555, 2.37179)
+texture = ExtResource("11_8wvhk")
+script = ExtResource("26_kqem8")
+
+[node name="led_fader_env_s" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module/fader_env_s"]
+z_index = 5
+position = Vector2(0.450073, 0.527039)
+scale = Vector2(0.587635, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="fader_env_r" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+position = Vector2(1340.83, 1363.75)
+scale = Vector2(2.55555, 2.37179)
+texture = ExtResource("11_8wvhk")
+script = ExtResource("27_v7rq3")
+
+[node name="led_fader_env_r" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module/fader_env_r"]
+z_index = 5
+position = Vector2(0.450073, 0.527039)
+scale = Vector2(0.587635, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="knop-groot-wit3" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+position = Vector2(3624.78, 1832.64)
+scale = Vector2(2.63234, 2.73071)
+texture = ExtResource("18_1fxtp")
+
+[node name="knop-klein-zwart" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+position = Vector2(286.667, 1375)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("13_rblm6")
+
+[node name="button_keysync" type="Button" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+layout_mode = 0
+offset_left = 428.333
+offset_top = 1350.0
+offset_right = 441.333
+offset_bottom = 1366.0
+theme_type_variation = &"FlatButton"
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pupc3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_adwf4")
+toggle_mode = true
+
+[node name="button_keysync2" type="Button" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+layout_mode = 0
+offset_left = 494.167
+offset_top = 1349.17
+offset_right = 507.167
+offset_bottom = 1365.17
+theme_type_variation = &"FlatButton"
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pupc3")
+theme_override_styles/normal = SubResource("StyleBoxFlat_adwf4")
+toggle_mode = true
+
+[node name="label_lfo_source_display" type="Label" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 14.325
+anchor_top = 28.175
+anchor_right = 18.675
+anchor_bottom = 35.8
+offset_left = -6.6684
+offset_top = -0.333374
+offset_right = -6.66821
+offset_bottom = -0.333496
+theme_override_styles/normal = SubResource("StyleBoxFlat_6bymk")
+
+[node name="label_lfo_amt_display" type="Label" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+layout_mode = 0
+offset_left = 747.0
+offset_top = 1125.0
+offset_right = 800.0
+offset_bottom = 1433.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_6bymk")
+
+[node name="label_lfo_dest_display" type="Label" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+layout_mode = 0
+offset_left = 802.0
+offset_top = 1127.0
+offset_right = 980.0
+offset_bottom = 1433.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_6bymk")
+
+[node name="label_lfo_scale_display" type="Label" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+layout_mode = 0
+offset_left = 982.0
+offset_top = 1127.0
+offset_right = 1157.0
+offset_bottom = 1432.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_6bymk")
+
+[node name="rot_vib_rate" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+position = Vector2(288.333, 1176.67)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_lfo_rate" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+position = Vector2(471.667, 1176.67)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_fx_freq" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+position = Vector2(1465, 1128.33)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_fx_rate" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+position = Vector2(1571.67, 1126.67)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("11_ogcfe")
+
+[node name="rot_fx_mix" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+z_index = 4
+position = Vector2(1676.67, 1125)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("11_ogcfe")
+
+[node name="knop-groot-wit" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+position = Vector2(1577.83, 280.583)
+scale = Vector2(1.75287, 1.63842)
+texture = ExtResource("18_1fxtp")
+
+[node name="knop-groot-wit2" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/lfo_module"]
+position = Vector2(287, 521)
+scale = Vector2(1.40805, 1.4548)
+texture = ExtResource("18_1fxtp")
+
+[node name="unison" type="Control" parent="scrollcontainer/vbox/control/beast_control"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="knop-klein-zwart2" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/unison"]
+z_index = 4
+position = Vector2(939.997, 668.667)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("13_rblm6")
+
+[node name="knop-klein-zwart3" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/unison"]
+z_index = 4
+position = Vector2(1048.34, 668.667)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("13_rblm6")
+
+[node name="knop-klein-zwart4" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/unison"]
+z_index = 4
+position = Vector2(1156.67, 670.33)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("13_rblm6")
+
+[node name="knop-klein-wit6" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/unison"]
+z_index = 4
+position = Vector2(1160, 567)
+scale = Vector2(1.60569, 1.60256)
+texture = ExtResource("11_ogcfe")
+
+[node name="button" type="Button" parent="scrollcontainer/vbox/control/beast_control/unison"]
+layout_mode = 0
+offset_left = 1010.0
+offset_top = 578.0
+offset_right = 1060.0
+offset_bottom = 616.0
+theme_override_colors/font_outline_color = Color(0, 0.898039, 0, 1)
+theme_override_colors/font_color = Color(0, 0.898039, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/normal = SubResource("StyleBoxFlat_3qea6")
+text = "4"
+
+[node name="pitch" type="Control" parent="scrollcontainer/vbox/control/beast_control"]
+anchors_preset = 0
+offset_left = -538.334
+offset_top = -492.417
+offset_right = -498.334
+offset_bottom = -452.417
+
+[node name="fine" type="Label" parent="scrollcontainer/vbox/control/beast_control/pitch"]
+layout_mode = 0
+offset_left = 1456.67
+offset_top = 1608.33
+offset_right = 1496.67
+offset_bottom = 1631.33
+theme_override_colors/font_color = Color(0.78187, 0.828756, 0.737083, 1)
+theme_override_colors/font_outline_color = Color(0.780392, 0.827451, 0.737255, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "FINE"
+
+[node name="semi" type="Label" parent="scrollcontainer/vbox/control/beast_control/pitch"]
+layout_mode = 0
+offset_left = 1565.0
+offset_top = 1608.33
+offset_right = 1605.0
+offset_bottom = 1631.33
+theme_override_colors/font_color = Color(0.78187, 0.828756, 0.737083, 1)
+theme_override_colors/font_outline_color = Color(0.780392, 0.827451, 0.737255, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "SEMI"
+
+[node name="rot_pitch_fine" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/pitch"]
+position = Vector2(1478.33, 1671.67)
+scale = Vector2(1.32353, 1.42157)
+texture = ExtResource("22_kcj7y")
+
+[node name="rot_pitch_semi" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/pitch"]
+position = Vector2(1586.67, 1671.67)
+scale = Vector2(1.32353, 1.42157)
+texture = ExtResource("22_kcj7y")
+
+[node name="rot_pitch_level" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/pitch"]
+z_index = 4
+position = Vector2(1695, 1511.67)
+scale = Vector2(1.52439, 1.5171)
+texture = ExtResource("11_ogcfe")
+
+[node name="vocoder" type="Control" parent="scrollcontainer/vbox/control/beast_control"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="label4" type="Label" parent="scrollcontainer/vbox/control/beast_control/vocoder"]
+layout_mode = 0
+offset_left = 931.667
+offset_top = 527.0
+offset_right = 1034.67
+offset_bottom = 563.0
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 26
+text = "UNISON"
+
+[node name="key_c" type="ColorRect" parent="scrollcontainer/vbox/control/beast_control/vocoder"]
+layout_mode = 0
+offset_left = 480.0
+offset_top = 427.0
+offset_right = 499.997
+offset_bottom = 484.0
+
+[node name="key_c#" type="ColorRect" parent="scrollcontainer/vbox/control/beast_control/vocoder"]
+z_index = 1
+layout_mode = 0
+offset_left = 494.997
+offset_top = 427.0
+offset_right = 510.997
+offset_bottom = 465.0
+color = Color(0, 0, 0, 1)
+
+[node name="key_d" type="ColorRect" parent="scrollcontainer/vbox/control/beast_control/vocoder"]
+layout_mode = 0
+offset_left = 504.997
+offset_top = 427.0
+offset_right = 529.997
+offset_bottom = 484.0
+
+[node name="key_d#" type="ColorRect" parent="scrollcontainer/vbox/control/beast_control/vocoder"]
+z_index = 1
+layout_mode = 0
+offset_left = 524.997
+offset_top = 427.0
+offset_right = 540.997
+offset_bottom = 465.0
+color = Color(0, 0, 0, 1)
+
+[node name="key_e" type="ColorRect" parent="scrollcontainer/vbox/control/beast_control/vocoder"]
+layout_mode = 0
+offset_left = 534.997
+offset_top = 427.0
+offset_right = 554.997
+offset_bottom = 484.0
+
+[node name="key_f" type="ColorRect" parent="scrollcontainer/vbox/control/beast_control/vocoder"]
+layout_mode = 0
+offset_left = 558.337
+offset_top = 427.0
+offset_right = 578.337
+offset_bottom = 484.0
+
+[node name="key_f#" type="ColorRect" parent="scrollcontainer/vbox/control/beast_control/vocoder"]
+z_index = 1
+layout_mode = 0
+offset_left = 571.667
+offset_top = 427.0
+offset_right = 587.667
+offset_bottom = 465.0
+color = Color(0, 0, 0, 1)
+
+[node name="key_g" type="ColorRect" parent="scrollcontainer/vbox/control/beast_control/vocoder"]
+layout_mode = 0
+offset_left = 581.667
+offset_top = 427.0
+offset_right = 606.667
+offset_bottom = 484.0
+
+[node name="key_g#" type="ColorRect" parent="scrollcontainer/vbox/control/beast_control/vocoder"]
+z_index = 1
+layout_mode = 0
+offset_left = 603.337
+offset_top = 427.0
+offset_right = 619.337
+offset_bottom = 465.0
+color = Color(0, 0, 0, 1)
+
+[node name="key_a" type="ColorRect" parent="scrollcontainer/vbox/control/beast_control/vocoder"]
+layout_mode = 0
+offset_left = 611.667
+offset_top = 427.0
+offset_right = 636.667
+offset_bottom = 484.0
+
+[node name="key_a#" type="ColorRect" parent="scrollcontainer/vbox/control/beast_control/vocoder"]
+z_index = 1
+layout_mode = 0
+offset_left = 631.667
+offset_top = 427.0
+offset_right = 647.667
+offset_bottom = 465.0
+color = Color(0, 0, 0, 1)
+
+[node name="key_b" type="ColorRect" parent="scrollcontainer/vbox/control/beast_control/vocoder"]
+layout_mode = 0
+offset_left = 641.666
+offset_top = 427.583
+offset_right = 661.666
+offset_bottom = 484.583
+
+[node name="knop-klein-wit6" type="Sprite2D" parent="scrollcontainer/vbox/control/beast_control/vocoder"]
+z_index = 4
+position = Vector2(536.666, 185.916)
+scale = Vector2(1.60569, 1.60256)
+texture = ExtResource("11_ogcfe")
+
+[node name="output_mix" type="Control" parent="scrollcontainer/vbox/control/beast_control"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="label_top_bar_on" type="Label" parent="scrollcontainer/vbox/control"]
+layout_mode = 0
+offset_left = 126.667
+offset_top = 1731.67
+offset_right = 166.666
+offset_bottom = 1754.67
+text = "ON"
+
+[node name="label_top_bar_on2" type="Label" parent="scrollcontainer/vbox/control"]
+layout_mode = 0
+offset_left = 126.667
+offset_top = 1703.33
+offset_right = 185.667
+offset_bottom = 1726.33
+text = "BYPASS"
+
+[node name="alligator" type="Control" parent="scrollcontainer/vbox/control"]
+anchors_preset = 0
+offset_left = 1.66813
+offset_top = 1487.75
+offset_right = 41.668
+offset_bottom = 1527.75
+
+[node name="alligator-front" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator"]
+position = Vector2(885.333, 1837.25)
+scale = Vector2(1.29121, 1.47)
+texture = ExtResource("2_pupc3")
+
+[node name="Label-shade" type="Label" parent="scrollcontainer/vbox/control/alligator"]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 1474.0
+offset_right = 1757.0
+offset_bottom = 2202.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_0usyw")
+
+[node name="Label" type="Label" parent="scrollcontainer/vbox/control/alligator"]
+layout_mode = 0
+offset_left = 523.0
+offset_top = 1934.0
+offset_right = 1100.0
+offset_bottom = 2056.0
+theme_override_colors/font_color = Color(0.635294, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.954458, 2.11775e-06, 9.62615e-07, 1)
+theme_override_colors/font_outline_color = Color(0.898276, 1.10701e-06, 9.62615e-07, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("5_6bymk")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_8hr4p")
+text = "         
+                      C r O K O d I L E
+                           T R I P L E   GATE   FILTER"
+horizontal_alignment = 1
+
+[node name="filter-vol" type="Label" parent="scrollcontainer/vbox/control/alligator"]
+layout_mode = 0
+offset_left = 234.998
+offset_top = 1502.25
+offset_right = 349.998
+offset_bottom = 1527.25
+theme_override_colors/font_color = Color(0.136826, 0.136826, 0.136826, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 19
+text = "Filter vol"
+horizontal_alignment = 1
+
+[node name="filter-vol2" type="Label" parent="scrollcontainer/vbox/control/alligator"]
+layout_mode = 0
+offset_left = 1363.33
+offset_top = 1500.58
+offset_right = 1478.33
+offset_bottom = 1525.58
+theme_override_colors/font_color = Color(0.136826, 0.136826, 0.136826, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 19
+text = "Master vol"
+horizontal_alignment = 1
+
+[node name="pattern" type="Control" parent="scrollcontainer/vbox/control/alligator"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="rot_pattern_resolution" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/pattern"]
+position = Vector2(200.333, 1863.92)
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="rot_pattern_shift" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/pattern"]
+position = Vector2(200.333, 1985.58)
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="led_pattern_on-off" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/pattern"]
+z_index = 21
+position = Vector2(216.667, 1626.67)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("17_adwf4")
+
+[node name="button_pattern_on-off" type="Button" parent="scrollcontainer/vbox/control/alligator/pattern"]
+layout_mode = 0
+offset_left = 148.667
+offset_top = 1608.92
+offset_right = 181.667
+offset_bottom = 1648.92
+theme_override_styles/normal = SubResource("StyleBoxFlat_k8837")
+
+[node name="button_shuffle" type="Button" parent="scrollcontainer/vbox/control/alligator/pattern"]
+z_index = 20
+layout_mode = 0
+offset_left = 147.0
+offset_top = 1675.58
+offset_right = 169.0
+offset_bottom = 1698.58
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jpp14")
+theme_override_styles/normal = SubResource("StyleBoxFlat_34otq")
+toggle_mode = true
+
+[node name="label_shuffle" type="Label" parent="scrollcontainer/vbox/control/alligator/pattern"]
+layout_mode = 0
+offset_left = 147.0
+offset_top = 1727.0
+offset_right = 225.0
+offset_bottom = 1771.0
+
+[node name="filter" type="Control" parent="scrollcontainer/vbox/control/alligator"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="rot_highpass_drive" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1179.5, 1644.75)
+scale = Vector2(1.32353, 1.42157)
+texture = ExtResource("22_kcj7y")
+
+[node name="rot_bandpass_drive" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1180.33, 1745.58)
+scale = Vector2(1.32353, 1.42157)
+texture = ExtResource("22_kcj7y")
+
+[node name="rot_lowpass_drive" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1180.33, 1847.25)
+scale = Vector2(1.32353, 1.42157)
+texture = ExtResource("22_kcj7y")
+
+[node name="rot_highpass_phaser" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1267, 1645.58)
+scale = Vector2(1.32353, 1.42157)
+texture = ExtResource("22_kcj7y")
+
+[node name="rot_bandpass_phaser" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1267, 1745.58)
+scale = Vector2(1.32353, 1.42157)
+texture = ExtResource("22_kcj7y")
+
+[node name="rot_lowpass_phaser" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1267, 1847.25)
+scale = Vector2(1.32353, 1.42157)
+texture = ExtResource("22_kcj7y")
+
+[node name="rot_highpass_delay" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1355.33, 1647.25)
+scale = Vector2(1.32353, 1.42157)
+texture = ExtResource("22_kcj7y")
+
+[node name="rot_bandpass_delay" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1355.33, 1747.25)
+scale = Vector2(1.32353, 1.42157)
+texture = ExtResource("22_kcj7y")
+
+[node name="rot_lowpass_delay" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1355.33, 1847.25)
+scale = Vector2(1.32353, 1.42157)
+texture = ExtResource("22_kcj7y")
+
+[node name="rot_highpass_pan" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1445.33, 1645.58)
+scale = Vector2(1.48602, 1.46667)
+texture = ExtResource("23_dtp5j")
+
+[node name="rot_bandpass_pan" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1445.33, 1747.25)
+scale = Vector2(1.48602, 1.46667)
+texture = ExtResource("23_dtp5j")
+
+[node name="rot_lowpass_pan" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1445.33, 1847.25)
+scale = Vector2(1.48602, 1.46667)
+texture = ExtResource("23_dtp5j")
+
+[node name="rot_highpass_vol" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1532, 1647.25)
+scale = Vector2(1.48602, 1.46667)
+texture = ExtResource("23_dtp5j")
+
+[node name="rot_bandpass_vol" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1532, 1747.25)
+scale = Vector2(1.48602, 1.46667)
+texture = ExtResource("23_dtp5j")
+
+[node name="rot_lowpass_vol" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1532, 1848.92)
+scale = Vector2(1.48602, 1.46667)
+texture = ExtResource("23_dtp5j")
+
+[node name="rot_filters_master_vol" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1635.33, 1748.92)
+scale = Vector2(1.48602, 1.46667)
+texture = ExtResource("23_dtp5j")
+
+[node name="rot_dry_ducking" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1355.33, 1973.92)
+scale = Vector2(1.32353, 1.42157)
+texture = ExtResource("22_kcj7y")
+
+[node name="rot_dry_pan" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1447, 1975.58)
+scale = Vector2(1.48602, 1.46667)
+texture = ExtResource("23_dtp5j")
+
+[node name="rot_dry_vol" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(1532, 1975.58)
+scale = Vector2(1.48602, 1.46667)
+texture = ExtResource("23_dtp5j")
+
+[node name="rot_lfo_highpass" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(738.332, 1646.42)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_lfo_bandpass" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(738.332, 1747.25)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_lfo_lowpass" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(738.332, 1850.59)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_env_highpass" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(999.999, 1648.08)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_env_bandpass" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(999.999, 1748.08)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_env_lowpass" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(999.999, 1848.08)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_freq-lowpass" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(827.498, 1846.42)
+rotation = -1.5708
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="rot_freq-bandpass" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(826.665, 1744.75)
+rotation = -1.5708
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="rot_freq-highpass" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(826.665, 1641.42)
+rotation = -1.5708
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="rot_res-highpass" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(914.999, 1644.75)
+rotation = -1.5708
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="rot_res-bandpass" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(914.999, 1746.42)
+rotation = -1.5708
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="rot_res-lowpass" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter"]
+position = Vector2(914.999, 1846.42)
+rotation = -1.5708
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="button_filter_high_pass_on" type="Button" parent="scrollcontainer/vbox/control/alligator/filter"]
+z_index = 20
+layout_mode = 0
+offset_left = 578.0
+offset_top = 1623.0
+offset_right = 600.0
+offset_bottom = 1646.0
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jpp14")
+theme_override_styles/normal = SubResource("StyleBoxFlat_34otq")
+toggle_mode = true
+
+[node name="button_filter_band_pass_on" type="Button" parent="scrollcontainer/vbox/control/alligator/filter"]
+z_index = 20
+layout_mode = 0
+offset_left = 578.0
+offset_top = 1723.0
+offset_right = 596.0
+offset_bottom = 1745.0
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jpp14")
+theme_override_styles/normal = SubResource("StyleBoxFlat_34otq")
+toggle_mode = true
+
+[node name="button_filter_low_pass_on" type="Button" parent="scrollcontainer/vbox/control/alligator/filter"]
+z_index = 20
+layout_mode = 0
+offset_left = 578.0
+offset_top = 1823.0
+offset_right = 598.0
+offset_bottom = 1843.0
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jpp14")
+theme_override_styles/normal = SubResource("StyleBoxFlat_34otq")
+toggle_mode = true
+
+[node name="gate" type="Control" parent="scrollcontainer/vbox/control/alligator"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="button_gate_highpass_on" type="Button" parent="scrollcontainer/vbox/control/alligator/gate"]
+layout_mode = 0
+offset_left = 380.0
+offset_top = 1627.0
+offset_right = 413.0
+offset_bottom = 1667.0
+
+[node name="button_gate_bandpass_on" type="Button" parent="scrollcontainer/vbox/control/alligator/gate"]
+layout_mode = 0
+offset_left = 380.333
+offset_top = 1728.92
+offset_right = 413.333
+offset_bottom = 1768.92
+
+[node name="button_gate_lowpass_on" type="Button" parent="scrollcontainer/vbox/control/alligator/gate"]
+layout_mode = 0
+offset_left = 380.333
+offset_top = 1830.58
+offset_right = 413.333
+offset_bottom = 1870.58
+
+[node name="led_gate_highpass" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/gate"]
+z_index = 21
+position = Vector2(468.667, 1645.58)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("17_adwf4")
+
+[node name="led_gate_bandpass" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/gate"]
+z_index = 21
+position = Vector2(468.667, 1745.58)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("17_adwf4")
+
+[node name="led_gate_lowpass" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/gate"]
+z_index = 21
+position = Vector2(468.667, 1845.58)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("17_adwf4")
+
+[node name="general_non_function_labels" type="Control" parent="scrollcontainer/vbox/control/alligator"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="1-2-sec" type="Label" parent="scrollcontainer/vbox/control/alligator/general_non_function_labels"]
+layout_mode = 0
+offset_left = 130.333
+offset_top = 1815.58
+offset_right = 170.333
+offset_bottom = 1840.58
+theme_override_colors/font_color = Color(0.136826, 0.136826, 0.136826, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 19
+text = "1/2"
+
+[node name="1-4-sec" type="Label" parent="scrollcontainer/vbox/control/alligator/general_non_function_labels"]
+layout_mode = 0
+offset_left = 182.0
+offset_top = 1793.92
+offset_right = 222.0
+offset_bottom = 1818.92
+theme_override_colors/font_color = Color(0.136826, 0.136826, 0.136826, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 19
+text = "1/4"
+
+[node name="1-8-sec" type="Label" parent="scrollcontainer/vbox/control/alligator/general_non_function_labels"]
+layout_mode = 0
+offset_left = 237.0
+offset_top = 1817.25
+offset_right = 277.0
+offset_bottom = 1842.25
+theme_override_colors/font_color = Color(0.136826, 0.136826, 0.136826, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 19
+text = "1/8"
+
+[node name="1-16-sec" type="Label" parent="scrollcontainer/vbox/control/alligator/general_non_function_labels"]
+layout_mode = 0
+offset_left = 247.0
+offset_top = 1850.58
+offset_right = 293.0
+offset_bottom = 1875.58
+theme_override_colors/font_color = Color(0.136826, 0.136826, 0.136826, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 19
+text = "1/16"
+
+[node name="1-16-sec2" type="Label" parent="scrollcontainer/vbox/control/alligator/general_non_function_labels"]
+layout_mode = 0
+offset_left = 182.0
+offset_top = 1918.92
+offset_right = 228.0
+offset_bottom = 1943.92
+theme_override_colors/font_color = Color(0.136826, 0.136826, 0.136826, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 19
+text = "SEC"
+
+[node name="1-sec" type="Label" parent="scrollcontainer/vbox/control/alligator/general_non_function_labels"]
+layout_mode = 0
+offset_left = 135.333
+offset_top = 1850.58
+offset_right = 150.333
+offset_bottom = 1875.58
+theme_override_colors/font_color = Color(0.136826, 0.136826, 0.136826, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 19
+text = "1"
+
+[node name="topbar" type="Control" parent="scrollcontainer/vbox/control/alligator"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="switch_on_bypass" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/topbar"]
+z_index = 22
+position = Vector2(105.333, 1510.58)
+scale = Vector2(1.42858, 1.33333)
+texture = ExtResource("2_rblm6")
+
+[node name="led_1_green" type="ColorRect" parent="scrollcontainer/vbox/control/alligator/topbar"]
+layout_mode = 0
+offset_left = 1328.33
+offset_top = 1519.33
+offset_right = 1350.33
+offset_bottom = 1527.33
+color = Color(0.32549, 0.964706, 0, 1)
+
+[node name="led_2_yellow" type="ColorRect" parent="scrollcontainer/vbox/control/alligator/topbar"]
+layout_mode = 0
+offset_left = 1328.33
+offset_top = 1508.91
+offset_right = 1350.33
+offset_bottom = 1516.91
+color = Color(0.960784, 0.960784, 0.00392157, 1)
+
+[node name="led_3_red" type="ColorRect" parent="scrollcontainer/vbox/control/alligator/topbar"]
+layout_mode = 0
+offset_left = 1328.33
+offset_top = 1497.25
+offset_right = 1350.33
+offset_bottom = 1505.25
+color = Color(1, 0.0313726, 0, 1)
+
+[node name="led_1_green2" type="ColorRect" parent="scrollcontainer/vbox/control/alligator/topbar"]
+layout_mode = 0
+offset_left = 201.665
+offset_top = 1519.33
+offset_right = 223.665
+offset_bottom = 1527.33
+color = Color(0.32549, 0.964706, 0, 1)
+
+[node name="led_2_yellow2" type="ColorRect" parent="scrollcontainer/vbox/control/alligator/topbar"]
+layout_mode = 0
+offset_left = 201.665
+offset_top = 1508.91
+offset_right = 223.665
+offset_bottom = 1516.91
+color = Color(0.960784, 0.960784, 0.00392157, 1)
+
+[node name="led_3_red2" type="ColorRect" parent="scrollcontainer/vbox/control/alligator/topbar"]
+layout_mode = 0
+offset_left = 201.665
+offset_top = 1498.92
+offset_right = 223.665
+offset_bottom = 1506.92
+color = Color(1, 0.0313726, 0, 1)
+
+[node name="lfo" type="Control" parent="scrollcontainer/vbox/control/alligator"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="button_lfo_sync" type="Button" parent="scrollcontainer/vbox/control/alligator/lfo"]
+z_index = 20
+layout_mode = 0
+offset_left = 683.0
+offset_top = 2093.0
+offset_right = 703.0
+offset_bottom = 2115.0
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jpp14")
+theme_override_styles/normal = SubResource("StyleBoxFlat_34otq")
+toggle_mode = true
+
+[node name="rot_freq" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/lfo"]
+position = Vector2(615.333, 2133.92)
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="label" type="Label" parent="scrollcontainer/vbox/control/alligator/lfo"]
+layout_mode = 0
+offset_left = 442.0
+offset_top = 2111.0
+offset_right = 519.0
+offset_bottom = 2154.0
+
+[node name="delay" type="Control" parent="scrollcontainer/vbox/control/alligator"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="button_delay_sync" type="Button" parent="scrollcontainer/vbox/control/alligator/delay"]
+z_index = 20
+layout_mode = 0
+offset_left = 1205.0
+offset_top = 2093.0
+offset_right = 1225.0
+offset_bottom = 2113.0
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jpp14")
+theme_override_styles/normal = SubResource("StyleBoxFlat_34otq")
+toggle_mode = true
+
+[node name="rot_delay_time" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/delay"]
+position = Vector2(1137, 2133.92)
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="rot_delay_feedback" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/delay"]
+position = Vector2(1290.33, 2133.92)
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="rot_delay_pan" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/delay"]
+position = Vector2(1383.67, 2133.92)
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="amp_env" type="Control" parent="scrollcontainer/vbox/control/alligator"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="rot_amp_env_a" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/amp_env"]
+position = Vector2(167, 2133.92)
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="rot_amp_env_d" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/amp_env"]
+position = Vector2(245.333, 2133.92)
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="rot_amp_env_r" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/amp_env"]
+position = Vector2(327, 2133.92)
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="filter_env" type="Control" parent="scrollcontainer/vbox/control/alligator"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="rot_filter_env_a" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter_env"]
+position = Vector2(818.667, 2133.92)
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="rot_filter_env_d" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter_env"]
+position = Vector2(900.333, 2133.92)
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="rot_filter_env_r" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/filter_env"]
+position = Vector2(982, 2133.92)
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="phaser" type="Control" parent="scrollcontainer/vbox/control/alligator"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="rot_phaser_rate" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/phaser"]
+position = Vector2(1518.67, 2133.92)
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="rot_phaser_fbk" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator/phaser"]
+position = Vector2(1613.67, 2133.92)
+scale = Vector2(1.38095, 1.42857)
+texture = ExtResource("22_056xh")
+
+[node name="label_display_top_bar" type="Label" parent="scrollcontainer/vbox/control/alligator"]
+z_index = 1
+layout_mode = 0
+offset_left = 675.0
+offset_top = 1494.0
+offset_right = 1150.0
+offset_bottom = 1531.0
+theme_override_colors/font_color = Color(8.08597e-06, 0.83784, 7.70092e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 0.839216, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("15_c6riy")
+theme_override_font_sizes/font_size = 35
+text = "Init Patch"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="display-background" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator"]
+position = Vector2(910.75, 1512.67)
+scale = Vector2(1.27309, 1.41667)
+texture = ExtResource("14_34otq")
+
+[node name="Aligator-logo" type="Sprite2D" parent="scrollcontainer/vbox/control/alligator"]
+position = Vector2(641.665, 1977.25)
+scale = Vector2(0.671497, 0.727477)
+texture = ExtResource("45_g2bq0")
+
+[node name="parrot" type="Control" parent="scrollcontainer/vbox/control"]
+anchors_preset = 0
+offset_left = 5.33473
+offset_top = 1380.0
+offset_right = 45.3347
+offset_bottom = 1420.0
+
+[node name="sampler-front" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(881.667, 2682)
+scale = Vector2(1.2967, 1.84333)
+texture = ExtResource("28_lkil8")
+
+[node name="outline_label_front" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_top = 2316.5
+offset_right = 1767.0
+offset_bottom = 3052.5
+theme_override_styles/normal = SubResource("StyleBoxFlat_a5wmf")
+clip_text = true
+
+[node name="outline_label6" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1116.67
+offset_top = 2716.17
+offset_right = 1498.67
+offset_bottom = 2828.17
+theme_override_styles/normal = SubResource("StyleBoxFlat_vpmdt")
+
+[node name="knob-roundings" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(146.167, 2500.83)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings2" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(213.333, 2501.17)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings3" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(281.667, 2501.17)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings4" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(350, 2500)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings5" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(418.333, 2500)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings6" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(150, 2633.33)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings7" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(216.667, 2633.33)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings8" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(285, 2633.33)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings9" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(353.333, 2633.33)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings10" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(421.667, 2633.33)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings11" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(150, 2770)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings12" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(216.667, 2770)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings13" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(285, 2770)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings14" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(353.333, 2770)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings15" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(421.667, 2770)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings16" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1166.67, 2500)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings17" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1235, 2500)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings18" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1303.33, 2500)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings19" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1371.67, 2500)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings20" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1440, 2500)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings21" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1168.33, 2635)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings22" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1236.67, 2635)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings23" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1303.33, 2635)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings24" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1371.67, 2635)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings25" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1440, 2635)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings26" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1168.33, 2770)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings27" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1235, 2770)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings28" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1303.33, 2770)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings29" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1371.67, 2770)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings30" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1440, 2770)
+scale = Vector2(1.03763, 1.11828)
+texture = ExtResource("29_dtp5j")
+
+[node name="knob-roundings31" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1595.83, 2780)
+scale = Vector2(2.33871, 2.36559)
+texture = ExtResource("29_dtp5j")
+
+[node name="sample1" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+z_index = 1
+layout_mode = 0
+offset_left = 551.667
+offset_top = 2442.83
+offset_right = 619.667
+offset_bottom = 2465.83
+theme_override_colors/font_color = Color(0.0687983, 0.0687983, 0.0687983, 1)
+theme_override_colors/font_outline_color = Color(0.197937, 0.197937, 0.197937, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u7lhm")
+text = "SAMPLE1"
+
+[node name="sample2" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+z_index = 1
+layout_mode = 0
+offset_left = 850.0
+offset_top = 2442.83
+offset_right = 918.0
+offset_bottom = 2465.83
+theme_override_colors/font_color = Color(0.0687983, 0.0687983, 0.0687983, 1)
+theme_override_colors/font_outline_color = Color(0.197937, 0.197937, 0.197937, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u7lhm")
+text = "SAMPLE2"
+
+[node name="sample3" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+z_index = 1
+layout_mode = 0
+offset_left = 555.0
+offset_top = 2651.17
+offset_right = 623.0
+offset_bottom = 2674.17
+theme_override_colors/font_color = Color(0.0687983, 0.0687983, 0.0687983, 1)
+theme_override_colors/font_outline_color = Color(0.197937, 0.197937, 0.197937, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u7lhm")
+text = "SAMPLE3"
+
+[node name="sample4" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+z_index = 1
+layout_mode = 0
+offset_left = 848.333
+offset_top = 2651.17
+offset_right = 916.333
+offset_bottom = 2674.17
+theme_override_colors/font_color = Color(0.0687983, 0.0687983, 0.0687983, 1)
+theme_override_colors/font_outline_color = Color(0.197937, 0.197937, 0.197937, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u7lhm")
+text = "SAMPLE4"
+
+[node name="sample5" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+z_index = 1
+layout_mode = 0
+offset_left = 556.667
+offset_top = 2864.5
+offset_right = 624.667
+offset_bottom = 2887.5
+theme_override_colors/font_color = Color(0.0687983, 0.0687983, 0.0687983, 1)
+theme_override_colors/font_outline_color = Color(0.197937, 0.197937, 0.197937, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u7lhm")
+text = "SAMPLE5"
+
+[node name="sample6" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+z_index = 1
+layout_mode = 0
+offset_left = 850.0
+offset_top = 2864.5
+offset_right = 918.0
+offset_bottom = 2887.5
+theme_override_colors/font_color = Color(0.0687983, 0.0687983, 0.0687983, 1)
+theme_override_colors/font_outline_color = Color(0.197937, 0.197937, 0.197937, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u7lhm")
+text = "SAMPLE6"
+
+[node name="sample1_rot_label" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 101.667
+offset_top = 2424.5
+offset_right = 169.667
+offset_bottom = 2447.5
+theme_override_colors/font_color = Color(0.0687983, 0.0687983, 0.0687983, 1)
+theme_override_colors/font_outline_color = Color(0.197937, 0.197937, 0.197937, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u7lhm")
+text = "SAMPLE1"
+
+[node name="outline_label" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 2444.17
+offset_right = 480.0
+offset_bottom = 2556.17
+theme_override_styles/normal = SubResource("StyleBoxFlat_vpmdt")
+
+[node name="sample1_rot_label2" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 102.0
+offset_top = 2559.5
+offset_right = 170.0
+offset_bottom = 2582.5
+theme_override_colors/font_color = Color(0.0687983, 0.0687983, 0.0687983, 1)
+theme_override_colors/font_outline_color = Color(0.197937, 0.197937, 0.197937, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u7lhm")
+text = "SAMPLE2"
+
+[node name="sample1_rot_label4" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1123.33
+offset_top = 2426.17
+offset_right = 1191.33
+offset_bottom = 2449.17
+theme_override_colors/font_color = Color(0.0687983, 0.0687983, 0.0687983, 1)
+theme_override_colors/font_outline_color = Color(0.197937, 0.197937, 0.197937, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u7lhm")
+text = "SAMPLE4"
+
+[node name="outline_label2" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 98.3334
+offset_top = 2579.17
+offset_right = 480.333
+offset_bottom = 2691.17
+theme_override_styles/normal = SubResource("StyleBoxFlat_vpmdt")
+
+[node name="sample1_rot_label3" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 102.0
+offset_top = 2694.5
+offset_right = 170.0
+offset_bottom = 2717.5
+theme_override_colors/font_color = Color(0.0687983, 0.0687983, 0.0687983, 1)
+theme_override_colors/font_outline_color = Color(0.197937, 0.197937, 0.197937, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u7lhm")
+text = "SAMPLE3"
+
+[node name="outline_label3" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 98.3334
+offset_top = 2714.17
+offset_right = 480.333
+offset_bottom = 2826.17
+theme_override_styles/normal = SubResource("StyleBoxFlat_vpmdt")
+
+[node name="outline_label4" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1116.67
+offset_top = 2446.17
+offset_right = 1498.67
+offset_bottom = 2558.17
+theme_override_styles/normal = SubResource("StyleBoxFlat_vpmdt")
+
+[node name="pad-unpressed" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(660.667, 2519.08)
+scale = Vector2(2.51389, 2.24419)
+texture = ExtResource("29_43adc")
+
+[node name="pad-unpressed2" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(952.334, 2519.08)
+scale = Vector2(2.48958, 2.2655)
+texture = ExtResource("29_43adc")
+
+[node name="pad-unpressed3" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(662.334, 2724.08)
+scale = Vector2(2.48958, 2.2655)
+texture = ExtResource("29_43adc")
+
+[node name="pad-unpressed4" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(952.334, 2725.74)
+scale = Vector2(2.48958, 2.2655)
+texture = ExtResource("29_43adc")
+
+[node name="pad-unpressed5" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(955.667, 2932.41)
+scale = Vector2(2.48958, 2.2655)
+texture = ExtResource("29_43adc")
+
+[node name="pad-unpressed6" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(662.334, 2932.41)
+scale = Vector2(2.48958, 2.2655)
+texture = ExtResource("29_43adc")
+
+[node name="pad-pressed" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(661.5, 2517.41)
+scale = Vector2(2.45705, 2.13483)
+texture = ExtResource("30_a5wmf")
+region_rect = Rect2(2.49, 2.49, 29333.3, 0)
+
+[node name="pad-pressed2" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+visible = false
+position = Vector2(953.333, 2518.33)
+scale = Vector2(2.45705, 2.13483)
+texture = ExtResource("30_a5wmf")
+region_rect = Rect2(2.49, 2.49, 29333.3, 0)
+
+[node name="pad-pressed3" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+visible = false
+position = Vector2(661.667, 2725)
+scale = Vector2(2.45705, 2.13483)
+texture = ExtResource("30_a5wmf")
+region_rect = Rect2(2.49, 2.49, 29333.3, 0)
+
+[node name="pad-pressed4" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+visible = false
+position = Vector2(953.333, 2725)
+scale = Vector2(2.45705, 2.13483)
+texture = ExtResource("30_a5wmf")
+region_rect = Rect2(2.49, 2.49, 29333.3, 0)
+
+[node name="pad-pressed5" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+visible = false
+position = Vector2(661.667, 2933.33)
+scale = Vector2(2.45705, 2.13483)
+texture = ExtResource("30_a5wmf")
+region_rect = Rect2(2.49, 2.49, 29333.3, 0)
+
+[node name="pad-pressed6" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+visible = false
+position = Vector2(955, 2933.33)
+scale = Vector2(2.45705, 2.13483)
+texture = ExtResource("30_a5wmf")
+region_rect = Rect2(2.49, 2.49, 29333.3, 0)
+
+[node name="rot_pitch_sample1" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(145, 2500.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_decay_sample1" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(213.333, 2500.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_pan_sample1" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(281.667, 2500.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_tone_sample1" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(350, 2500.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_level_sample1" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(418.333, 2500.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_pitch_sample4" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1166.67, 2500.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+script = ExtResource("44_f2m5g")
+
+[node name="rot_decay_sample4" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1235, 2500.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_pan_sample4" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1303.33, 2500.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_tone_sample4" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1371.67, 2500.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_level_sample4" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1440, 2500.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="sample5_label" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1123.33
+offset_top = 2561.17
+offset_right = 1191.33
+offset_bottom = 2584.17
+theme_override_colors/font_color = Color(0.0687983, 0.0687983, 0.0687983, 1)
+theme_override_colors/font_outline_color = Color(0.197937, 0.197937, 0.197937, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u7lhm")
+text = "SAMPLE5"
+
+[node name="outline_label_sample5" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1116.67
+offset_top = 2581.17
+offset_right = 1498.67
+offset_bottom = 2693.17
+theme_override_styles/normal = SubResource("StyleBoxFlat_vpmdt")
+
+[node name="rot_pitch_sample5" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1166.67, 2635.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_decay_sample5" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1235, 2635.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_pan_sample5" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1303.33, 2635.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_tone_sample5" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1371.67, 2635.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_level_sample5" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1440, 2635.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="sample1_rot_label6" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1123.33
+offset_top = 2696.17
+offset_right = 1191.33
+offset_bottom = 2719.17
+theme_override_colors/font_color = Color(0.0687983, 0.0687983, 0.0687983, 1)
+theme_override_colors/font_outline_color = Color(0.197937, 0.197937, 0.197937, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_styles/normal = SubResource("StyleBoxFlat_u7lhm")
+text = "SAMPLE6"
+
+[node name="rot_noname26" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1166.67, 2770.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_noname27" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1235, 2770.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_noname28" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1303.33, 2770.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_noname29" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1371.67, 2770.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_noname30" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1440, 2770.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_noname11" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(148.333, 2633.67)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_noname12" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(216.667, 2633.67)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_noname13" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(285, 2633.67)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_noname14" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(353.333, 2633.67)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_noname15" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(421.667, 2633.67)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_noname16" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(148.333, 2770.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_noname17" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(216.667, 2770.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_noname18" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(285, 2770.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_noname19" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(353.333, 2770.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="rot_noname20" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(421.667, 2770.33)
+scale = Vector2(1.35417, 1.45161)
+texture = ExtResource("21_dvntt")
+
+[node name="parrot" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1333.33, 2926.17)
+texture = ExtResource("31_8hmit")
+
+[node name="device-type-ex-label" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(41.6666, 2753.67)
+scale = Vector2(2.22222, 1.66667)
+texture = ExtResource("32_ax5q8")
+
+[node name="sampler" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1175.0
+offset_top = 2969.5
+offset_right = 1490.0
+offset_bottom = 3002.5
+theme_override_colors/font_color = Color(0.0687983, 0.0687983, 0.0687983, 1)
+theme_override_colors/font_outline_color = Color(0.197937, 0.197937, 0.197937, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 25
+theme_override_styles/normal = SubResource("StyleBoxFlat_u7lhm")
+text = "Six samples sampler"
+
+[node name="sampler2" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 13.9999
+offset_top = 2835.0
+offset_right = 172.0
+offset_bottom = 2891.0
+rotation = -1.5708
+theme_override_colors/font_color = Color(0.0687983, 0.0687983, 0.0687983, 1)
+theme_override_colors/font_outline_color = Color(0.197937, 0.197937, 0.197937, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("34_lkil8")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = SubResource("StyleBoxFlat_u7lhm")
+text = "SAMPLER"
+
+[node name="parrot-clipart" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(303.333, 2941.17)
+scale = Vector2(1.19808, 0.495208)
+texture = ExtResource("33_e5v56")
+
+[node name="label_display_top_bar" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+z_index = 1
+layout_mode = 0
+offset_left = 669.0
+offset_top = 2340.0
+offset_right = 1150.0
+offset_bottom = 2390.0
+theme_override_colors/font_color = Color(8.08597e-06, 0.83784, 7.70092e-07, 1)
+theme_override_colors/font_outline_color = Color(0, 0.839216, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("15_c6riy")
+theme_override_font_sizes/font_size = 35
+text = "Init Patch"
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="selectbuttongrey" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1553.33, 2530)
+scale = Vector2(3.20175, 2.75)
+texture = ExtResource("37_ax5q8")
+
+[node name="selectbuttongrey2" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1630, 2530)
+scale = Vector2(3.20175, 2.75)
+texture = ExtResource("37_ax5q8")
+
+[node name="selectbuttongrey3" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1553.33, 2596.67)
+scale = Vector2(3.20175, 2.75)
+texture = ExtResource("37_ax5q8")
+
+[node name="selectbuttongrey4" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1630, 2596.67)
+scale = Vector2(3.20175, 2.75)
+texture = ExtResource("37_ax5q8")
+
+[node name="selectbuttongrey5" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1553.75, 2662.5)
+scale = Vector2(3.20175, 2.75)
+texture = ExtResource("37_ax5q8")
+
+[node name="selectbuttongrey6" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1630.42, 2662.5)
+scale = Vector2(3.20175, 2.75)
+texture = ExtResource("37_ax5q8")
+
+[node name="display-background" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(909.167, 2365)
+scale = Vector2(1.27968, 1.66666)
+texture = ExtResource("14_34otq")
+
+[node name="nav-button" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1591.67, 2456.67)
+scale = Vector2(1.63636, 1.58975)
+texture = ExtResource("38_e5v56")
+
+[node name="selectbuttonyellow" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1553.58, 2529.42)
+scale = Vector2(3.13158, 2.86842)
+texture = ExtResource("39_k8837")
+
+[node name="selectbuttonyellow2" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+visible = false
+position = Vector2(1553.33, 2595)
+scale = Vector2(3.13158, 2.86842)
+texture = ExtResource("39_k8837")
+
+[node name="selectbuttonyellow3" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+visible = false
+position = Vector2(1553.33, 2661.67)
+scale = Vector2(3.13158, 2.86842)
+texture = ExtResource("39_k8837")
+
+[node name="selectbuttonyellow4" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+visible = false
+position = Vector2(1630, 2530)
+scale = Vector2(3.13158, 2.86842)
+texture = ExtResource("39_k8837")
+
+[node name="selectbuttonyellow5" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+visible = false
+position = Vector2(1630, 2595)
+scale = Vector2(3.13158, 2.86842)
+texture = ExtResource("39_k8837")
+
+[node name="selectbuttonyellow6" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+visible = false
+position = Vector2(1630, 2661.67)
+scale = Vector2(3.13158, 2.86842)
+texture = ExtResource("39_k8837")
+
+[node name="label_1" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+z_index = 46
+layout_mode = 0
+offset_left = 1543.33
+offset_top = 2508.33
+offset_right = 1565.33
+offset_bottom = 2552.33
+theme_override_colors/font_color = Color(0.118581, 0.118581, 0.118581, 1)
+theme_override_font_sizes/font_size = 31
+text = "1"
+
+[node name="label_2" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+z_index = 46
+layout_mode = 0
+offset_left = 1620.0
+offset_top = 2508.33
+offset_right = 1642.0
+offset_bottom = 2552.33
+theme_override_colors/font_color = Color(0.118581, 0.118581, 0.118581, 1)
+theme_override_font_sizes/font_size = 31
+text = "2"
+
+[node name="label_3" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+z_index = 46
+layout_mode = 0
+offset_left = 1545.0
+offset_top = 2573.33
+offset_right = 1567.0
+offset_bottom = 2617.33
+theme_override_colors/font_color = Color(0.118581, 0.118581, 0.118581, 1)
+theme_override_font_sizes/font_size = 31
+text = "3"
+
+[node name="label_4" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+z_index = 46
+layout_mode = 0
+offset_left = 1620.0
+offset_top = 2573.33
+offset_right = 1642.0
+offset_bottom = 2617.33
+theme_override_colors/font_color = Color(0.118581, 0.118581, 0.118581, 1)
+theme_override_font_sizes/font_size = 31
+text = "4"
+
+[node name="label_5" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+z_index = 46
+layout_mode = 0
+offset_left = 1545.0
+offset_top = 2638.33
+offset_right = 1567.0
+offset_bottom = 2682.33
+theme_override_colors/font_color = Color(0.118581, 0.118581, 0.118581, 1)
+theme_override_font_sizes/font_size = 31
+text = "5"
+
+[node name="label_6" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+z_index = 46
+layout_mode = 0
+offset_left = 1623.33
+offset_top = 2638.33
+offset_right = 1645.33
+offset_bottom = 2682.33
+theme_override_colors/font_color = Color(0.118581, 0.118581, 0.118581, 1)
+theme_override_font_sizes/font_size = 31
+text = "6"
+
+[node name="label_load" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1570.0
+offset_top = 2476.67
+offset_right = 1614.0
+offset_bottom = 2500.67
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.0475577, 0.0475576, 0.0475576, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 18
+text = "LOAD"
+
+[node name="label_pitch_sample1" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 121.667
+offset_top = 2446.67
+offset_right = 170.667
+offset_bottom = 2469.67
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "PITCH"
+
+[node name="label_decay_sample1" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 188.333
+offset_top = 2446.67
+offset_right = 237.333
+offset_bottom = 2469.67
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "DECAY"
+
+[node name="label_pan_sample1" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 265.0
+offset_top = 2446.67
+offset_right = 314.0
+offset_bottom = 2469.67
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "PAN"
+
+[node name="label_tone_sample1" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 330.0
+offset_top = 2446.67
+offset_right = 379.0
+offset_bottom = 2469.67
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "TONE"
+
+[node name="label_level_sample1" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 398.333
+offset_top = 2446.67
+offset_right = 447.333
+offset_bottom = 2469.67
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "LEVEL"
+
+[node name="label_pitch_sample2" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 126.667
+offset_top = 2581.67
+offset_right = 175.667
+offset_bottom = 2604.67
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "PITCH"
+
+[node name="label_decay_sample2" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 193.333
+offset_top = 2581.67
+offset_right = 242.333
+offset_bottom = 2604.67
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "DECAY"
+
+[node name="label_pan_sample2" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 270.0
+offset_top = 2581.67
+offset_right = 319.0
+offset_bottom = 2604.67
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "PAN"
+
+[node name="label_tone_sample2" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 335.0
+offset_top = 2581.67
+offset_right = 384.0
+offset_bottom = 2604.67
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "TONE"
+
+[node name="label_level_sample2" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 403.333
+offset_top = 2581.67
+offset_right = 452.333
+offset_bottom = 2604.67
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "LEVEL"
+
+[node name="label_pitch_sample3" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 126.667
+offset_top = 2716.67
+offset_right = 175.667
+offset_bottom = 2739.67
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "PITCH"
+
+[node name="label_decay_sample3" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 193.333
+offset_top = 2716.67
+offset_right = 242.333
+offset_bottom = 2739.67
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "DECAY"
+
+[node name="label_pan_sample3" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 270.0
+offset_top = 2716.67
+offset_right = 319.0
+offset_bottom = 2739.67
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "PAN"
+
+[node name="label_tone_sample3" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 335.0
+offset_top = 2716.67
+offset_right = 384.0
+offset_bottom = 2739.67
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "TONE"
+
+[node name="label_level_sample3" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 403.333
+offset_top = 2716.67
+offset_right = 452.333
+offset_bottom = 2739.67
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "LEVEL"
+
+[node name="label_pitch_sample4" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1141.67
+offset_top = 2448.33
+offset_right = 1190.67
+offset_bottom = 2471.33
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "PITCH"
+
+[node name="label_decay_sample4" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1208.33
+offset_top = 2448.33
+offset_right = 1257.33
+offset_bottom = 2471.33
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "DECAY"
+
+[node name="label_pan_sample4" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1285.0
+offset_top = 2448.33
+offset_right = 1334.0
+offset_bottom = 2471.33
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "PAN"
+
+[node name="label_tone_sample4" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1350.0
+offset_top = 2448.33
+offset_right = 1399.0
+offset_bottom = 2471.33
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "TONE"
+
+[node name="label_level_sample4" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1418.33
+offset_top = 2448.33
+offset_right = 1467.33
+offset_bottom = 2471.33
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "LEVEL"
+
+[node name="label_pitch_sample5" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1141.67
+offset_top = 2583.33
+offset_right = 1190.67
+offset_bottom = 2606.33
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "PITCH"
+
+[node name="label_decay_sample5" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1208.33
+offset_top = 2583.33
+offset_right = 1257.33
+offset_bottom = 2606.33
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "DECAY"
+
+[node name="label_pan_sample5" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1285.0
+offset_top = 2583.33
+offset_right = 1334.0
+offset_bottom = 2606.33
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "PAN"
+
+[node name="label_tone_sample5" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1350.0
+offset_top = 2583.33
+offset_right = 1399.0
+offset_bottom = 2606.33
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "TONE"
+
+[node name="label_level_sample5" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1418.33
+offset_top = 2583.33
+offset_right = 1467.33
+offset_bottom = 2606.33
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "LEVEL"
+
+[node name="label_pitch_sample6" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1141.67
+offset_top = 2718.33
+offset_right = 1190.67
+offset_bottom = 2741.33
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "PITCH"
+
+[node name="label_decay_sample6" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1208.33
+offset_top = 2718.33
+offset_right = 1257.33
+offset_bottom = 2741.33
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "DECAY"
+
+[node name="label_pan_sample6" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1285.0
+offset_top = 2718.33
+offset_right = 1334.0
+offset_bottom = 2741.33
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "PAN"
+
+[node name="label_tone_sample6" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1350.0
+offset_top = 2718.33
+offset_right = 1399.0
+offset_bottom = 2741.33
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "TONE"
+
+[node name="label_level_sample6" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1418.33
+offset_top = 2718.33
+offset_right = 1467.33
+offset_bottom = 2741.33
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "LEVEL"
+
+[node name="label_level_sample7" type="Label" parent="scrollcontainer/vbox/control/parrot"]
+layout_mode = 0
+offset_left = 1541.67
+offset_top = 2851.67
+offset_right = 1657.67
+offset_bottom = 2874.67
+theme_override_colors/font_color = Color(0.0605303, 0.0605303, 0.0605303, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("23_056xh")
+text = "MASTER LEVEL"
+
+[node name="rot_master_level" type="Sprite2D" parent="scrollcontainer/vbox/control/parrot"]
+position = Vector2(1595, 2776.67)
+scale = Vector2(1.75287, 1.63842)
+texture = ExtResource("18_1fxtp")
+
+[node name="vintage2" type="Control" parent="scrollcontainer/vbox/control"]
+anchors_preset = 0
+offset_left = -16.6667
+offset_top = 1218.33
+offset_right = 23.3333
+offset_bottom = 1258.33
+
+[node name="rot_noisegate" type="Sprite2D" parent="scrollcontainer/vbox/control/vintage2"]
+z_index = 4
+position = Vector2(306.668, 672.75)
+scale = Vector2(1.66667, 1.66667)
+texture = ExtResource("13_rblm6")
+
+[node name="rot_filter_bands" type="Sprite2D" parent="scrollcontainer/vbox/control/vintage2"]
+position = Vector2(147.335, 740.583)
+scale = Vector2(1.40805, 1.4548)
+texture = ExtResource("18_1fxtp")
+
+[node name="fader_spectral_spread" type="Sprite2D" parent="scrollcontainer/vbox/control/vintage2"]
+z_index = 4
+position = Vector2(602.917, 924.792)
+scale = Vector2(1.83333, 2.85256)
+texture = ExtResource("11_8wvhk")
+script = ExtResource("47_kqem8")
+
+[node name="led-fader_spectral_spread" type="Sprite2D" parent="scrollcontainer/vbox/control/vintage2/fader_spectral_spread"]
+z_index = 5
+position = Vector2(0.227221, 0.0730451)
+rotation = -1.5708
+scale = Vector2(0.587635, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="fader_mic_dry" type="Sprite2D" parent="scrollcontainer/vbox/control/vintage2"]
+z_index = 4
+position = Vector2(1514.17, 808.75)
+scale = Vector2(2.55555, 2.37179)
+texture = ExtResource("11_8wvhk")
+script = ExtResource("51_517gk")
+
+[node name="led-fader_mic_dry" type="Sprite2D" parent="scrollcontainer/vbox/control/vintage2/fader_mic_dry"]
+z_index = 5
+position = Vector2(0.450043, 0.5271)
+scale = Vector2(0.587635, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="fader_synth_carrier" type="Sprite2D" parent="scrollcontainer/vbox/control/vintage2"]
+z_index = 4
+position = Vector2(1596.67, 808.333)
+scale = Vector2(2.55555, 2.37179)
+texture = ExtResource("11_8wvhk")
+script = ExtResource("54_6r5jr")
+
+[node name="led-fader_synth_carrier" type="Sprite2D" parent="scrollcontainer/vbox/control/vintage2/fader_synth_carrier"]
+z_index = 5
+position = Vector2(3.8147e-06, 0.702712)
+scale = Vector2(0.587635, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="fader_vocoder_robot" type="Sprite2D" parent="scrollcontainer/vbox/control/vintage2"]
+z_index = 4
+position = Vector2(1673.33, 808.333)
+scale = Vector2(2.55555, 2.37179)
+texture = ExtResource("11_8wvhk")
+script = ExtResource("55_f2m5g")
+
+[node name="led-fader_vocoder_robot" type="Sprite2D" parent="scrollcontainer/vbox/control/vintage2/fader_vocoder_robot"]
+z_index = 5
+position = Vector2(0.450043, 0.5271)
+scale = Vector2(0.587635, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="knop-klein-wit16" type="Sprite2D" parent="scrollcontainer/vbox/control/vintage2"]
+z_index = 4
+position = Vector2(100.833, 871.667)
+scale = Vector2(1.66667, 1.92308)
+texture = ExtResource("11_ogcfe")
+
+[node name="knop-klein-wit7" type="Sprite2D" parent="scrollcontainer/vbox/control/vintage2"]
+z_index = 4
+position = Vector2(188.333, 871.667)
+scale = Vector2(1.66667, 1.92308)
+texture = ExtResource("11_ogcfe")
+
+[node name="knop-klein-wit6" type="Sprite2D" parent="scrollcontainer/vbox/control/vintage2"]
+z_index = 4
+position = Vector2(306.458, 926.875)
+scale = Vector2(1.45325, 1.44231)
+texture = ExtResource("11_ogcfe")
+
+[node name="knop-klein-wit8" type="Sprite2D" parent="scrollcontainer/vbox/control/vintage2"]
+z_index = 4
+position = Vector2(413.333, 926.667)
+scale = Vector2(1.45325, 1.44231)
+texture = ExtResource("11_ogcfe")
+
+[node name="knop-klein-wit9" type="Sprite2D" parent="scrollcontainer/vbox/control/vintage2"]
+z_index = 4
+position = Vector2(525, 926.667)
+scale = Vector2(1.45325, 1.44231)
+texture = ExtResource("11_ogcfe")
+
+[node name="the-well" type="Control" parent="scrollcontainer/vbox/control"]
+anchors_preset = 0
+offset_left = -16.6667
+offset_top = 855.0
+offset_right = 23.3333
+offset_bottom = 895.0
+
+[node name="TemplateFrontplaatMixerProject" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(897.5, 570.417)
+scale = Vector2(1.83402, 1.59001)
+texture = ExtResource("61_j33au")
+
+[node name="Display-background_Channel_select" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1008.84, 346.667)
+scale = Vector2(2.25423, 2.275)
+texture = ExtResource("14_34otq")
+
+[node name="Label" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.475
+anchor_top = 9.24167
+anchor_right = 2.675
+anchor_bottom = 9.81667
+offset_left = 26.0
+offset_top = 55.0
+offset_right = 151.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 33
+theme_override_styles/normal = SubResource("StyleBoxFlat_1b1nu")
+text = "MODE"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 2.975
+anchor_top = 9.26667
+anchor_right = 5.875
+anchor_bottom = 9.84167
+offset_left = 154.0
+offset_top = 55.0
+offset_right = 323.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 33
+theme_override_styles/normal = SubResource("StyleBoxFlat_1b1nu")
+text = "DELAY"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label3" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 6.15
+anchor_top = 9.21667
+anchor_right = 10.025
+anchor_bottom = 9.79167
+offset_left = 327.0
+offset_top = 55.0
+offset_right = 496.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 33
+theme_override_styles/normal = SubResource("StyleBoxFlat_1b1nu")
+text = "FEEDBACK"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label4" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 10.175
+anchor_top = 9.21667
+anchor_right = 14.175
+anchor_bottom = 9.79167
+offset_left = 503.0
+offset_top = 55.0
+offset_right = 672.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 33
+theme_override_styles/normal = SubResource("StyleBoxFlat_1b1nu")
+text = "COLOR"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label5" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 14.3
+anchor_top = 9.21667
+anchor_right = 16.8
+anchor_bottom = 9.79167
+offset_left = 678.0
+offset_top = 55.0
+offset_right = 847.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 33
+theme_override_styles/normal = SubResource("StyleBoxFlat_1b1nu")
+text = "MODULATION"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label6" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 16.875
+anchor_top = 9.21667
+anchor_right = 19.85
+anchor_bottom = 9.89167
+offset_left = 853.0
+offset_top = 55.0
+offset_right = 949.0
+offset_bottom = 80.0
+theme_override_font_sizes/font_size = 33
+theme_override_styles/normal = SubResource("StyleBoxFlat_1b1nu")
+text = "OUTPUT"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="schakelaar" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 130
+position = Vector2(58.8334, 328.875)
+scale = Vector2(2.30952, 2.15)
+texture = ExtResource("2_rblm6")
+
+[node name="Schakelaar-achtergrond" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3
+anchor_top = 7.49167
+anchor_right = 0.7
+anchor_bottom = 8.96667
+offset_left = 28.0
+offset_top = 11.0
+offset_right = 52.0
+offset_bottom = 45.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_l8adc")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label7" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.725
+anchor_top = 7.56667
+anchor_right = 2.075
+anchor_bottom = 8.16667
+offset_left = 56.0
+offset_top = 12.0
+offset_right = 114.0
+offset_bottom = 28.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 31
+text = "Bypass"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label8" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.85
+anchor_top = 8.325
+anchor_right = 0.85
+anchor_bottom = 8.975
+offset_left = 56.0
+offset_top = 27.0
+offset_right = 114.0
+offset_bottom = 43.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 32
+text = "On"
+metadata/_edit_use_anchors_ = true
+
+[node name="Selectors" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1525, 345.834)
+scale = Vector2(1.53287, 1.62698)
+texture = ExtResource("62_8oyj7")
+
+[node name="Labelbackground modules" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.55
+anchor_top = 9.84167
+anchor_right = 2.65
+anchor_bottom = 11.9167
+offset_left = 26.0
+offset_top = 80.0
+offset_right = 151.0
+offset_bottom = 330.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jiyfo")
+metadata/_edit_use_anchors_ = true
+
+[node name="Labelbackground modules2" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 2.95
+anchor_top = 9.84167
+anchor_right = 5.875
+anchor_bottom = 11.9667
+offset_left = 157.0
+offset_top = 80.0
+offset_right = 323.0
+offset_bottom = 330.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jiyfo")
+metadata/_edit_use_anchors_ = true
+
+[node name="Labelbackground modules3" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 6.15
+anchor_top = 9.84167
+anchor_right = 10.025
+anchor_bottom = 11.8417
+offset_left = 329.0
+offset_top = 80.0
+offset_right = 496.0
+offset_bottom = 330.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jiyfo")
+metadata/_edit_use_anchors_ = true
+
+[node name="Labelbackground modules4" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 10.25
+anchor_top = 9.84167
+anchor_right = 14.175
+anchor_bottom = 11.8667
+offset_left = 503.0
+offset_top = 80.0
+offset_right = 672.0
+offset_bottom = 330.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jiyfo")
+metadata/_edit_use_anchors_ = true
+
+[node name="Labelbackground modules5" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 14.325
+anchor_top = 9.79167
+anchor_right = 16.825
+anchor_bottom = 11.9167
+offset_left = 679.0
+offset_top = 80.0
+offset_right = 846.0
+offset_bottom = 330.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jiyfo")
+metadata/_edit_use_anchors_ = true
+
+[node name="Labelbackground modules6" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 16.9
+anchor_top = 9.74167
+anchor_right = 19.9
+anchor_bottom = 11.9417
+offset_left = 854.0
+offset_top = 80.0
+offset_right = 949.0
+offset_bottom = 330.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_jiyfo")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-darker-background" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 6.15
+anchor_top = 10.4667
+anchor_right = 10.05
+anchor_bottom = 11.9667
+offset_left = 329.0
+offset_top = 211.0
+offset_right = 496.0
+offset_bottom = 330.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_fjcrc")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label_fader-bg" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.341667
+anchor_top = 11.8167
+anchor_right = 2.69167
+anchor_bottom = 11.8167
+offset_left = 38.0
+offset_top = 274.0
+offset_right = 134.0
+offset_bottom = 303.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_m8ice")
+metadata/_edit_use_anchors_ = true
+
+[node name="fader-mode" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 4
+position = Vector2(73.3333, 761.667)
+scale = Vector2(0.924799, 0.955126)
+texture = ExtResource("11_ogcfe")
+
+[node name="VierkantKnopje" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(205, 665)
+scale = Vector2(1.80631, 1.71622)
+texture = ExtResource("63_o750p")
+
+[node name="VierkantKnopje2" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(311.667, 675.75)
+scale = Vector2(1.44144, 1.31081)
+texture = ExtResource("63_o750p")
+
+[node name="VierkantKnopje3" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(466.667, 676.667)
+scale = Vector2(1.44144, 1.35586)
+texture = ExtResource("63_o750p")
+
+[node name="VierkantKnopje4" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(340, 745)
+scale = Vector2(1.13288, 1.04279)
+texture = ExtResource("63_o750p")
+
+[node name="VierkantKnopje5" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 1
+position = Vector2(866.667, 658.334)
+scale = Vector2(1.13288, 1.04279)
+texture = ExtResource("63_o750p")
+
+[node name="VierkantKnopje6" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 1
+position = Vector2(1206.67, 658.334)
+scale = Vector2(1.17455, 1.06194)
+texture = ExtResource("63_o750p")
+
+[node name="schakelaar2" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 130
+position = Vector2(80, 505.209)
+scale = Vector2(2.61905, 2.41667)
+texture = ExtResource("2_rblm6")
+
+[node name="Schakelaar-achtergrond2" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.625
+anchor_top = 9.61667
+anchor_right = 0.95
+anchor_bottom = 10.8667
+offset_left = 38.0
+offset_top = 99.0
+offset_right = 63.0
+offset_bottom = 155.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_l8adc")
+metadata/_edit_use_anchors_ = true
+
+[node name="schakelaar3" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 130
+position = Vector2(1109.33, 513.542)
+scale = Vector2(1.7619, 1.75)
+texture = ExtResource("2_rblm6")
+
+[node name="Schakelaar-achtergrond3" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 12.6
+anchor_top = 9.84167
+anchor_right = 12.775
+anchor_bottom = 10.5167
+offset_left = 591.0
+offset_top = 103.0
+offset_right = 616.0
+offset_bottom = 178.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_l8adc")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-mode-schakelaar-text" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.15
+anchor_top = 9.61667
+anchor_right = 1.7
+anchor_bottom = 9.94167
+offset_left = 69.0
+offset_top = 102.0
+offset_right = 127.0
+offset_bottom = 118.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "NORMAL"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-mode-schakelaar-text2" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.09167
+anchor_top = 10.0583
+anchor_right = 2.44167
+anchor_bottom = 10.3833
+offset_left = 68.0
+offset_top = 121.0
+offset_right = 133.0
+offset_bottom = 137.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "TRIGGERED"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-mode-schakelaar-text3" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.15
+anchor_top = 10.4833
+anchor_right = 1.15
+anchor_bottom = 10.8083
+offset_left = 69.0
+offset_top = 139.0
+offset_right = 134.0
+offset_bottom = 155.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "RDLL"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-mode-schakelaar-text4" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.825
+anchor_top = 12.0417
+anchor_right = 2.35
+anchor_bottom = 12.3667
+offset_left = 107.0
+offset_top = 220.0
+offset_right = 139.0
+offset_bottom = 236.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "TRIG"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-0" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.383333
+anchor_top = 11.6917
+anchor_right = 0.483333
+anchor_bottom = 12.0167
+offset_left = 53.0
+offset_top = 309.0
+offset_right = 62.0
+offset_bottom = 325.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "0"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-rdll" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 2.2
+anchor_top = 11.6917
+anchor_right = 2.8
+anchor_bottom = 12.0167
+offset_left = 102.0
+offset_top = 309.0
+offset_right = 131.0
+offset_bottom = 325.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "RDLL"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-time" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 3.2
+anchor_top = 10.4
+anchor_right = 3.8
+anchor_bottom = 10.725
+offset_left = 192.0
+offset_top = 184.0
+offset_right = 221.0
+offset_bottom = 200.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "TIME"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-offset R" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 4.70833
+anchor_top = 10.375
+anchor_right = 5.93333
+anchor_bottom = 10.7
+offset_left = 255.0
+offset_top = 185.0
+offset_right = 313.0
+offset_bottom = 201.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "OFFSET R"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-keep-pitch" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 3.35833
+anchor_top = 10.9
+anchor_right = 3.55833
+anchor_bottom = 12.025
+offset_left = 209.0
+offset_top = 209.0
+offset_right = 267.0
+offset_bottom = 225.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "KEEP
+PITCH"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-keep-sync" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 5.11667
+anchor_top = 11.2417
+anchor_right = 5.71667
+anchor_bottom = 11.5667
+offset_left = 292.0
+offset_top = 212.0
+offset_right = 321.0
+offset_bottom = 228.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "SYNC"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-PINGPONG" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 2.93333
+anchor_top = 11.6167
+anchor_right = 4.28333
+anchor_bottom = 11.9417
+offset_left = 171.0
+offset_top = 312.0
+offset_right = 236.0
+offset_bottom = 328.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "PING-PONG"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-pan" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 4.31667
+anchor_top = 11.5917
+anchor_right = 5.01667
+anchor_bottom = 11.9167
+offset_left = 254.0
+offset_top = 313.0
+offset_right = 319.0
+offset_bottom = 329.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "L PAN R"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-offset R2" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 8.40833
+anchor_top = 10.4
+anchor_right = 9.63333
+anchor_bottom = 10.725
+offset_left = 432.0
+offset_top = 184.0
+offset_right = 490.0
+offset_bottom = 200.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "OFFSET R"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-feedback" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 6.55
+anchor_top = 10.4
+anchor_right = 7.75
+anchor_bottom = 10.725
+offset_left = 353.0
+offset_top = 184.0
+offset_right = 411.0
+offset_bottom = 200.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "FEEDBACK"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-diffuse" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 7.70833
+anchor_top = 10.4833
+anchor_right = 8.58333
+anchor_bottom = 10.8083
+offset_left = 385.0
+offset_top = 219.0
+offset_right = 443.0
+offset_bottom = 235.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "DIFFUSE"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-filter" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 11.875
+anchor_top = 10.4417
+anchor_right = 12.425
+anchor_bottom = 10.7667
+offset_left = 560.0
+offset_top = 219.0
+offset_right = 618.0
+offset_bottom = 235.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "FILTER"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-drive" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 10.25
+anchor_top = 9.48334
+anchor_right = 10.8
+anchor_bottom = 9.80834
+offset_left = 560.0
+offset_top = 219.0
+offset_right = 618.0
+offset_bottom = 235.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "DRIVE"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-lfo" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 15.4167
+anchor_top = 10.3583
+anchor_right = 15.4167
+anchor_bottom = 10.6833
+offset_left = 745.0
+offset_top = 219.0
+offset_right = 803.0
+offset_bottom = 235.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "LFO"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-dry-wet" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 17.8333
+anchor_top = 10.75
+anchor_right = 19.4583
+anchor_bottom = 11.125
+offset_left = 870.0
+offset_top = 175.0
+offset_right = 935.0
+offset_bottom = 191.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 24
+text = "DRY / WET"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-ducking" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 17.9333
+anchor_top = 9.95
+anchor_right = 18.7333
+anchor_bottom = 10.3
+offset_left = 876.0
+offset_top = 247.0
+offset_right = 941.0
+offset_bottom = 263.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 23
+text = "DUCKING"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-freq" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 11.2083
+anchor_top = 13.0083
+anchor_right = 11.2083
+anchor_bottom = 13.3333
+offset_left = 530.0
+offset_top = 248.0
+offset_right = 588.0
+offset_bottom = 264.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "FREQ"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-reso" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 12.6667
+anchor_top = 13.0083
+anchor_right = 12.6667
+anchor_bottom = 13.3333
+offset_left = 610.0
+offset_top = 248.0
+offset_right = 668.0
+offset_bottom = 264.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "RESO"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-rate" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 14.6667
+anchor_top = 13.05
+anchor_right = 14.6667
+anchor_bottom = 13.375
+offset_left = 705.0
+offset_top = 248.0
+offset_right = 763.0
+offset_bottom = 264.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "RATE"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-spread" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 7.05
+anchor_top = 13.05
+anchor_right = 7.6
+anchor_bottom = 13.375
+offset_left = 343.0
+offset_top = 248.0
+offset_right = 401.0
+offset_bottom = 264.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "SPREAD"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-amount" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 8.43333
+anchor_top = 13.05
+anchor_right = 8.98333
+anchor_bottom = 13.375
+offset_left = 426.0
+offset_top = 248.0
+offset_right = 484.0
+offset_bottom = 264.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "AMOUNT"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-amount2" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 16.0
+anchor_top = 13.05
+anchor_right = 16.55
+anchor_bottom = 13.375
+offset_left = 780.0
+offset_top = 248.0
+offset_right = 838.0
+offset_bottom = 264.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+text = "AMOUNT"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-lim" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 12.8417
+anchor_top = 9.68334
+anchor_right = 12.8417
+anchor_bottom = 10.0583
+offset_left = 618.0
+offset_top = 106.0
+offset_right = 676.0
+offset_bottom = 122.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 24
+text = "LIM"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-ovdr" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 12.8
+anchor_top = 9.88334
+anchor_right = 12.8
+anchor_bottom = 10.2583
+offset_left = 618.0
+offset_top = 123.0
+offset_right = 676.0
+offset_bottom = 139.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 24
+text = "OVDR"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-dist" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 12.8
+anchor_top = 10.0833
+anchor_right = 12.8
+anchor_bottom = 10.4583
+offset_left = 618.0
+offset_top = 140.0
+offset_right = 676.0
+offset_bottom = 156.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 24
+text = "DIST"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-tube" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+z_index = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 12.8
+anchor_top = 10.325
+anchor_right = 12.8
+anchor_bottom = 10.7
+offset_left = 618.0
+offset_top = 157.0
+offset_right = 676.0
+offset_bottom = 173.0
+theme_override_colors/font_outline_color = Color(0.791967, 0.502379, 0.502761, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 24
+text = "TUBE"
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.99167
+anchor_top = 10.4333
+anchor_right = 2.04167
+anchor_bottom = 11.0583
+offset_left = 122.0
+offset_top = 136.0
+offset_right = 126.0
+offset_bottom = 179.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.375
+anchor_top = 10.7417
+anchor_right = 1.45
+anchor_bottom = 11.8167
+offset_left = 80.0
+offset_top = 155.0
+offset_right = 84.0
+offset_bottom = 262.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect3" type="ColorRect" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 3.575
+anchor_top = 11.6167
+anchor_right = 3.575
+anchor_bottom = 11.6917
+offset_left = 202.0
+offset_top = 304.0
+offset_right = 206.0
+offset_bottom = 314.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect4" type="ColorRect" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 3.925
+anchor_top = 11.3667
+anchor_right = 4.2
+anchor_bottom = 11.3667
+offset_left = 215.0
+offset_top = 290.0
+offset_right = 257.0
+offset_bottom = 293.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Echo-well-logo" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(497.417, 361.667)
+scale = Vector2(1.26146, 0.612612)
+texture = ExtResource("64_t7jjg")
+
+[node name="Label-title" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 2.8
+anchor_top = 8.05834
+anchor_right = 5.125
+anchor_bottom = 9.13334
+offset_left = 118.0
+offset_top = 11.0
+offset_right = 203.0
+offset_bottom = 51.0
+theme_override_fonts/font = ExtResource("65_7881w")
+theme_override_font_sizes/font_size = 61
+text = "THE well"
+metadata/_edit_use_anchors_ = true
+
+[node name="Knob-scale" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1644.17, 543.334)
+scale = Vector2(1.19253, 1.17117)
+texture = ExtResource("67_oyh7p")
+
+[node name="Silver-knob" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1645, 539.167)
+scale = Vector2(0.576924, 0.559072)
+texture = ExtResource("66_xwjmo")
+
+[node name="Knob-scale9" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(667.5, 545)
+scale = Vector2(1.19253, 1.17117)
+texture = ExtResource("67_oyh7p")
+
+[node name="Silver-knob9" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(668.333, 540.834)
+scale = Vector2(0.576924, 0.559072)
+texture = ExtResource("66_xwjmo")
+
+[node name="Label-darker-background2" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 10.25
+anchor_top = 10.4667
+anchor_right = 14.175
+anchor_bottom = 11.9167
+offset_left = 503.0
+offset_top = 211.0
+offset_right = 672.0
+offset_bottom = 330.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_fjcrc")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-darker-background3" type="Label" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 14.325
+anchor_top = 10.4667
+anchor_right = 16.825
+anchor_bottom = 11.9167
+offset_left = 679.0
+offset_top = 211.0
+offset_right = 846.0
+offset_bottom = 330.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_fjcrc")
+metadata/_edit_use_anchors_ = true
+
+[node name="Knob-scale1" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1640, 725)
+scale = Vector2(0.977011, 0.960961)
+texture = ExtResource("67_oyh7p")
+
+[node name="Silver-knob1" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1640, 722.5)
+scale = Vector2(0.470086, 0.453587)
+texture = ExtResource("66_xwjmo")
+
+[node name="Knob-scale2" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1453.33, 721.667)
+scale = Vector2(0.977011, 0.960961)
+texture = ExtResource("67_oyh7p")
+
+[node name="Silver-knob2" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1453.33, 718.334)
+scale = Vector2(0.470086, 0.453587)
+texture = ExtResource("66_xwjmo")
+
+[node name="Knob-scale3" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1316.67, 721.667)
+scale = Vector2(0.977011, 0.960961)
+texture = ExtResource("67_oyh7p")
+
+[node name="Silver-knob3" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1316.67, 719.167)
+scale = Vector2(0.470086, 0.453587)
+texture = ExtResource("66_xwjmo")
+
+[node name="Knob-scale6" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1453.33, 540)
+scale = Vector2(0.977011, 0.960961)
+texture = ExtResource("67_oyh7p")
+
+[node name="Silver-knob6" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1453.33, 536.667)
+scale = Vector2(0.470086, 0.453587)
+texture = ExtResource("66_xwjmo")
+
+[node name="Knob-scale7" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1316.67, 540)
+scale = Vector2(0.977011, 0.960961)
+texture = ExtResource("67_oyh7p")
+
+[node name="Silver-knob7" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1316.67, 537.5)
+scale = Vector2(0.470086, 0.453587)
+texture = ExtResource("66_xwjmo")
+
+[node name="Knob-scale4" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1141.67, 721.667)
+scale = Vector2(0.977011, 0.960961)
+texture = ExtResource("67_oyh7p")
+
+[node name="Silver-knob4" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1141.67, 718.334)
+scale = Vector2(0.470086, 0.453587)
+texture = ExtResource("66_xwjmo")
+
+[node name="Knob-scale5" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1005, 721.667)
+scale = Vector2(0.977011, 0.960961)
+texture = ExtResource("67_oyh7p")
+
+[node name="Silver-knob5" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1005, 719.167)
+scale = Vector2(0.470086, 0.453587)
+texture = ExtResource("66_xwjmo")
+
+[node name="Knob-scale11" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(801.667, 721.667)
+scale = Vector2(0.977011, 0.960961)
+texture = ExtResource("67_oyh7p")
+
+[node name="Silver-knob11" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(801.667, 718.334)
+scale = Vector2(0.470086, 0.453587)
+texture = ExtResource("66_xwjmo")
+
+[node name="Knob-scale12" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(665, 721.667)
+scale = Vector2(0.977011, 0.960961)
+texture = ExtResource("67_oyh7p")
+
+[node name="Silver-knob12" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(665, 719.167)
+scale = Vector2(0.470086, 0.453587)
+texture = ExtResource("66_xwjmo")
+
+[node name="Knob-scale8" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1005, 540)
+scale = Vector2(0.977011, 0.960961)
+texture = ExtResource("67_oyh7p")
+
+[node name="Silver-knob8" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(1005, 537.5)
+scale = Vector2(0.470086, 0.453587)
+texture = ExtResource("66_xwjmo")
+
+[node name="Knob-scale10" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(818.333, 540)
+scale = Vector2(0.977011, 0.960961)
+texture = ExtResource("67_oyh7p")
+
+[node name="Silver-knob10" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(818.333, 537.5)
+scale = Vector2(0.470086, 0.453587)
+texture = ExtResource("66_xwjmo")
+
+[node name="Knob-scale13" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(345.833, 545)
+scale = Vector2(1.19253, 1.17117)
+texture = ExtResource("67_oyh7p")
+
+[node name="Silver-knob13" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(346.666, 540.834)
+scale = Vector2(0.576924, 0.559072)
+texture = ExtResource("66_xwjmo")
+
+[node name="Knob-scale14" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(496.667, 540)
+scale = Vector2(0.977011, 0.960961)
+texture = ExtResource("67_oyh7p")
+
+[node name="Silver-knob14" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(496.666, 537.5)
+scale = Vector2(0.470086, 0.453587)
+texture = ExtResource("66_xwjmo")
+
+[node name="Knob-scale15" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(470, 747.5)
+scale = Vector2(0.718391, 0.645646)
+texture = ExtResource("67_oyh7p")
+
+[node name="Silver-knob15" type="Sprite2D" parent="scrollcontainer/vbox/control/the-well"]
+position = Vector2(470, 745)
+scale = Vector2(0.341881, 0.295358)
+texture = ExtResource("66_xwjmo")
+
+[node name="well_leds-out" type="Control" parent="scrollcontainer/vbox/control/the-well"]
+layout_mode = 1
+anchor_left = 0.291667
+anchor_top = 7.5
+anchor_right = 0.291667
+anchor_bottom = 7.5
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_use_anchors_ = true
+
+[node name="led_1_green" type="ColorRect" parent="scrollcontainer/vbox/control/the-well/well_leds-out"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 18.3417
+anchor_top = 0.739667
+anchor_right = 18.8417
+anchor_bottom = 0.989667
+offset_left = 923.0
+offset_top = 34.08
+offset_right = 945.0
+offset_bottom = 42.08
+color = Color(0.32549, 0.964706, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="led_2_yellow" type="ColorRect" parent="scrollcontainer/vbox/control/the-well/well_leds-out"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 18.35
+anchor_top = 0.416835
+anchor_right = 18.85
+anchor_bottom = 0.666835
+offset_left = 923.0
+offset_top = 23.6599
+offset_right = 945.0
+offset_bottom = 31.6599
+color = Color(0.960784, 0.960784, 0.00392157, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="led_3_red" type="ColorRect" parent="scrollcontainer/vbox/control/the-well/well_leds-out"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 18.3417
+anchor_top = 0.116666
+anchor_right = 18.8417
+anchor_bottom = 0.391666
+offset_left = 923.0
+offset_top = 12.0
+offset_right = 945.0
+offset_bottom = 20.0
+color = Color(1, 0.0313726, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Peach" type="Control" parent="scrollcontainer/vbox/control"]
+anchors_preset = 0
+offset_left = 5.0
+offset_top = 201.667
+offset_right = 45.0
+offset_bottom = 241.667
+
+[node name="Blank-peach-front" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(865, 536.667)
+scale = Vector2(1.44892, 1.64714)
+texture = ExtResource("68_7881w")
+
+[node name="fader_cv-1" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach/Blank-peach-front"]
+z_index = 4
+position = Vector2(-423.017, 189.217)
+scale = Vector2(3.38889, 2.37179)
+texture = ExtResource("11_8wvhk")
+script = ExtResource("69_xwjmo")
+
+[node name="led_fader_cv-1" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach/Blank-peach-front/fader_cv-1"]
+z_index = 5
+position = Vector2(0.245893, 0.699829)
+scale = Vector2(0.594262, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="fader_cv-2" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach/Blank-peach-front"]
+z_index = 4
+position = Vector2(-293.322, 189.217)
+scale = Vector2(3.38889, 2.37179)
+texture = ExtResource("11_8wvhk")
+
+[node name="led_fader_cv-2" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach/Blank-peach-front/fader_cv-2"]
+z_index = 5
+position = Vector2(0.245893, 0.699829)
+scale = Vector2(0.594262, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="fader_cv-3" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach/Blank-peach-front"]
+z_index = 4
+position = Vector2(-157.589, 189.217)
+scale = Vector2(3.38889, 2.37179)
+texture = ExtResource("11_8wvhk")
+
+[node name="led_fader_cv-3" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach/Blank-peach-front/fader_cv-3"]
+z_index = 5
+position = Vector2(0.245893, 0.699829)
+scale = Vector2(0.594262, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="fader_cv-4" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach/Blank-peach-front"]
+z_index = 4
+position = Vector2(-14.9537, 190.229)
+scale = Vector2(3.38889, 2.37179)
+texture = ExtResource("11_8wvhk")
+
+[node name="led_fader_cv-4" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach/Blank-peach-front/fader_cv-4"]
+z_index = 5
+position = Vector2(0.245893, 0.699829)
+scale = Vector2(0.594262, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="fader_cv-5" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach/Blank-peach-front"]
+z_index = 4
+position = Vector2(135.733, 190.229)
+scale = Vector2(3.38889, 2.37179)
+texture = ExtResource("11_8wvhk")
+
+[node name="led_fader_cv-5" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach/Blank-peach-front/fader_cv-5"]
+z_index = 5
+position = Vector2(0.245893, 0.699829)
+scale = Vector2(0.594262, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="fader_cv-6" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach/Blank-peach-front"]
+z_index = 4
+position = Vector2(281.819, 190.229)
+scale = Vector2(3.38889, 2.37179)
+texture = ExtResource("11_8wvhk")
+
+[node name="led_fader_cv-6" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach/Blank-peach-front/fader_cv-6"]
+z_index = 5
+position = Vector2(0.245893, 0.699829)
+scale = Vector2(0.594262, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="fader_cv-7" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach/Blank-peach-front"]
+z_index = 4
+position = Vector2(427.905, 190.229)
+scale = Vector2(3.38889, 2.37179)
+texture = ExtResource("11_8wvhk")
+
+[node name="led_fader_cv-7" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach/Blank-peach-front/fader_cv-7"]
+z_index = 5
+position = Vector2(0.245893, 0.699829)
+scale = Vector2(0.594262, 0.702706)
+texture = ExtResource("12_ogcfe")
+
+[node name="Label-title" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.260645
+anchor_top = 0.00129566
+anchor_right = 0.260645
+anchor_bottom = 0.00129585
+offset_left = 272.908
+offset_top = 118.281
+offset_right = 440.908
+offset_bottom = 180.281
+theme_override_fonts/font = ExtResource("34_lkil8")
+theme_override_font_sizes/font_size = 48
+text = "The Peach"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label-title2" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.947688
+anchor_top = 1.0013
+anchor_right = 2.05231
+anchor_bottom = 2.6263
+offset_left = 272.908
+offset_top = 118.281
+offset_right = 440.908
+offset_bottom = 180.281
+theme_override_fonts/font = ExtResource("34_lkil8")
+theme_override_font_sizes/font_size = 48
+text = "CV CONTROLLER
+"
+metadata/_edit_use_anchors_ = true
+
+[node name="Peach-logo" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+modulate = Color(1, 1, 1, 0.54902)
+position = Vector2(843.333, 578.333)
+scale = Vector2(0.362549, 0.278727)
+texture = ExtResource("70_oyh7p")
+
+[node name="Peach-logo2" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(578.073, 175)
+scale = Vector2(0.0502014, 0.0455729)
+texture = ExtResource("70_oyh7p")
+
+[node name="Nice-vintage-rotary" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(1540, 453.333)
+scale = Vector2(0.637931, 0.572562)
+texture = ExtResource("71_1b1nu")
+
+[node name="Knob-scale9" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(1540, 456.667)
+scale = Vector2(1.19253, 1.17117)
+texture = ExtResource("67_oyh7p")
+
+[node name="Nice-vintage-rotary2" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(1372.5, 453.333)
+scale = Vector2(0.637931, 0.572562)
+texture = ExtResource("71_1b1nu")
+
+[node name="Knob-scale10" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(1372.5, 456.667)
+scale = Vector2(1.19253, 1.17117)
+texture = ExtResource("67_oyh7p")
+
+[node name="Nice-vintage-rotary3" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(1205.83, 453.333)
+scale = Vector2(0.637931, 0.572562)
+texture = ExtResource("71_1b1nu")
+
+[node name="Knob-scale11" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(1205.83, 456.667)
+scale = Vector2(1.19253, 1.17117)
+texture = ExtResource("67_oyh7p")
+
+[node name="Nice-vintage-rotary4" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(1031.67, 453.333)
+scale = Vector2(0.637931, 0.572562)
+texture = ExtResource("71_1b1nu")
+
+[node name="Knob-scale12" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(1031.67, 456.667)
+scale = Vector2(1.19253, 1.17117)
+texture = ExtResource("67_oyh7p")
+
+[node name="Nice-vintage-rotary5" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(864.167, 453.333)
+scale = Vector2(0.637931, 0.572562)
+texture = ExtResource("71_1b1nu")
+
+[node name="Knob-scale13" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(864.167, 456.667)
+scale = Vector2(1.19253, 1.17117)
+texture = ExtResource("67_oyh7p")
+
+[node name="Nice-vintage-rotary6" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(697.5, 453.333)
+scale = Vector2(0.637931, 0.572562)
+texture = ExtResource("71_1b1nu")
+
+[node name="Knob-scale14" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(697.5, 456.667)
+scale = Vector2(1.19253, 1.17117)
+texture = ExtResource("67_oyh7p")
+
+[node name="Nice-vintage-rotary7" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(521.667, 453.333)
+scale = Vector2(0.637931, 0.572562)
+texture = ExtResource("71_1b1nu")
+
+[node name="Knob-scale15" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(521.667, 456.667)
+scale = Vector2(1.19253, 1.17117)
+texture = ExtResource("67_oyh7p")
+
+[node name="Nice-vintage-rotary8" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(354.167, 453.333)
+scale = Vector2(0.637931, 0.572562)
+texture = ExtResource("71_1b1nu")
+
+[node name="Knob-scale16" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(354.167, 456.667)
+scale = Vector2(1.19253, 1.17117)
+texture = ExtResource("67_oyh7p")
+
+[node name="Nice-vintage-rotary9" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(187.5, 453.333)
+scale = Vector2(0.637931, 0.572562)
+texture = ExtResource("71_1b1nu")
+
+[node name="Knob-scale17" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(187.5, 456.667)
+scale = Vector2(1.19253, 1.17117)
+texture = ExtResource("67_oyh7p")
+
+[node name="Label2" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 243.333
+offset_top = 713.333
+offset_right = 258.333
+offset_bottom = 871.333
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+
+[node name="Label3" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 430.0
+offset_top = 713.333
+offset_right = 445.0
+offset_bottom = 871.333
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+
+[node name="Label4" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 630.0
+offset_top = 713.667
+offset_right = 645.0
+offset_bottom = 871.667
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+
+[node name="Label5" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 836.667
+offset_top = 713.667
+offset_right = 851.667
+offset_bottom = 871.667
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+
+[node name="Label6" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 1051.67
+offset_top = 713.333
+offset_right = 1066.67
+offset_bottom = 871.333
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+
+[node name="Label7" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 1265.0
+offset_top = 718.333
+offset_right = 1280.0
+offset_bottom = 876.333
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+
+[node name="Label8" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 1475.0
+offset_top = 720.0
+offset_right = 1490.0
+offset_bottom = 878.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+
+[node name="Label16" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 141.667
+offset_top = 521.667
+offset_right = 237.667
+offset_bottom = 555.667
+theme_override_fonts/font = ExtResource("62_sp00t")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+text = "LFO 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 43
+
+[node name="Label17" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 308.333
+offset_top = 521.667
+offset_right = 404.333
+offset_bottom = 555.667
+theme_override_fonts/font = ExtResource("62_sp00t")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+text = "LFO 2"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 43
+
+[node name="Label18" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 476.667
+offset_top = 521.667
+offset_right = 572.667
+offset_bottom = 555.667
+theme_override_fonts/font = ExtResource("62_sp00t")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+text = "G ENV"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 43
+
+[node name="Label19" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 638.333
+offset_top = 521.667
+offset_right = 766.333
+offset_bottom = 555.667
+theme_override_fonts/font = ExtResource("62_sp00t")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+text = "FILTER FEQ"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 43
+
+[node name="Label20" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 816.667
+offset_top = 521.667
+offset_right = 918.667
+offset_bottom = 555.667
+theme_override_fonts/font = ExtResource("62_sp00t")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+text = "SHAPER"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 43
+
+[node name="Label21" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 985.0
+offset_top = 521.667
+offset_right = 1087.0
+offset_bottom = 555.667
+theme_override_fonts/font = ExtResource("62_sp00t")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+text = "RATE"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 43
+
+[node name="Label22" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 1158.33
+offset_top = 521.667
+offset_right = 1260.33
+offset_bottom = 555.667
+theme_override_fonts/font = ExtResource("62_sp00t")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+text = "DRIVE"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 43
+
+[node name="Label23" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 1325.0
+offset_top = 521.667
+offset_right = 1427.0
+offset_bottom = 555.667
+theme_override_fonts/font = ExtResource("62_sp00t")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+text = "RESO"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 43
+
+[node name="Label24" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 1491.67
+offset_top = 521.667
+offset_right = 1593.67
+offset_bottom = 555.667
+theme_override_fonts/font = ExtResource("62_sp00t")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+text = "PHASE"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 43
+
+[node name="Label25" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 1005.0
+offset_top = 258.333
+offset_right = 1342.0
+offset_bottom = 344.333
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 61
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+text = "CV INPUTS"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 43
+
+[node name="Label26" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 493.333
+offset_top = 568.333
+offset_right = 1308.33
+offset_bottom = 654.333
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 61
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+text = "CV OUTPUTS TO THE WELL"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 43
+
+[node name="Label27" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 198.333
+offset_top = 880.0
+offset_right = 300.333
+offset_bottom = 914.125
+theme_override_fonts/font = ExtResource("62_sp00t")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+text = "DELAY"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 43
+
+[node name="Label28" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 390.0
+offset_top = 881.667
+offset_right = 505.0
+offset_bottom = 915.792
+theme_override_fonts/font = ExtResource("62_sp00t")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+text = "FEEDBACK"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 43
+
+[node name="Label29" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 583.333
+offset_top = 881.667
+offset_right = 698.333
+offset_bottom = 915.792
+theme_override_fonts/font = ExtResource("62_sp00t")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+text = "SPREAD"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 43
+
+[node name="Label30" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 803.333
+offset_top = 881.667
+offset_right = 896.333
+offset_bottom = 915.792
+theme_override_fonts/font = ExtResource("62_sp00t")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+text = "DRIVE"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 43
+
+[node name="Label31" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 1020.0
+offset_top = 881.667
+offset_right = 1113.0
+offset_bottom = 915.792
+theme_override_fonts/font = ExtResource("62_sp00t")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+text = "FILTER"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 43
+
+[node name="Label32" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 1230.0
+offset_top = 881.667
+offset_right = 1323.0
+offset_bottom = 915.792
+theme_override_fonts/font = ExtResource("62_sp00t")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+text = "FREQ"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 43
+
+[node name="Label33" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 1438.33
+offset_top = 880.0
+offset_right = 1531.33
+offset_bottom = 914.125
+theme_override_fonts/font = ExtResource("62_sp00t")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_mp4fb")
+text = "RESO"
+horizontal_alignment = 1
+vertical_alignment = 1
+justification_flags = 43
+
+[node name="wavform_control-peach" type="Control" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 302.0
+offset_top = 235.0
+offset_right = 447.0
+offset_bottom = 330.0
+script = ExtResource("73_oyh7p")
+
+[node name="label_black_background" type="Label" parent="scrollcontainer/vbox/control/Peach/wavform_control-peach"]
+z_index = 210
+layout_mode = 0
+offset_right = 221.0
+offset_bottom = 93.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_hevnm")
+
+[node name="waveformline2d" type="Line2D" parent="scrollcontainer/vbox/control/Peach/wavform_control-peach/label_black_background"]
+position = Vector2(11.666, 49.9164)
+default_color = Color(0.843812, 0.182295, 4.81307e-07, 1)
+
+[node name="waveformnamelabel-peach" type="Label" parent="scrollcontainer/vbox/control/Peach/wavform_control-peach"]
+layout_mode = 0
+offset_left = 36.3333
+offset_top = 96.6666
+offset_right = 182.333
+offset_bottom = 125.667
+theme_override_colors/font_color = Color(0.890196, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0.890196, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("23_056xh")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_demfc")
+text = "Waveform In"
+horizontal_alignment = 1
+
+[node name="button1" type="Button" parent="scrollcontainer/vbox/control/Peach"]
+z_index = 20
+layout_mode = 0
+offset_left = 90.0
+offset_top = 441.667
+offset_right = 112.0
+offset_bottom = 464.667
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jpp14")
+theme_override_styles/normal = SubResource("StyleBoxFlat_34otq")
+toggle_mode = true
+
+[node name="button2" type="Button" parent="scrollcontainer/vbox/control/Peach"]
+z_index = 20
+layout_mode = 0
+offset_left = 256.667
+offset_top = 441.667
+offset_right = 278.667
+offset_bottom = 464.667
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jpp14")
+theme_override_styles/normal = SubResource("StyleBoxFlat_34otq")
+toggle_mode = true
+
+[node name="button3" type="Button" parent="scrollcontainer/vbox/control/Peach"]
+z_index = 20
+layout_mode = 0
+offset_left = 425.0
+offset_top = 441.667
+offset_right = 447.0
+offset_bottom = 464.667
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jpp14")
+theme_override_styles/normal = SubResource("StyleBoxFlat_34otq")
+toggle_mode = true
+
+[node name="button4" type="Button" parent="scrollcontainer/vbox/control/Peach"]
+z_index = 20
+layout_mode = 0
+offset_left = 596.667
+offset_top = 441.667
+offset_right = 618.667
+offset_bottom = 464.667
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jpp14")
+theme_override_styles/normal = SubResource("StyleBoxFlat_34otq")
+toggle_mode = true
+
+[node name="button5" type="Button" parent="scrollcontainer/vbox/control/Peach"]
+z_index = 20
+layout_mode = 0
+offset_left = 766.667
+offset_top = 441.667
+offset_right = 788.667
+offset_bottom = 464.667
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jpp14")
+theme_override_styles/normal = SubResource("StyleBoxFlat_34otq")
+toggle_mode = true
+
+[node name="button6" type="Button" parent="scrollcontainer/vbox/control/Peach"]
+z_index = 20
+layout_mode = 0
+offset_left = 935.0
+offset_top = 441.667
+offset_right = 957.0
+offset_bottom = 464.667
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jpp14")
+theme_override_styles/normal = SubResource("StyleBoxFlat_34otq")
+toggle_mode = true
+
+[node name="button7" type="Button" parent="scrollcontainer/vbox/control/Peach"]
+z_index = 20
+layout_mode = 0
+offset_left = 1103.33
+offset_top = 441.667
+offset_right = 1125.33
+offset_bottom = 464.667
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jpp14")
+theme_override_styles/normal = SubResource("StyleBoxFlat_34otq")
+toggle_mode = true
+
+[node name="button8" type="Button" parent="scrollcontainer/vbox/control/Peach"]
+z_index = 20
+layout_mode = 0
+offset_left = 1275.0
+offset_top = 441.667
+offset_right = 1297.0
+offset_bottom = 464.667
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jpp14")
+theme_override_styles/normal = SubResource("StyleBoxFlat_34otq")
+toggle_mode = true
+
+[node name="button9" type="Button" parent="scrollcontainer/vbox/control/Peach"]
+z_index = 20
+layout_mode = 0
+offset_left = 1441.67
+offset_top = 441.667
+offset_right = 1463.67
+offset_bottom = 464.667
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jpp14")
+theme_override_styles/normal = SubResource("StyleBoxFlat_34otq")
+toggle_mode = true
+
+[node name="ColorRect" type="ColorRect" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 93.3334
+offset_top = 366.667
+offset_right = 1495.33
+offset_bottom = 376.667
+
+[node name="ColorRect2" type="ColorRect" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 93.3334
+offset_top = 376.667
+offset_right = 105.333
+offset_bottom = 434.667
+
+[node name="ColorRect3" type="ColorRect" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 258.333
+offset_top = 376.667
+offset_right = 270.333
+offset_bottom = 434.667
+
+[node name="ColorRect4" type="ColorRect" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 425.0
+offset_top = 376.667
+offset_right = 437.0
+offset_bottom = 434.667
+
+[node name="ColorRect5" type="ColorRect" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 595.0
+offset_top = 376.667
+offset_right = 607.0
+offset_bottom = 434.667
+
+[node name="ColorRect6" type="ColorRect" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 766.667
+offset_top = 376.667
+offset_right = 778.667
+offset_bottom = 434.667
+
+[node name="ColorRect7" type="ColorRect" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 936.667
+offset_top = 376.667
+offset_right = 948.667
+offset_bottom = 434.667
+
+[node name="ColorRect8" type="ColorRect" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 1105.0
+offset_top = 376.667
+offset_right = 1117.0
+offset_bottom = 434.667
+
+[node name="ColorRect9" type="ColorRect" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 1276.67
+offset_top = 376.667
+offset_right = 1288.67
+offset_bottom = 434.667
+
+[node name="ColorRect10" type="ColorRect" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 1441.67
+offset_top = 376.667
+offset_right = 1453.67
+offset_bottom = 434.667
+
+[node name="Label-on-off" type="Label" parent="scrollcontainer/vbox/control/Peach"]
+layout_mode = 0
+offset_left = 1513.33
+offset_top = 351.667
+offset_right = 1657.33
+offset_bottom = 393.229
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("62_sp00t")
+theme_override_font_sizes/font_size = 35
+text = "ON / OFF"
+
+[node name="Peach-logo3" type="Sprite2D" parent="scrollcontainer/vbox/control/Peach"]
+position = Vector2(1570, 286.666)
+scale = Vector2(0.0684408, 0.0686442)
+texture = ExtResource("70_oyh7p")
+script = ExtResource("73_xwjmo")
+
+[node name="Size" type="Button" parent="."]
+visible = false
+z_index = 101
+offset_left = 116.0
+offset_right = 234.0
+offset_bottom = 67.0
+theme_override_fonts/font = ExtResource("62_sp00t")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/hover = SubResource("StyleBoxFlat_0kstj")
+theme_override_styles/normal = SubResource("StyleBoxFlat_yx50j")
+text = "Make
+Smaller
+"
+script = ExtResource("63_g2bq0")
+
+[connection signal="gui_input" from="scrollcontainer" to="scrollcontainer" method="_on_gui_input"]
+[connection signal="pressed" from="Size" to="Size" method="_size_button_pressed"]

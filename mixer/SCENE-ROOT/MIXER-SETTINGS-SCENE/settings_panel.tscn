@@ -1,0 +1,593 @@
+[gd_scene load_steps=28 format=3 uid="uid://cdtdudvksiwp4"]
+
+[ext_resource type="Script" uid="uid://b5onrrxhx5stc" path="res://SCENE-ROOT/MIXER-SETTINGS-SCENE/settings_panel.gd" id="1_2ler5"]
+[ext_resource type="Texture2D" uid="uid://7o61t7tgthc2" path="res://SCENE-ROOT/images/pcb.jpg" id="1_dlsee"]
+[ext_resource type="Theme" uid="uid://cb44yoxalg5xm" path="res://menubuttonstyle.tres" id="2_ijvmt"]
+[ext_resource type="FontFile" uid="uid://swi45mygiorx" path="res://SCENE-ROOT/font/Roboto-Bold.ttf" id="3_s7wdi"]
+[ext_resource type="Script" uid="uid://o5a0c0dnq4n2" path="res://SCENE-ROOT/SCRIPTS/GD/button_mic_1.gd" id="4_6j1i7"]
+[ext_resource type="Script" uid="uid://tg1noylb75hl" path="res://SCENE-ROOT/SCRIPTS/GD/button_mic_2.gd" id="5_h47y8"]
+[ext_resource type="Script" uid="uid://blg7lvd7p2tgp" path="res://SCENE-ROOT/SCRIPTS/GD/button_master_a.gd" id="5_wedb2"]
+[ext_resource type="Script" uid="uid://cclv3tylkny3s" path="res://SCENE-ROOT/SCRIPTS/GD/button_exit.gd" id="6_5uprr"]
+[ext_resource type="Script" uid="uid://c6ivmb5k86ep6" path="res://SCENE-ROOT/SCRIPTS/GD/button_device_1.gd" id="7_ri1f0"]
+[ext_resource type="Script" uid="uid://cu273r4nt1wwv" path="res://SCENE-ROOT/SCRIPTS/GD/button_force_stereo.gd" id="7_uqxqc"]
+[ext_resource type="Script" uid="uid://bcitgrgcxwxuj" path="res://SCENE-ROOT/SCRIPTS/GD/button_master_c.gd" id="7_wedb2"]
+[ext_resource type="Script" uid="uid://beeure1l5w163" path="res://SCENE-ROOT/SCRIPTS/GD/button_split_channels.gd" id="8_osslg"]
+[ext_resource type="Script" uid="uid://c00auqweiro0y" path="res://SCENE-ROOT/SCRIPTS/GD/button_device_2.gd" id="8_vrna3"]
+[ext_resource type="Script" uid="uid://dy3pl2ourxw51" path="res://SCENE-ROOT/SCRIPTS/GD/button_device_3.gd" id="9_11xqq"]
+[ext_resource type="Script" uid="uid://b7mn366bagouf" path="res://SCENE-ROOT/SCRIPTS/GD/button_resample_fix.gd" id="9_i6pf7"]
+[ext_resource type="Script" uid="uid://ctf7n6u3rclw7" path="res://SCENE-ROOT/SCRIPTS/GD/button_device_4.gd" id="10_bvhel"]
+[ext_resource type="Script" uid="uid://cn6mohcgfnmuo" path="res://SCENE-ROOT/SCRIPTS/GD/button_jack_fallback.gd" id="10_l7dkk"]
+[ext_resource type="Script" uid="uid://db0je63vd02hd" path="res://SCENE-ROOT/SCRIPTS/GD/button_device_5.gd" id="11_hsn8v"]
+[ext_resource type="Script" uid="uid://5oinc7al7rgf" path="res://SCENE-ROOT/SCRIPTS/GD/button_device_6.gd" id="12_24sil"]
+[ext_resource type="Script" uid="uid://d1c2aqswpthyo" path="res://SCENE-ROOT/SCRIPTS/GD/button_unmute_all.gd" id="13_wedb2"]
+[ext_resource type="Script" uid="uid://de4odpw6xx565" path="res://SCENE-ROOT/SCRIPTS/GD/button_master_b.gd" id="14_7bsij"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_khtxq"]
+bg_color = Color(0.0862745, 0.0862745, 0.0862745, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i4dgb"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m67ov"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_shqkd"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1ffbg"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.8, 0.105882, 0, 1)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_11xqq"]
+bg_color = Color(0.00184107, 0.00184107, 0.00184107, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.714286, 0.84683, 0.663325, 1)
+
+[node name="Settings_lcd_panel" type="Node2D"]
+script = ExtResource("1_2ler5")
+
+[node name="Pcb" type="Sprite2D" parent="."]
+position = Vector2(877, 462)
+scale = Vector2(4.60847, 3.14437)
+texture = ExtResource("1_dlsee")
+
+[node name="Button_MIC1" type="MenuButton" parent="."]
+offset_left = 10.0
+offset_top = 27.0
+offset_right = 164.0
+offset_bottom = 91.0
+theme = ExtResource("2_ijvmt")
+theme_override_fonts/font = ExtResource("3_s7wdi")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "MIC1 / LINE"
+flat = false
+script = ExtResource("4_6j1i7")
+
+[node name="Button_MIC2" type="MenuButton" parent="."]
+offset_left = 175.0
+offset_top = 28.0
+offset_right = 329.0
+offset_bottom = 92.0
+theme = ExtResource("2_ijvmt")
+theme_override_fonts/font = ExtResource("3_s7wdi")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "MIC2 / LINE"
+flat = false
+script = ExtResource("5_h47y8")
+
+[node name="Button_DEVICE1" type="MenuButton" parent="."]
+offset_left = 339.0
+offset_top = 27.0
+offset_right = 475.0
+offset_bottom = 91.0
+theme = ExtResource("2_ijvmt")
+theme_override_fonts/font = ExtResource("3_s7wdi")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "CH3"
+flat = false
+script = ExtResource("7_ri1f0")
+
+[node name="Button_DEVICE2" type="MenuButton" parent="."]
+offset_left = 491.0
+offset_top = 27.0
+offset_right = 627.0
+offset_bottom = 91.0
+theme = ExtResource("2_ijvmt")
+theme_override_fonts/font = ExtResource("3_s7wdi")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "CH4"
+flat = false
+script = ExtResource("8_vrna3")
+
+[node name="Button_DEVICE3" type="MenuButton" parent="."]
+offset_left = 643.0
+offset_top = 27.0
+offset_right = 779.0
+offset_bottom = 91.0
+theme = ExtResource("2_ijvmt")
+theme_override_fonts/font = ExtResource("3_s7wdi")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "CH5"
+flat = false
+script = ExtResource("9_11xqq")
+
+[node name="Button_DEVICE4" type="MenuButton" parent="."]
+offset_left = 793.0
+offset_top = 27.0
+offset_right = 929.0
+offset_bottom = 91.0
+theme = ExtResource("2_ijvmt")
+theme_override_fonts/font = ExtResource("3_s7wdi")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "CH6"
+flat = false
+script = ExtResource("10_bvhel")
+
+[node name="Button_DEVICE5" type="MenuButton" parent="."]
+offset_left = 945.0
+offset_top = 27.0
+offset_right = 1081.0
+offset_bottom = 91.0
+theme = ExtResource("2_ijvmt")
+theme_override_fonts/font = ExtResource("3_s7wdi")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "CH7"
+flat = false
+script = ExtResource("11_hsn8v")
+
+[node name="Button_DEVICE6" type="MenuButton" parent="."]
+offset_left = 1099.0
+offset_top = 27.0
+offset_right = 1235.0
+offset_bottom = 91.0
+theme = ExtResource("2_ijvmt")
+theme_override_fonts/font = ExtResource("3_s7wdi")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "CH8"
+flat = false
+script = ExtResource("12_24sil")
+
+[node name="Button_MASTER_A" type="Button" parent="."]
+offset_left = 1247.0
+offset_top = 25.0
+offset_right = 1396.0
+offset_bottom = 89.0
+theme_override_fonts/font = ExtResource("3_s7wdi")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/hover = SubResource("StyleBoxFlat_m67ov")
+theme_override_styles/normal = SubResource("StyleBoxFlat_shqkd")
+text = "A / SPKR
+On/Off"
+script = ExtResource("5_wedb2")
+
+[node name="Button_MASTER_B" type="Button" parent="."]
+offset_left = 1406.0
+offset_top = 25.0
+offset_right = 1555.0
+offset_bottom = 89.0
+theme_override_fonts/font = ExtResource("3_s7wdi")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/hover = SubResource("StyleBoxFlat_m67ov")
+theme_override_styles/normal = SubResource("StyleBoxFlat_shqkd")
+text = "B / SPKR
+On/Off"
+script = ExtResource("14_7bsij")
+
+[node name="Button_MASTER_C" type="Button" parent="."]
+offset_left = 1562.0
+offset_top = 23.0
+offset_right = 1711.0
+offset_bottom = 87.0
+theme_override_fonts/font = ExtResource("3_s7wdi")
+theme_override_font_sizes/font_size = 23
+theme_override_styles/hover = SubResource("StyleBoxFlat_m67ov")
+theme_override_styles/normal = SubResource("StyleBoxFlat_shqkd")
+text = "C / SPKR
+On/Off"
+script = ExtResource("7_wedb2")
+
+[node name="CAPACITOR" type="Label" parent="."]
+offset_top = 293.0
+offset_right = 80.0
+offset_bottom = 354.0
+tooltip_text = "CAPACITOR"
+mouse_filter = 1
+
+[node name="CAPACITOR2" type="Label" parent="."]
+offset_left = 100.0
+offset_top = 354.0
+offset_right = 204.0
+offset_bottom = 436.0
+tooltip_text = "CAPACITOR"
+mouse_filter = 1
+
+[node name="CAPACITOR3" type="Label" parent="."]
+offset_left = 287.0
+offset_top = 311.0
+offset_right = 391.0
+offset_bottom = 375.0
+tooltip_text = "CAPACITOR"
+mouse_filter = 1
+
+[node name="CAPACITOR4" type="Label" parent="."]
+offset_left = 741.0
+offset_top = 354.0
+offset_right = 902.0
+offset_bottom = 443.0
+tooltip_text = "CAPACITOR"
+mouse_filter = 1
+
+[node name="CAPACITOR5" type="Label" parent="."]
+offset_left = 927.0
+offset_top = 275.0
+offset_right = 1088.0
+offset_bottom = 436.0
+tooltip_text = "CAPACITOR"
+mouse_filter = 1
+
+[node name="RESISTOR" type="Label" parent="."]
+offset_left = 10.0
+offset_top = 250.0
+offset_right = 171.0
+offset_bottom = 308.0
+tooltip_text = "RESISTOR"
+mouse_filter = 1
+
+[node name="RESISTOR2" type="Label" parent="."]
+offset_left = 252.0
+offset_top = 253.0
+offset_right = 413.0
+offset_bottom = 311.0
+tooltip_text = "RESISTOR"
+mouse_filter = 1
+
+[node name="RESISTOR3" type="Label" parent="."]
+offset_left = 535.0
+offset_top = 253.0
+offset_right = 696.0
+offset_bottom = 311.0
+tooltip_text = "RESISTOR"
+mouse_filter = 1
+
+[node name="RESISTOR4" type="Label" parent="."]
+offset_left = 777.0
+offset_top = 235.0
+offset_right = 938.0
+offset_bottom = 293.0
+tooltip_text = "RESISTOR"
+mouse_filter = 1
+
+[node name="RESISTOR5" type="Label" parent="."]
+offset_left = 1205.0
+offset_top = 336.0
+offset_right = 1527.0
+offset_bottom = 440.0
+tooltip_text = "RESISTOR"
+mouse_filter = 1
+
+[node name="RESISTOR6" type="Label" parent="."]
+offset_left = 1508.0
+offset_top = 336.0
+offset_right = 1743.0
+offset_bottom = 437.0
+tooltip_text = "RESISTOR"
+mouse_filter = 1
+
+[node name="RESISTOR7" type="Label" parent="."]
+offset_left = 1336.0
+offset_top = 639.0
+offset_right = 1479.0
+offset_bottom = 681.0
+tooltip_text = "RESISTOR"
+mouse_filter = 1
+
+[node name="RESISTOR8" type="Label" parent="."]
+offset_left = 1560.0
+offset_top = 639.0
+offset_right = 1703.0
+offset_bottom = 681.0
+tooltip_text = "RESISTOR"
+mouse_filter = 1
+
+[node name="RESISTOR9" type="Label" parent="."]
+offset_left = 1205.0
+offset_top = 591.0
+offset_right = 1738.0
+offset_bottom = 614.0
+tooltip_text = "RESISTOR"
+mouse_filter = 1
+
+[node name="TRANSISTOR" type="Label" parent="."]
+offset_left = 1205.0
+offset_top = 548.0
+offset_right = 1738.0
+offset_bottom = 591.0
+tooltip_text = "TRANSISTOR"
+mouse_filter = 1
+
+[node name="TRANSISTOR2" type="Label" parent="."]
+offset_left = 1116.0
+offset_top = 403.0
+offset_right = 1173.0
+offset_bottom = 446.0
+tooltip_text = "TRANSISTOR"
+mouse_filter = 1
+
+[node name="CONNECTOR" type="Label" parent="."]
+offset_left = 489.0
+offset_top = 336.0
+offset_right = 641.0
+offset_bottom = 443.0
+tooltip_text = "CONNECTOR"
+mouse_filter = 1
+
+[node name="CONNECTOR2" type="Label" parent="."]
+offset_left = -4.0
+offset_top = 840.0
+offset_right = 337.0
+offset_bottom = 894.0
+tooltip_text = "CONNECTOR"
+mouse_filter = 1
+
+[node name="CONNECTOR3" type="Label" parent="."]
+offset_left = 1542.0
+offset_top = 856.0
+offset_right = 1657.0
+offset_bottom = 900.0
+tooltip_text = "CONNECTOR"
+mouse_filter = 1
+
+[node name="OPAMP" type="Label" parent="."]
+offset_left = 1205.0
+offset_top = 717.0
+offset_right = 1721.0
+offset_bottom = 761.0
+tooltip_text = "OPAMP"
+mouse_filter = 1
+
+[node name="OPAMP2" type="Label" parent="."]
+offset_left = 1205.0
+offset_top = 477.0
+offset_right = 1721.0
+offset_bottom = 521.0
+tooltip_text = "OPAMP"
+mouse_filter = 1
+
+[node name="VOLTAGE-REGULATORS" type="Label" parent="."]
+offset_left = 1205.0
+offset_top = 214.0
+offset_right = 1738.0
+offset_bottom = 336.0
+tooltip_text = "VOLTAGE-REGULATORS"
+mouse_filter = 1
+
+[node name="COMPRESSOR-CONTROL" type="Label" parent="."]
+offset_left = 4.0
+offset_top = 143.0
+offset_right = 1049.0
+offset_bottom = 228.0
+tooltip_text = "COMPRESSOR-CONTROL"
+mouse_filter = 1
+
+[node name="LCD-CONTROL" type="Label" parent="."]
+offset_left = 252.0
+offset_top = 548.0
+offset_right = 385.0
+offset_bottom = 670.0
+tooltip_text = "      LCD
+CONTROLLER"
+mouse_filter = 1
+
+[node name="VU POWER" type="Label" parent="."]
+offset_left = 287.0
+offset_top = 394.0
+offset_right = 391.0
+offset_bottom = 516.0
+tooltip_text = "VU POWER"
+mouse_filter = 1
+
+[node name="DSP" type="Label" parent="."]
+offset_left = -4.0
+offset_top = 564.0
+offset_right = 100.0
+offset_bottom = 686.0
+tooltip_text = "DSP"
+mouse_filter = 1
+
+[node name="DIODES" type="Label" parent="."]
+offset_left = 641.0
+offset_top = 336.0
+offset_right = 745.0
+offset_bottom = 458.0
+tooltip_text = "DIODES"
+mouse_filter = 1
+
+[node name="DIODES2" type="Label" parent="."]
+offset_left = 1205.0
+offset_top = 829.0
+offset_right = 1625.0
+offset_bottom = 852.0
+tooltip_text = "DIODES"
+mouse_filter = 1
+
+[node name="ZENER" type="Label" parent="."]
+offset_left = 1680.0
+offset_top = 835.0
+offset_right = 1720.0
+offset_bottom = 891.0
+tooltip_text = "ZENER"
+mouse_filter = 1
+
+[node name="Label_rood_omranding" type="Label" parent="."]
+offset_left = 1173.0
+offset_top = 92.0
+offset_right = 1725.0
+offset_bottom = 203.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_1ffbg")
+max_lines_visible = 1
+visible_characters = 1
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1162.0
+offset_top = 104.0
+offset_right = 1745.0
+offset_bottom = 137.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("3_s7wdi")
+theme_override_font_sizes/font_size = 25
+text = "Sound issues workarounds"
+horizontal_alignment = 1
+
+[node name="Button_force_stereo" type="Button" parent="."]
+visible = false
+offset_left = 1797.0
+offset_top = 38.0
+offset_right = 1885.0
+offset_bottom = 100.0
+theme_override_fonts/font = ExtResource("3_s7wdi")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_m67ov")
+theme_override_styles/normal = SubResource("StyleBoxFlat_shqkd")
+text = "FORCE
+STEREO"
+script = ExtResource("7_uqxqc")
+
+[node name="Button_Usb_fix" type="Button" parent="."]
+offset_left = 1595.0
+offset_top = 127.0
+offset_right = 1716.0
+offset_bottom = 189.0
+theme_override_fonts/font = ExtResource("3_s7wdi")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_11xqq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_shqkd")
+text = "USB
+FIX"
+script = ExtResource("8_osslg")
+toggle_id = "usb_fix"
+label_text = "USB FIX"
+
+[node name="Button_Resample_fix" type="Button" parent="."]
+offset_left = 1467.0
+offset_top = 128.0
+offset_right = 1588.0
+offset_bottom = 190.0
+theme_override_fonts/font = ExtResource("3_s7wdi")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_m67ov")
+theme_override_styles/normal = SubResource("StyleBoxFlat_shqkd")
+text = "RESAMPLE
+FIX"
+script = ExtResource("9_i6pf7")
+toggle_id = "resample_fix"
+label_text = "RESAMPLE FIX"
+
+[node name="Button_Jack_fallback" type="Button" parent="."]
+offset_left = 1334.0
+offset_top = 129.0
+offset_right = 1455.0
+offset_bottom = 191.0
+theme_override_fonts/font = ExtResource("3_s7wdi")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_m67ov")
+theme_override_styles/normal = SubResource("StyleBoxFlat_shqkd")
+text = "JACK
+FALLBACK"
+script = ExtResource("10_l7dkk")
+toggle_id = "jack_fallback"
+label_text = "JACK FALLBACK"
+
+[node name="Button_unmute_all" type="Button" parent="."]
+offset_left = 1187.0
+offset_top = 129.0
+offset_right = 1319.0
+offset_bottom = 191.0
+theme_override_fonts/font = ExtResource("3_s7wdi")
+theme_override_font_sizes/font_size = 22
+theme_override_styles/hover = SubResource("StyleBoxFlat_m67ov")
+theme_override_styles/normal = SubResource("StyleBoxFlat_shqkd")
+text = "UNMUTE
+ALL"
+script = ExtResource("13_wedb2")
+toggle_id = "unmute_all"
+label_text = "UNMUTE ALL"
+
+[node name="Button_Exit" type="Button" parent="."]
+offset_left = 10.0
+offset_top = 98.0
+offset_right = 147.0
+offset_bottom = 162.0
+theme = ExtResource("2_ijvmt")
+theme_override_fonts/font = ExtResource("3_s7wdi")
+theme_override_font_sizes/font_size = 27
+theme_override_styles/hover = SubResource("StyleBoxFlat_khtxq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_i4dgb")
+text = "EXIT"
+script = ExtResource("6_5uprr")
+
+[connection signal="pressed" from="Button_Exit" to="Button_Exit" method="On_button_pressed_settings_scene"]
